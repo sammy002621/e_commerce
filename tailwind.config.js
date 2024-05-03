@@ -16,6 +16,7 @@ module.exports = {
       backgroundColor:{
         sammy:'#DB4444',
         happy:'#F5F5F5',
+        mama:'#363738'
         
         
       },

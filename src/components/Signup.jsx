@@ -1,8 +1,7 @@
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import Footer from './Footer';
-
-function Login() {
+function Signup() {
   return (
     <div>
         {/* header */}
@@ -12,6 +11,7 @@ function Login() {
  <a href='google.com' className='font-bold underline ml-3'>ShopNow</a></p>
             </div>
             <div className='ml-80'>
+            
                 <select name="" id=""  className='bg-transparent outline-none'>
                     <option value="English" >English</option>
                     <option value="French" >French</option>
@@ -60,20 +60,38 @@ function Login() {
                 <div className='w-[10%]  flex items-center justify-center  '>
                    
                 </div>
-                <div className='w-[30%]  pt-60 flex justify-center pl-20 overflow-hidden'>
+                <div className='w-[30%]  pt-20 flex justify-center pl-20 overflow-hidden'>
                     <div className=''>
-                        <h1 className='text-3xl font-medium mb-4'>Log in to Exclusive</h1>
+                        <h1 className='text-3xl font-medium mb-4'>Create an account</h1>
                         <p className='text-baseline mb-10'>Enter your details below</p>
                         <form action="" className='mt-5'>
-                            <input type="text" placeholder='Email or Phone Number' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full' />
-                            <input type="text" placeholder='Password' className='bg-transparent border-b-2  outline-none pb-2 border-gray-700  mb-8 w-full' />
-                            <div className='flex justify-between items-center'>
-                                <div>
-                                <button className='text-white bg-sammy px-10 py-3 rounded-md'>Log In</button>
+                        
+                        <input type="text" placeholder='Name' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full' />
+                        <input type="text"  placeholder='Email or Phone Number' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full'/>
+                            <input type="text" placeholder='Password' className='bg-transparent border-b-2  outline-none pb-2 border-gray-700  mb-10 w-full' />
+                            <div className=''>
+                                <div className='mb-4'>
+                                <button className='text-white bg-sammy px-10 py-3 rounded-md w-full' type='submit'>Create Account</button>
                                 </div>
-                                <div>
-                                    <p className='text-happy'><a href="google.com">Forgot Password?</a></p>
+                                <div className='flex items-center border-black border  px-10 py-3 rounded-md w-full justify-center'>
+                                   <div className='mr-2'>
+                                             <img src="/Icon-Google.svg" alt="" />
+                                   </div>
+                                   <div className='text-lg border-gray-500 hover:cursor-pointer '>
+                                    Sign up with Google
+                                   </div>
                                 </div>
+
+                                <div className='text-center mt-9 text-lg text-gray-700 flex items-center justify-center'>
+                                      <div className='mr-4'>
+                                        Already have Account
+                                      </div>
+                                      <div>
+                                        <a href="google.com">Login</a>
+                                        <div className='border border-gray-600'></div>
+                                      </div>
+                                     
+                                    </div>
 
                             </div>
                         </form>
@@ -88,4 +106,5 @@ function Login() {
   )
 }
 
-export default Login
+
+export default Signup
