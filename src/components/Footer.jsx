@@ -25,7 +25,7 @@ function Footer() {
     <p className='text-xl'>+88015-88888-9999</p>
    </div>
    <div className='text-xl  '>
-    <p className='mb-8'><a href="google.com" className='font-medium text-2xl'>Account</a></p>
+    <p className='mb-8 font-medium text-2xl'>Account</p>
     <p className='mb-5'><a href="google.com">My Account</a></p>
     <p className='mb-5'><a href="google.com">Login/Register</a></p>
     <p className='mb-5'><a href="google.com">Cart</a></p>
