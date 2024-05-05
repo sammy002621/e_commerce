@@ -18,7 +18,7 @@ module.exports = {
         happy:'#F5F5F5',
         mama:'#363738'
         
-        
+     
       },
       colors:{
         happy:'#DB4444',
@@ -26,6 +26,7 @@ module.exports = {
       },
       backgroundImage: {
         footer_texture: "url('/public/body_image.png')",
+        home_texture:"url('/public/dots.svg')"
       }
     },
 
