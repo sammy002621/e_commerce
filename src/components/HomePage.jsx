@@ -116,7 +116,7 @@ function HomePage() {
             <div className='flex justify-between  '>
                <div className='w-full flex justify-between pt-9'>
                <div>
-                <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+                <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                         <button className='bg-sammy text-white px-3 py-1 rounded-md'>-40%</button>
@@ -156,8 +156,8 @@ function HomePage() {
                </div>
                <div>
                 {/* first */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
-                    <div className='flex justify-between items-center'>
+               <div className='bg-happy  pt-3 w-[300px] h-[270px] rounded-lg'>
+                    <div className='flex justify-between items-center px-3'>
                     <div>
                         <button className='bg-sammy text-white px-3 py-1 rounded-md'>-35%</button>
                     </div>
@@ -165,7 +165,7 @@ function HomePage() {
                         <img src="/heart.svg" alt="" />
                     </div>
                     </div>
-                    <div className='flex items-start mt-2 justify-between'>
+                    <div className='flex items-start mt-2 justify-between px-3'>
                         <div className='ml-5'>
                             <img src="/chair.svg" alt="" />
                         </div>
@@ -173,6 +173,7 @@ function HomePage() {
                             <img src="/eye.svg" alt="" />
                         </div>
                     </div>
+                    <div className='bg-black text-white text-center pt-1 pb-1 w-full text-lg font-medium  hover:cursor-pointer'>Add to Chart</div>
                     
                 </div>
                 <div className='bg-white '>
@@ -194,7 +195,7 @@ function HomePage() {
                </div>
                <div>
                 {/* second */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                         <button className='bg-sammy text-white px-3 py-1 rounded-md'>-30%</button>
@@ -232,7 +233,7 @@ function HomePage() {
                </div>
                <div>
                 {/* third */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                         <button className='bg-sammy text-white px-3 py-1 rounded-md'>-25%</button>
@@ -269,7 +270,7 @@ function HomePage() {
                </div>
                <div>
                 {/* fourth */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                         <button className='bg-sammy text-white px-3 py-1 rounded-md'>-40%</button>
@@ -315,7 +316,7 @@ function HomePage() {
 
         {/* categories */}
 
-        <div className='px-40 mt-20 '>
+        <div className='px-10 mt-20 lg:px-40'>
             <div className='flex items-center mb-10'>
                 <div className=''>
                     <img src="/rectangle_red.svg" alt="" />
@@ -327,19 +328,19 @@ function HomePage() {
 
             {/* browse by categories */}
             <div className='flex items-center justify-between'>
-                <div className='text-4xl font-semibold'>Browse By Category</div>
+                <div className=' text-xl font-semibold md:text-4xl md:font-semibold'>Browse By Category</div>
                 <div><img src="/arrows.svg" alt="" className='mr-12' /></div>
             </div>
 
             {/* products */}
-            <div className='flex  w-full justify-between mt-20 mb-20'>
-                <div className=' flex flex-col items-center py-10 px-20 rounded-md border-2 border-gray-300 hover:cursor-pointer'>
+            <div className='flex flex-col  mt-20 mb-20 sm:flex-row '>
+                <div className=' flex flex-col w-full mb-3 items-center py-10 px-20 rounded-md border-2 border-gray-300 hover:cursor-pointer sm:mr-2 overflow-x-hidden '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
                     <div>Phones</div>
                 </div>
-                <div className=' flex flex-col items-center py-10 px-20 rounded-md border-2 border-gray-300 hover:cursor-pointer'>
+                <div className=' flex flex-col items-center mb-3 py-10 px-20 rounded-md border-2 border-gray-300 hover:cursor-pointer  sm:mr-2 '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -347,7 +348,7 @@ function HomePage() {
                         Computers
                     </div>
                 </div>
-                <div className='  flex flex-col items-center py-10 px-20 rounded-md border-2 border-gray-300 hover:cursor-pointer'>
+                <div className='  flex flex-col items-center  mb-3 py-10 px-20 rounded-md border-2 border-gray-300 hover:cursor-pointer  sm:mr-2'>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -355,11 +356,11 @@ function HomePage() {
                     SmartWatch
                     </div>
                 </div>
-                <div className=' bg-sammy text-white flex flex-col items-center py-10 px-20 rounded-md'>
+                <div className=' bg-sammy text-white  mb-3 flex flex-col items-center py-10 px-20 rounded-md  sm:mr-2'>
                     <div className='mb-5'><img src="white_camera.svg" alt="" /></div>
                     <div>Camera</div>
                 </div>
-                <div className=' flex flex-col items-center py-10 px-20 rounded-md border-2 border-gray-300 hover:cursor-pointer'>
+                <div className=' flex flex-col items-center mb-3 py-10 px-20 rounded-md border-2 border-gray-300 hover:cursor-pointer sm:mr-2 '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -367,7 +368,7 @@ function HomePage() {
                     HeadPhones
                     </div>
                 </div>
-                <div className=' flex flex-col items-center py-10 px-20  rounded-md border-2 border-gray-300 hover:cursor-pointer'>
+                <div className=' flex flex-col items-center py-10 px-20  rounded-md border-2 border-gray-300 hover:cursor-pointer lg:h-[182px]   '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -380,7 +381,7 @@ function HomePage() {
             
         </div>
         <div className='border-gray-300 mb-20 border-t-2 mx-40'></div>
-            <div className='mx-40 mb-40'>
+            <div className=' mx-10 md:mx-40 md:mb-40'>
             <div className='flex items-center mb-10'>
                 <div className=''>
                     <img src="/rectangle_red.svg" alt="" />
@@ -390,14 +391,14 @@ This Month
                 </div>
             </div>
             <div className='flex items-center justify-between mb-10'>
-                <div className='text-4xl font-semibold'>Best Selling Products</div>
+                <div className=' text-lg font-semibold sm:text-4xl sm:font-semibold'>Best Selling Products</div>
                 <div><button  className='bg-sammy text-white px-10 py-3 text-lg font-medium rounded-md hover:bg-hover'>View All</button></div>
             </div>
             {/* BEST SELLING PRODUCTS */}
-            <div className='flex justify-between  '>
-               <div className='w-full flex justify-between pt-9'>
-               <div>
-                <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+            <div className='flex  '>
+               <div className='w-full flex flex-col  justify-between pt-9 md:flex-row'>
+               <div className='mb-5'>
+                <div className='bg-happy px-3 pt-3 w-full h-[270px] md:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -406,7 +407,7 @@ This Month
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/gamer.svg" alt="" />
                         </div>
                         <div>
@@ -415,7 +416,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white mb-4 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -436,7 +437,7 @@ This Month
                </div>
                <div>
                 {/* first */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -445,7 +446,7 @@ This Month
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5'>
+                        <div className=' ml-20 md:ml-5'>
                             <img src="/chair.svg" alt="" />
                         </div>
                         <div>
@@ -454,7 +455,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -473,7 +474,7 @@ This Month
                </div>
                <div>
                 {/* second */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -482,7 +483,7 @@ This Month
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5'>
+                        <div className=' ml-20 md:ml-5'>
                             <img src="/keyboard.svg" alt="" />
                         </div>
                         <div>
@@ -491,7 +492,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -510,7 +511,7 @@ This Month
                </div>
                <div>
                 {/* third */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -519,7 +520,7 @@ This Month
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/television.svg" alt="" />
                         </div>
                         <div>
@@ -528,7 +529,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -546,7 +547,7 @@ This Month
                </div>
                <div>
                 {/* fourth */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -555,7 +556,7 @@ This Month
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/gamer.svg" alt="" />
                         </div>
                         <div>
@@ -564,7 +565,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -637,7 +638,7 @@ Our Products
             <div className='flex justify-between mb-20 '>
                <div className='w-full flex justify-between pt-9'>
                <div>
-                <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+                <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -676,7 +677,7 @@ Our Products
                </div>
                <div>
                 {/* first */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -713,7 +714,7 @@ Our Products
                </div>
                <div>
                 {/* second */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -750,7 +751,7 @@ Our Products
                </div>
                <div>
                 {/* third */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -786,7 +787,7 @@ Our Products
                </div>
                <div>
                 {/* fourth */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -830,7 +831,7 @@ Our Products
             <div className='flex justify-between mb-20 '>
                <div className='w-full flex justify-between pt-9'>
                <div>
-                <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+                <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     <button className='bg-button text-white px-3 py-1 rounded-md'>NEW</button>
@@ -874,7 +875,7 @@ Our Products
                </div>
                <div>
                 {/* first */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
 
@@ -916,7 +917,7 @@ Our Products
                </div>
                <div>
                 {/* second */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     <button className='bg-button text-white px-3 py-1 rounded-md'>NEW</button>
@@ -959,7 +960,7 @@ Our Products
                </div>
                <div>
                 {/* third */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -1000,7 +1001,7 @@ Our Products
                </div>
                <div>
                 {/* fourth */}
-               <div className='bg-happy px-3 pt-3 w-[300px] h-[260px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 w-[300px] h-[270px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
