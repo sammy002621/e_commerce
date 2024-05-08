@@ -100,6 +100,16 @@ const decrement2 = ()=>{
             </div></div>
           <div className=' w-[70px]'>$1100</div>
         </div>
+
+        <div className='flex justify-between items-center'>
+          <div className='border border-gray-600 px-5 py-2 mb-2 rounded-md'>
+          
+          <button className='text-md font-semibold'>Return To shop</button>
+          </div>
+          <div className='border-gray-600 border px-5 py-2 mb-2 rounded-md'><button className='text-md font-semibold'>Update Cart</button></div>
+          
+          
+          </div>
         
     </div>
   )
