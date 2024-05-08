@@ -65,7 +65,7 @@ const decrement2 = ()=>{
           $650
           </div>
           <div className='flex-1 '>
-            <div className=' w-1/5 flex items-center justify-center  border-2 border-gray-400 rounded-md h-1/4'>
+            <div className='  sm:w-1/5 flex items-center justify-center  border-2 border-gray-400 rounded-md h-1/4'>
                 <div className='mr-5'>{product1}</div>
                 <div className='flex flex-col juistify-center'>
                     <div onClick={increment1}  className=' flex justify-center'><button><KeyboardArrowUpIcon/></button></div>
