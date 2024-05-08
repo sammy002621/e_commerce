@@ -5,12 +5,13 @@ import Signup from './components/Signup';
 import HomePage from './components/HomePage';
 import WishList from './components/WishList';
 import HeaderHome from './components/HeaderHome';
+import { Home } from '@mui/icons-material';
 function App() {
   return (
     // me
     <div className="App">
      <WishList/>
-     <HeaderHome/>
+     
     </div>
   );
 }
