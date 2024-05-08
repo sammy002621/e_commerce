@@ -9,7 +9,7 @@ function Products() {
           <div className='flex-1  sm:flex sm:justify-start '>Product</div>
           <div className='flex-1 '>Price</div>
           <div className='flex-1 '>Quantity</div>
-          <div className=' w-[80px] pl-2 '>SubTotal</div>
+          <div className=' w-[80px] pl-2 pr-1 '>SubTotal</div>
         </div>
 
         {/* the second row */}
@@ -20,7 +20,7 @@ function Products() {
             '>
                 <img src="monitor_cart.svg" alt="" />
             </div>
-            <div>
+            <div className='w-1/2 sm:w-2/3'>
                 LCD Monitor
             </div>
           </div>
@@ -37,9 +37,9 @@ function Products() {
           <div className='flex items-center flex-1   '>
             <div className=' pr-2 hidden sm:inline
             '>
-                <img src="gamer.svg" alt=""  className='w-[50px]'/>
+                <img src="gamer_cart.svg" alt="" />
             </div>
-            <div className=''>
+            <div className='w-1/2 sm:w-2/3 mr-1'>
             H1 Gamepad
             </div>
           </div>
