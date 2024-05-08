@@ -1,21 +1,27 @@
 import React from 'react'
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 
 function Header() {
   return (
-    <div className='bg-green-600 text-white flex  lg:justify-center lg:items-center py-3 w-full overflow-hidden'>
-            <div className='md:w-11/12 xl:pl-80 ml-2 xl:ml-20 '>
-                <p className='w-2/3 md:w-full md:pl-5'>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
- <a href='google.com' className='font-bold underline ml-3'>ShopNow</a></p>
+    <div className='bg-black w-full overflow-hidden text-white lg:flex  justify-center'>
+            <div className='  w-full  flex justify-between text-xl items-start my-4 ml-1 lg:mx-10'>
+            <div className=' w-10/12  flex justify-center'>
+                <p className='font-medium'>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+ <a href='google.com' className='ml-2 underline font-bold'>ShopNow</a></p>
             </div>
-            <div className=' w-4/6 sm:w-2/16 md:w-4/12'>
+            <div className='flex justify-between items-center ml-2 pl-5  '>
             
-            <select name="" id=""  className='bg-transparent outline-none  w-9/12 sm:w-9/12 sm:ml-12 lg:w-1/3 lg:ml-20 xl:ml-40 xl:w-1/5'>
-                    <option value="English" >English</option>
-                    <option value="French" >French</option>
-                    <option value="Spanish" >Spanish</option>
-                    <option value="Portugeuse" >Portugeuse</option>
-                </select>
+            <div className='font-medium'>
+              English
             </div>
+            <div>
+<KeyboardArrowDownIcon/>
+            </div>
+            </div>
+
+            </div>
+            
         </div>
   )
 }
