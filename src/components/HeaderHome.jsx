@@ -9,7 +9,7 @@ function HeaderHome() {
             <h1 className='font-semibold text-xl'>Exclusive</h1>
         </div>
         {/* the middle side */}
-        <div className='flex justify-between  w-10/12 md:w-2/3 lg:w-1/2 lg:px-5 
+        <div className='flex justify-between  md:pl-0 w-full sm:w-10/12 md:w-2/3 lg:w-1/2 lg:px-5 
         '>
             <div><a href="google.com">Home</a></div>
             <div><a href="">Contact</a></div>

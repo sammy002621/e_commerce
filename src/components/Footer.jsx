@@ -2,10 +2,10 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='bg-black  text-white mt-20'>
-    <div className='flex mx-40 py-20 pb-10 justify-between items-start  mt-20 mb-20' >
-   <div className=''>
-    <h1 className='font-semibold text-3xl mb-8'>Exclusive</h1>
+    <div className='bg-black  text-white'>
+    <div className='flex mx-5 lg:mx-10 py-10 pb-5 justify-between items-start  mt-20  lg:mb-10 ' >
+   <div className='hidden md:inline'>
+    <h1 className='font-semibold text-xl xl:text-3xl mb-8'>Exclusive</h1>
     <p className='font-semibold text-xl mb-8'>Subscribe</p>
     <p className=' mb-5 text-xl'>Get 10% off  your first order </p>
     <div className='flex    w-[240px] px-3 py-3 border-2 border-white rounded-md items-center'>
@@ -18,13 +18,13 @@ function Footer() {
           </div>
     </div>
    </div>
-   <div className=' w-1/5'>
+   <div className='  hidden lg:inline lg:text-lg  xl:w-1/5'>
     <p className='font-semibold text-xl mb-8 '>Support</p>
     <p className=' mb-5 font-medium text-xl w-4/5'>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
     <p className='mb-5 text-xl'>exclusive@gmail.com</p>
     <p className='text-xl'>+88015-88888-9999</p>
    </div>
-   <div className='text-xl  '>
+   <div className='hidden 2xl:inline text-xl  '>
     <p className='mb-8 font-medium text-2xl'>Account</p>
     <p className='mb-5'><a href="google.com">My Account</a></p>
     <p className='mb-5'><a href="google.com">Login/Register</a></p>
@@ -32,15 +32,15 @@ function Footer() {
     <p className='mb-5'><a href="google.com">WishList</a></p>
     <p className='mb-5'><a href="google.com">Shop</a></p>
    </div>
-   <div className='text-xl  '>
-    <p className='font-medium text-2xl mb-8'>Quick Link</p>
+   <div className='text-lg  '>
+    <p className='font-medium  text-xl lg:text-2xl mb-8'>Quick Link</p>
     <p className='mb-5'><a href="google.com">Privacy Policy</a></p>
     <p className='mb-5'><a href="google.com">Terms of Policy</a></p>
     <p className='mb-5'><a href="google.com">FAQ</a></p>
     <p className='mb-5'><a href="google.com">Contact</a></p>
    </div>
    <div className=''>
-    <p className='font-medium text-2xl mb-8'>Download App</p>
+    <p className='font-medium   text-xl ml-2 lg:text-2xl mb-8'>Download App</p>
     <p className='text-gray-600 mb-2 font-medium'>Save $3 with App New User Only</p>
     <div >
        <div className='flex mb-8 items-center'>
@@ -65,12 +65,12 @@ function Footer() {
     </div>
    </div>
     </div>
-    <div className=' font-medium text-xl text-mama'>
-<div className='flex justify-center items-center border-t-2 border-gray-700 pt-2'>
+    <div className=' font-medium  md:text-xl text-mama'>
+<div className='flex justify-center items-center border-t-2 border-gray-700 py-4 px-3'>
     <div className='mr-2'>
 <img src="/copyright.png" alt="" />
     </div>
-    <div>
+    <div className=''>
     Copyright Rimel 2022. All right reserved
 
     </div>
