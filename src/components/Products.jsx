@@ -6,6 +6,8 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 function Products() {
     let [product1,setProduct1]=useState(1);
     let [product2,setProduct2]=useState(2);
+    let [product1_price,setProduct1Price]=useState(650);
+    let [product2_price,setProduct2Price]=useState(1100);
 
     const increment1 = ()=>{
 
@@ -53,11 +55,11 @@ const decrement2 = ()=>{
         <div className='w-full flex justify-between  px-2 sm:px-12 py-10 text-lg font-baseline mb-10 items-center  shadow-md'>
           <div className='flex items-center  flex-1 '>
             <div className='
-            pr-2 hidden sm:inline
+            pr-2 
             '>
-                <img src="monitor_cart.svg" alt="" />
+                <img src="monitor_cart.svg" alt="" className='w-full' />
             </div>
-            <div className='w-1/2 md:w-2/3'>
+            <div className='w-1/2 md:w-2/3 hidden sm:flex'>
                 LCD Monitor
             </div>
           </div>
@@ -65,8 +67,8 @@ const decrement2 = ()=>{
           $650
           </div>
           <div className='flex-1 '>
-            <div className=' w-1/2 lg:w-1/4 flex items-center justify-center  border-2 border-gray-400 rounded-md h-1/4'>
-                <div className=' mr-1 md:mr-5'>{product1}</div>
+            <div className=' w-2/3 sm:w-1/3 flex items-center justify-center  border-2 border-gray-400 rounded-md h-1/4'>
+                <div className=' pl-1 mr-1 md:mr-5'>{product1}</div>
                 <div className='flex flex-col juistify-center'>
                     <div onClick={increment1}  className=' flex justify-center'><button><KeyboardArrowUpIcon/></button></div>
                     <div onClick={decrement1} className=''><button><KeyboardArrowDownIcon/></button></div>
@@ -80,18 +82,18 @@ const decrement2 = ()=>{
         {/* the third row */}
         <div className='w-full flex justify-between   px-2 sm:px-12 py-10 text-lg font-baseline mb-10 items-center shadow-md'>
           <div className='flex items-center flex-1   '>
-            <div className=' pr-2 hidden sm:inline
+            <div className=' pr-2 
             '>
                 <img src="gamer_cart.svg" alt="" />
             </div>
-            <div className='w-1/2 md:w-2/3 mr-1'>
+            <div className='w-1/2 md:w-2/3 hidden sm:flex'>
             H1 Gamepad
             </div>
           </div>
           <div className='flex-1  '>
           $550
           </div>
-          <div className='flex-1 '><div className=' w-1/2 lg:w-1/4 flex items-center justify-center  border-2 border-gray-400 rounded-md '>
+          <div className='flex-1 '><div className=' w-2/3 sm:w-1/3 flex items-center justify-center  border-2 border-gray-400 rounded-md '>
                 <div className='pl-1 mr-1 md:mr-5 '>{product2}</div>
                 <div className='flex flex-col juistify-center'>
                     <div onClick={increment2}  className=' flex justify-center'><button><KeyboardArrowUpIcon/></button></div>
@@ -102,14 +104,40 @@ const decrement2 = ()=>{
         </div>
 
         <div className='flex justify-between items-center'>
-          <div className='border border-gray-600 px-5 py-2 mb-2 rounded-md'>
+          <div className='border border-gray-600 sm:px-5  px-2 py-2 mb-2 rounded-md'>
           
-          <button className='text-md font-semibold'>Return To shop</button>
+          <button className='sm:text-md font-semibold'>Return To shop</button>
           </div>
-          <div className='border-gray-600 border px-5 py-2 mb-2 rounded-md'><button className='text-md font-semibold'>Update Cart</button></div>
+          <div className='border-gray-600 border px-5 py-2 mb-2 rounded-md lg:px-10'><button className='text-md font-semibold'>Update Cart</button></div>
           
           
           </div>
+
+           <div className='flex flex-col lg:flex-row  lg:items-baseline lg:justify-between mt-10'>
+           <div className='flex flex-col  lg:flex-row lg:justify-between  lg:my-0 my-4'>
+            <div className='flex   justify-center'><input type="text" placeholder='Coupon Code' className='border-2 border-gray-300 text-center lg:py-4 lg:mr-2 py-4 outline-none  rounded-md text-white w-11/12 xl:w-auto ' /></div>
+            <div className='flex justify-center '><button className='bg-sammy  text-white px-4 rounded-md  lg:px-6 w-11/12 py-4 mt-4 lg:mt-0  xl:w-auto'>Apply Coupon</button></div>
+           </div>
+
+           <div className='border-2 border-gray-400 py-2 px-4 my-4 rounded-md xl:w-2/5 xl:my '>
+            <h1 className='text-lg font-semibold mb-4 pt-2'>Cart Total</h1>
+            <div className='flex border-b-2 border-gray-400 text-base justify-between pb-2 mb-3'>
+              <div>Subtotal:</div>
+              <div>${product1_price+product2_price}</div>
+            </div>
+            <div className='flex border-b-2 border-gray-400 text-base justify-between pb-2 mb-3'>
+              <div>Shipping:</div>
+              <div>Free</div>
+            </div>
+            <div className='flex justify-between font-sm mb-3 text-base' >
+              <div>Total:</div>
+              <div>${product2_price}</div>
+            </div>
+            <div className='flex justify-center'>
+              <button className='bg-sammy text-white px-5 py-3 my-1 rounded-md text-base'>Process to checkout</button>
+            </div>
+           </div>
+           </div>
         
     </div>
   )
