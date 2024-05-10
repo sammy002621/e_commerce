@@ -32,8 +32,8 @@ function Footer() {
     <p className='mb-5'><a href="google.com">WishList</a></p>
     <p className='mb-5'><a href="google.com">Shop</a></p>
    </div>
-   <div className='text-lg  '>
-    <p className='font-medium  text-xl lg:text-2xl mb-8'>Quick Link</p>
+   <div className='text-lg  mr-3 sm:mr-0 '>
+    <p className='font-medium  text-xl lg:text-2xl mb-8  sm:mr-0'>Quick Link</p>
     <p className='mb-5'><a href="google.com">Privacy Policy</a></p>
     <p className='mb-5'><a href="google.com">Terms of Policy</a></p>
     <p className='mb-5'><a href="google.com">FAQ</a></p>
@@ -67,7 +67,7 @@ function Footer() {
     </div>
     <div className=' font-medium  md:text-xl text-mama'>
 <div className='flex justify-center items-center border-t-2 border-gray-700 py-4 px-3'>
-    <div className='mr-2'>
+    <div className='mr-2 hidden sm:inline'>
 <img src="/copyright.png" alt="" />
     </div>
     <div className=''>

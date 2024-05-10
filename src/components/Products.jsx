@@ -46,8 +46,8 @@ const decrement2 = ()=>{
       <div className='lg:mx-40 mt-10 lg:mt-20 mx-4'>
         {/* the first row */}
         
-        <div className='w-full flex justify-between  px-2 sm:px-12 py-10 text-lg font-baseline mb-10 items-center  shadow-md'>
-          <div className='flex-1  sm:flex sm:justify-start '>Product</div>
+        <div className='w-full flex justify-between  px-2 sm:px-12 py-10 sm:text-lg font-baseline mb-10 items-center  shadow-md'>
+          <div className='flex-1  sm:flex sm:justify-start mr-2 sm:mr-0 '>Product</div>
           <div className='flex-1 '>Price</div>
           <div className='flex-1 '>Quantity</div>
           <div className=' w-[80px] pl-2 pr-1 '>SubTotal</div>
@@ -118,7 +118,7 @@ const decrement2 = ()=>{
            <div className='flex flex-col lg:flex-row  lg:items-baseline lg:justify-between mt-20'>
            <div className='flex flex-col  lg:flex-row lg:justify-between  lg:my-0 my-4'>
             <div className='flex   justify-center'><input type="text" placeholder='Coupon Code' className='border-2 border-gray-300 text-center lg:py-4 lg:mr-2 py-4 outline-none  rounded-md  w-11/12 xl:w-auto xl:px-6' /></div>
-            <div className='flex justify-center '><button className='bg-sammy  text-white px-4 rounded-md  lg:px-6 w-11/12 py-4 mt-4 lg:mt-0  xl:w-auto xl:px-6 '>Apply Coupon</button></div>
+            <div className='flex justify-center '><button className='bg-sammy text-white px-4 rounded-md  lg:px-6 w-11/12 py-4 mt-4 lg:mt-0  xl:w-auto xl:px-6 '>Apply Coupon</button></div>
            </div>
 
            <div className='border-2 border-gray-400 py-2 px-4 my-4 rounded-md xl:w-2/5  '>

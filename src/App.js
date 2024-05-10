@@ -10,7 +10,7 @@ function App() {
   return (
     // me
     <div className="App">
-     <WishList/>
+     <HomePage/>
      
     </div>
   );

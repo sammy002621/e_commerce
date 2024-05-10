@@ -12,13 +12,13 @@ function Signup() {
         {/* body */}
 <HeaderHome/>
 
-        <div className='w-[80%] flex mt-20 h-[720px]'>
-                <div className='w-[60%] object-cover bg-bottom bg-footer_texture'>
+        <div className='px-5 lg:px-0 lg:w-[80%] flex lg:mt-20 lg:h-[720px]'>
+                <div className='hidden w-[65%] lg:inline lg:w-[60%] object-cover bg-center bg-footer_texture bg-red-600'>
                 </div>
-                <div className='w-[10%]  flex items-center justify-center  '>
+                <div className='lg:w-[5%]  flex items-center justify-center  '>
                    
                 </div>
-                <div className='w-[30%]  pt-20 flex justify-center pl-20 overflow-hidden'>
+                <div className='w-full  md:w-[80%] lg:w-[50%]  pt-20 lg:pt-60 flex justify-end md:mx-auto lg:pl-20 overflow-hidden '>
                     <div className=''>
                         <h1 className='text-3xl font-medium mb-4'>Create an account</h1>
                         <p className='text-baseline mb-10'>Enter your details below</p>

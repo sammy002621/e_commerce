@@ -10,16 +10,16 @@ function HomePage() {
         <Header/>
         <HeaderHome/>
         {/* body */}
-        <div className='flex px-40   justify-between'>
+        <div className='flex px-5 md:px-10 lg:px-40   justify-between'>
             {/* the right side */}
-            <div className='  w-1/5 pt-10 '>
+            <div className=' hidden sm:inline lg:w-1/5 pt-10 md:pr-2 '>
     <div className='flex justify-between mb-5'>
         <div>Woman's Fashion</div>
-        <div className='pr-10'><ChevronRightIcon/></div>
+        <div className='pr-2 lg:pr-10'><ChevronRightIcon/></div>
     </div>
     <div className='flex justify-between mb-5'>
         <div>Men's Fashion</div>
-        <div className='pr-10'><ChevronRightIcon/></div>
+        <div className='pr-2 lg:pr-10'><ChevronRightIcon/></div>
     </div>
     <div className='mb-5'>
     Electronics
@@ -44,23 +44,23 @@ function HomePage() {
     </div>
             </div>
 
-            <div className='border-l-2 border-gray-300'></div>
+            <div className='hidden sm:inline border-l-2 border-gray-300 '></div>
             {/* the left side */}
 
-            <div className='w-4/5  pt-10 ' >
-                <div className='  text-white w-11/12 bg-black ml-12  '>
+            <div className=' w-full lg:w-4/5  pt-10 ' >
+                <div className='  text-white  bg-black w-full lg:w-11/12 md:ml-12 px-5  '>
                 <div className='flex  pt-8 justify-center'>
-                  <div className=' pt-9 bg-black'>
-                  <div className='flex items-center  w-8/12 justify-between mb-5'>
-                    <div>
+                  <div className=' pt-9  w-full '>
+                  <div className='flex items-center w-full  lg:w-8/12 justify-between mb-5 '>
+                    <div className='hidden lg:inline'>
        <img src="/apple.svg" alt="" />
                     </div>
-                    <div>
+                    <div className='text-2xl'>
                     iPhone 14 Series
                     </div>
                 </div>
-                <div className='text-5xl font-semibold mb-5 leading-10'>
-                <p className='mb-4'>Up to 10%</p> off Voucher
+                <div className='text-semibold text-xl lg:text-5xl font-semibold mb-5 leading-10'>
+                <p className='mb-4 '>Up to 10%</p> off Voucher
                 </div>
                 <div className='flex'>
                     <div className='mr-3'>
@@ -72,7 +72,7 @@ function HomePage() {
                     </div>
                 </div>
                 </div>
-                <div className='w-3/5 overflow-hidden ml-10 pl-60'>
+                <div className='hidden w-full lg:w-3/5 overflow-hidden ml-10 pl-60'>
             <img src="/dots.svg" alt=""  />
                 </div>
                 </div>
@@ -88,7 +88,7 @@ function HomePage() {
             
         </div>
 
-        <div className='px-40 mt-20'>
+        <div className='px-5 lg:px-40 mt-20'>
             {/* the first div */}
             <div className='flex items-center'>
                 <div>
@@ -100,10 +100,10 @@ function HomePage() {
             </div>
             {/* the second div */}
             <div className='flex items-center  mt-3 pr-11'>
-      <div className=' text-2xl font-semibold mr-60'>
+      <div className='  text-xl lg:text-2xl font-semibold lg:mr-60'>
         Flash Sales
       </div>
-      <div className='flex justify-between items-center flex-1'>
+      <div className='hidden lg:flex lg:justify-between lg:items-center lg:flex-1'>
       <div className='mr-80'>
         <img src="/time.svg" alt="" />
       </div>
@@ -113,20 +113,30 @@ function HomePage() {
       </div>
             </div>
 {/*  the third div */}
-            <div className='flex justify-between  '>
-               <div className='w-full flex justify-between pt-9'>
-               <div>
-                <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+
+
+
+
+
+
+
+
+
+
+
+<div className='flex  '>
+               <div className='w-full flex flex-col  justify-between pt-9 md:flex-row'>
+               <div className='mb-5'>
+                <div className='bg-happy px-3 pt-3 w-full  md:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
                     <div>
-                        <button className='bg-sammy text-white px-3 py-1 rounded-md'>-40%</button>
                     </div>
                     <div>
                         <img src="/heart.svg" alt="" />
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5 mb-8'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/gamer.svg" alt="" />
                         </div>
                         <div>
@@ -135,7 +145,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white mb-4 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -156,27 +166,25 @@ function HomePage() {
                </div>
                <div>
                 {/* first */}
-               <div className='bg-happy  pt-3 w-[300px]  rounded-lg'>
-                    <div className='flex justify-between items-center px-3'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
+                    <div className='flex justify-between items-center'>
                     <div>
-                        <button className='bg-sammy text-white px-3 py-1 rounded-md'>-35%</button>
                     </div>
-                    <div >
+                    <div>
                         <img src="/heart.svg" alt="" />
                     </div>
                     </div>
-                    <div className='flex items-start mt-2 justify-between px-3'>
-                        <div className='ml-5'>
+                    <div className='flex items-start mt-2 justify-between'>
+                        <div className=' ml-20 md:ml-5'>
                             <img src="/chair.svg" alt="" />
                         </div>
                         <div>
                             <img src="/eye.svg" alt="" />
                         </div>
                     </div>
-                    <div className='bg-black text-white text-center pt-1 pb-1 w-full text-lg font-medium  hover:cursor-pointer'>Add to Cart</div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -195,17 +203,16 @@ function HomePage() {
                </div>
                <div>
                 {/* second */}
-               <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
-                        <button className='bg-sammy text-white px-3 py-1 rounded-md'>-30%</button>
                     </div>
                     <div>
                         <img src="/heart.svg" alt="" />
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5 mb-8'>
+                        <div className=' ml-20 md:ml-5'>
                             <img src="/keyboard.svg" alt="" />
                         </div>
                         <div>
@@ -214,7 +221,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -233,17 +240,16 @@ function HomePage() {
                </div>
                <div>
                 {/* third */}
-               <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
-                        <button className='bg-sammy text-white px-3 py-1 rounded-md'>-25%</button>
                     </div>
                     <div>
                         <img src="/heart.svg" alt="" />
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5 mb-8'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/television.svg" alt="" />
                         </div>
                         <div>
@@ -252,7 +258,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -270,17 +276,16 @@ function HomePage() {
                </div>
                <div>
                 {/* fourth */}
-               <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
-                        <button className='bg-sammy text-white px-3 py-1 rounded-md'>-40%</button>
                     </div>
                     <div>
                         <img src="/heart.svg" alt="" />
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5 mb-8'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/gamer.svg" alt="" />
                         </div>
                         <div>
@@ -289,7 +294,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -311,7 +316,7 @@ function HomePage() {
             {/* HERE ME */}
             
         </div>
-        <div className='flex items-center justify-center'><button className='bg-sammy text-white text-xl font-medium px-20 py-3 rounded-md mt-20 mb-20 hover:bg-hover'>View All Products</button></div>
+        <div className='flex items-center justify-center'><button className='bg-sammy text-white text-xl font-medium px-10 sm:px-20 py-3 rounded-md mt-20 mb-20 hover:bg-hover'>View All Products</button></div>
         <div className='border-b-2 border-gray-200 mx-40'></div>
 
         {/* categories */}
@@ -329,11 +334,11 @@ function HomePage() {
             {/* browse by categories */}
             <div className='flex items-center justify-between'>
                 <div className=' text-xl font-semibold md:text-4xl md:font-semibold'>Browse By Category</div>
-                <div><img src="/arrows.svg" alt="" className='mr-12' /></div>
+                <div className='hidden lg:inline'><img src="/arrows.svg" alt="" className='mr-12' /></div>
             </div>
 
             {/* products */}
-            <div className='flex flex-col  mt-20 mb-20 lg:flex-row  lg:justify-between '>
+            <div className='flex flex-col mt-10 lg:mt-20 mb-20 lg:flex-row  lg:justify-between '>
                 <div className=' flex flex-col  mb-3 items-center py-10 px-10 rounded-md border-2 border-gray-300 hover:cursor-pointer lg:mr-2   '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
@@ -381,7 +386,7 @@ function HomePage() {
             
         </div>
         <div className='border-gray-300 mb-20 border-t-2 mx-40'></div>
-            <div className=' mx-10 md:mx-40 md:mb-40'>
+            <div className=' mx-5 md:mx-40 md:mb-40'>
             <div className='flex items-center mb-10'>
                 <div className=''>
                     <img src="/rectangle_red.svg" alt="" />
@@ -390,11 +395,21 @@ function HomePage() {
 This Month
                 </div>
             </div>
-            <div className='flex items-center justify-between mb-10'>
-                <div className=' text-lg font-semibold sm:text-4xl sm:font-semibold'>Best Selling Products</div>
-                <div><button  className='bg-sammy text-white px-10 py-3 text-lg font-medium rounded-md hover:bg-hover'>View All</button></div>
+            <div className='flex items-center justify-between mb-5'>
+                <div className=' text-lg font-semibold sm:text-4xl sm:font-semibold'>Best Sale Products</div>
+                <div><button  className='bg-sammy text-white px-4 lg:px-10 py-3 lg:text-lg font-medium rounded-md hover:bg-hover'>View All</button></div>
             </div>
             {/* BEST SELLING PRODUCTS */}
+
+
+
+
+
+
+
+
+
+      
             <div className='flex  '>
                <div className='w-full flex flex-col  justify-between pt-9 md:flex-row'>
                <div className='mb-5'>
@@ -588,7 +603,7 @@ This Month
             </div>
 
   {/* ENHANCE YOUR MUSIC EXPERIENCE */}
-            <div className='mx-40  flex  w-10/12 items-center bg-black justify-center'>
+            <div className='mx-5 lg:mx-40  flex  lg:w-10/12 items-center bg-black justify-center rounded-sm lg:rounded-none'>
                 {/* first enhance your music experience  */}
                     <div className='flex  w-11/12 pt-8 items-center'>
                     <div className='flex-1  '>
@@ -596,20 +611,20 @@ This Month
                         <div className='text-sammy mt-3 mb-5'>
                             categories
                         </div>
-                        <div className='text-white text-4xl font-medium w-6/12 mb-7'>
+                        <div className='text-white text-lg lg:text-4xl font-medium lg:w-6/12 mb-7'>
                             Enhance Your Music Experience
                         </div>
                                  {/* second time */}
-                        <div>
+                        <div className=''>
 <img src="second_time.svg" alt="" />
                         </div>
 
                         <div>
-                            <button className='bg-button text-white px-10 py-3 mt-7 rounded-md'>Buy Now!</button>
+                            <button className='bg-button text-white px-4 mb-4 lg:px-10 py-3 mt-7 rounded-md'>Buy Now!</button>
                         </div>
                     </div>
                              {/* second enhance your music experience */}
-                             <div className='w-[600px]  flex-1'>
+                             <div className='hidden lg:flex lg:w-[600px]  flex-1'>
                                 <img src="speaker.svg" alt="" />
                              </div>
                     <div>
@@ -620,7 +635,7 @@ This Month
                   {/* EXPLORE THE PRODUCTS */}
 
 
-                  <div className='mx-40 mt-20'>
+                  <div className='mx-5 lg:mx-40 mt-20'>
                     <div className='flex items-center mb-10'>
                 <div className=''>
                     <img src="/rectangle_red.svg" alt="" />
@@ -630,15 +645,27 @@ Our Products
                 </div>
             </div>
             <div className='flex items-center justify-between'>
-                <div className='text-4xl font-semibold'>Explore Our Products</div>
-                <div><img src="/arrows.svg" alt="" className='mr-12' /></div>
+                <div className='text-lg lg:text-4xl font-semibold'>Explore Our Products</div>
+                <div className='hidden lg:block'><img src="/arrows.svg" alt="" className='mr-12' /></div>
             </div>
             {/*  the first  explored products */}
 
-            <div className='flex justify-between mb-20 '>
-               <div className='w-full flex justify-between pt-9'>
-               <div>
-                <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div className='flex  '>
+               <div className='w-full flex flex-col  justify-between pt-9 md:flex-row'>
+               <div className='mb-5'>
+                <div className='bg-happy px-3 pt-3 w-full  md:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -647,7 +674,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/gamer.svg" alt="" />
                         </div>
                         <div>
@@ -656,7 +683,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white mb-4 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -677,7 +704,7 @@ Our Products
                </div>
                <div>
                 {/* first */}
-               <div className='bg-happy px-3 pt-3 w-[300px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -686,7 +713,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5'>
+                        <div className=' ml-20 md:ml-5'>
                             <img src="/chair.svg" alt="" />
                         </div>
                         <div>
@@ -695,7 +722,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -714,7 +741,7 @@ Our Products
                </div>
                <div>
                 {/* second */}
-               <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -723,7 +750,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5'>
+                        <div className=' ml-20 md:ml-5'>
                             <img src="/keyboard.svg" alt="" />
                         </div>
                         <div>
@@ -732,7 +759,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -751,7 +778,7 @@ Our Products
                </div>
                <div>
                 {/* third */}
-               <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -760,7 +787,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/television.svg" alt="" />
                         </div>
                         <div>
@@ -769,7 +796,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -787,7 +814,7 @@ Our Products
                </div>
                <div>
                 {/* fourth */}
-               <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -796,7 +823,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-5'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/gamer.svg" alt="" />
                         </div>
                         <div>
@@ -805,7 +832,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className='bg-white  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -828,10 +855,29 @@ Our Products
 
             {/* the second explored products */}
 
-            <div className='flex justify-between mb-20 '>
-               <div className='w-full flex justify-between pt-9'>
-               <div>
-                <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div className='flex flex-col'>
+            <div className='flex flex-col lg:justify-between lg:mb-20 '>
+               <div className='w-full flex  flex-col lg:flex-row  lg:justify-between pt-9'>
+               <div className='mb-10 lg:mb-0'>
+                <div className='bg-happy px-3 pt-3 lg:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     <button className='bg-button text-white px-3 py-1 rounded-md'>NEW</button>
@@ -873,9 +919,9 @@ Our Products
                     {/* here */}
 
                </div>
-               <div>
+               <div className='mb-10 lg:mb-0'>
                 {/* first */}
-               <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 lg:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
 
@@ -915,9 +961,9 @@ Our Products
                     </div>
 
                </div>
-               <div>
+               <div className='mb-10 lg:mb-0'>
                 {/* second */}
-               <div className='bg-happy px-3 pt-3 w-[300px] rounded-lg'>
+               <div className='bg-happy px-3 pt-3 lg:w-[300px] rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     <button className='bg-button text-white px-3 py-1 rounded-md'>NEW</button>
@@ -958,9 +1004,9 @@ Our Products
                     </div>
 
                </div>
-               <div>
+               <div className='mb-10 lg:mb-0'>
                 {/* third */}
-               <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 lg:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -999,9 +1045,9 @@ Our Products
                         </div>
                     </div>
                </div>
-               <div>
+               <div className='mb-10 lg:mb-0'>
                 {/* fourth */}
-               <div className='bg-happy px-3 pt-3 w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 lg:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -1043,10 +1089,11 @@ Our Products
                </div>
             </div>
 
+            </div>
                   </div>
-                  <div className='flex items-center justify-center'><button className='bg-sammy text-white text-xl font-medium px-20 py-3 rounded-md mt-20 mb-20 hover:bg-hover'>View All Products</button></div>
+                  <div className='flex items-center justify-center'><button className='bg-sammy text-white text-xl font-medium px-10 sm:px-20 py-3 rounded-md mt-20 mb-20 hover:bg-hover'>View All Products</button></div>
 
-                  <div className='mx-40'>
+                  <div className='hidden lg:mx-40'>
 
                    <div  className='flex items-center mb-10'>
                    <div className=''>
@@ -1091,42 +1138,42 @@ Featured
                 </div>
             </div>
             {/* delivery services */}
-            <div className='flex justify-between items-center  w-8/12 ml-40 mt-40 mb-10 '>
-               {/* free and fast delivery */}
-                <div className='flex flex-col items-center hover:cursor-pointer'>
-                    <div className='mb-5'>
-                        <img src="services.svg" alt="" />
-                    </div>
-                    <div className=' flex flex-col items-center '>
-                        <p className='text-2xl font-semibold mb-2'>FREE AND FAST DELIVERY</p>
-                        <p>Free delivery for all orders over $140</p>
-                    </div>
-                </div>
-
-                <div>
-                <div className='flex flex-col items-center hover:cursor-pointer  mb-5'>
-                <img src="services_1.svg" alt="" />
-                    </div>
-                    <div className='flex flex-col items-center '>
-                        <p className='text-2xl font-semibold mb-2'>24/7 CUSTOMER SERVICE</p>
-                        <p>Friendly 24/7 customer support</p>
-                    </div>
-                </div>
-
-                <div className='flex flex-col items-center hover:cursor-pointer'>
-                <div className='mb-5'>
-                        <img src="services_2.svg" alt="" />
-                    </div>
-                    <div className='flex flex-col items-center  ' >
-                        <p className='text-2xl font-semibold mb-2 '>MONEY BACK GUARANTEE</p>
-                        <p>We reurn money within 30 days</p>
-                    </div>
-                </div>
-            </div>
+            
            
                   </div>
-                  <div className='flex justify-end mr-40 '> 
-                  <img src="up_arrow.svg" alt="" /></div>
+                  
+
+                  <div className='mx-5 flex flex-col lg:flex-row lg:justify-center lg:items-center tex-center'>
+                    <div className=' mb-10 py-2'>
+                        <div className='flex justify-center mb-6'>                           
+                         <img src="/services.svg" alt="" />
+
+</div>
+                        <div className='flex justify-center font-bold text-lg mb-1'>FREE AND FAST DELIVERY</div>
+                        <div className='flex justify-center text-lg'>Free delivery for all orders over $140</div>
+                    </div>
+                    <div className=' mb-10 py-2'>
+                        <div className='flex justify-center mb-5'>
+                            <img src="/services_1.svg" alt="" />
+                        </div>
+                        <div className='flex justify-center text-lg font-bold mb-2 '>
+                        24/7 CUSTOMER SERVICE
+                        </div>
+
+                        <div className='flex justify-center text-lg'>
+                        Friendly 24/7 customer support
+                        </div>
+
+                        </div>
+                    <div className=' mb-10 py-2'>
+                        <div className='flex justify-center mb-5'>
+                        <img src="/services_2.svg" alt="" />
+
+                        </div>
+                        <div className='flex justify-center mb-2 font-bold text-lg'>MONEY BACK GUARANTEE</div>
+                        <div className='flex justify-center text-lg'>We reurn money within 30 days</div>
+                    </div>
+                  </div>
 
                   <Footer/>
 
