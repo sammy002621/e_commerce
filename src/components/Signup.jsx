@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './Footer';
 import Header from './Header';
 import HeaderHome from './HeaderHome';
+import { Link } from 'react-router-dom';
 function Signup() {
   return (
     <div>
@@ -45,7 +46,7 @@ function Signup() {
                                         Already have Account
                                       </div>
                                       <div>
-                                        <a href="google.com">Login</a>
+                                        <Link to={'/login'}>Login</Link>
                                         <div className='border border-gray-600'></div>
                                       </div>
                                      

@@ -145,7 +145,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='bg-white mb-4 '>
+                <div className=' mb-4 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -154,9 +154,13 @@ function HomePage() {
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -184,7 +188,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='bg-white mb-10 '>
+                <div className=' mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -193,9 +197,13 @@ function HomePage() {
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -221,7 +229,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='bg-white mb-10 '>
+                <div className=' mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -230,9 +238,13 @@ function HomePage() {
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -258,7 +270,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='bg-white  mb-10'>
+                <div className='  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -267,9 +279,13 @@ function HomePage() {
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -294,7 +310,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='bg-white  mb-10'>
+                <div className='  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -303,9 +319,13 @@ function HomePage() {
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -339,13 +359,13 @@ function HomePage() {
 
             {/* products */}
             <div className='flex flex-col mt-10 lg:mt-20 mb-20 lg:flex-row  lg:justify-between '>
-                <div className=' flex flex-col  mb-3 items-center py-10 px-10 rounded-md border-2 border-gray-300 hover:cursor-pointer lg:mr-2   '>
+                <div className=' flex flex-col  mb-3 items-center py-10 px-10  xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer lg:mr-2   '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
                     <div>Phones</div>
                 </div>
-                <div className=' flex flex-col  items-center mb-3 py-10 px-10 rounded-md border-2 border-gray-300 hover:cursor-pointer  lg:mr-2 '>
+                <div className=' flex flex-col  items-center mb-3 py-10 px-10 xl:flex-1 rounded-md border-2 border-gray-300 hover:cursor-pointer  lg:mr-2 '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -353,7 +373,7 @@ function HomePage() {
                         Computers
                     </div>
                 </div>
-                <div className='  flex flex-col items-center  mb-3 py-10 px-10 rounded-md border-2 border-gray-300 hover:cursor-pointer  lg:mr-2'>
+                <div className='  flex flex-col items-center  mb-3 py-10 px-10  xl:flex-1 rounded-md border-2 border-gray-300 hover:cursor-pointer  lg:mr-2'>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -361,11 +381,11 @@ function HomePage() {
                     SmartWatch
                     </div>
                 </div>
-                <div className=' bg-sammy text-white  mb-3 flex flex-col items-center py-10 px-10 rounded-md  md:mr-2'>
+                <div className=' bg-sammy text-white  mb-3 flex flex-col xl:flex-1  items-center py-10 px-10 rounded-md  md:mr-2'>
                     <div className='mb-5'><img src="white_camera.svg" alt="" /></div>
                     <div>Camera</div>
                 </div>
-                <div className=' flex flex-col items-center mb-3 py-10 px-10 rounded-md border-2 border-gray-300 hover:cursor-pointer lg:mr-2 '>
+                <div className=' flex flex-col items-center mb-3 py-10 px-10 xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer lg:mr-2 '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -373,11 +393,10 @@ function HomePage() {
                     HeadPhones
                     </div>
                 </div>
-                <div className=' flex flex-col items-center py-10 px-10  rounded-md border-2 border-gray-300 hover:cursor-pointer    '>
+                <div className=' flex flex-col items-center mb-3 py-10 px-10 xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer lg:mr-2 '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
-
                     <div>
                     Gaming
                     </div>
@@ -431,7 +450,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='bg-white mb-4 '>
+                <div className=' mb-4 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -440,9 +459,13 @@ This Month
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -470,7 +493,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='bg-white mb-10 '>
+                <div className=' mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -479,9 +502,13 @@ This Month
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -507,7 +534,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='bg-white mb-10 '>
+                <div className=' mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -516,9 +543,13 @@ This Month
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -544,7 +575,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='bg-white  mb-10'>
+                <div className='  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -553,9 +584,13 @@ This Month
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -580,7 +615,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='bg-white  mb-10'>
+                <div className='  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -589,9 +624,13 @@ This Month
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -683,7 +722,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white mb-4 '>
+                <div className=' mb-4 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -692,9 +731,13 @@ Our Products
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -722,7 +765,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white mb-10 '>
+                <div className=' mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -731,9 +774,13 @@ Our Products
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -759,7 +806,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white mb-10 '>
+                <div className=' mb-10 '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -768,9 +815,13 @@ Our Products
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -796,7 +847,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white  mb-10'>
+                <div className='  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -805,9 +856,13 @@ Our Products
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -832,7 +887,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white  mb-10'>
+                <div className='  mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -841,9 +896,13 @@ Our Products
                             <div className='text-mama'>$160</div>
                         </div>
                         <div className='flex'>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                     </div>
@@ -896,7 +955,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className=' '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -905,9 +964,13 @@ Our Products
                         </div>
                         <div className='flex'>
                         <div className='text-happy mr-3'>$160</div>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                         {/* THE FIRST BUTTON DIV */}
@@ -940,7 +1003,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className=' '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -949,9 +1012,13 @@ Our Products
                         </div>
                         <div className='flex'>
                            <div className='text-happy mr-3'>$160</div>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                           <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                         {/* THE SECOND BUTTON DIV */}
@@ -982,7 +1049,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className=' '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -991,9 +1058,13 @@ Our Products
                         </div>
                         <div className='flex'>
                         <div className='text-happy mr-3'>$160</div>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                         {/* THE THIRD BUTTON DIV */}
@@ -1024,7 +1095,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className=' '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -1033,9 +1104,13 @@ Our Products
                         </div>
                         <div className='flex'>
                         <div className='text-happy mr-3'>$160</div>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                         {/* THE FOURTH BUTTON DIV */}
@@ -1065,7 +1140,7 @@ Our Products
                     </div>
                     
                 </div>
-                <div className='bg-white '>
+                <div className=' '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -1074,9 +1149,13 @@ Our Products
                         </div>
                         <div className='flex'>
                         <div className='text-happy mr-3'>$160</div>
-                            <div className='mr-3'>
-                            <img src="/five_star.svg" alt="" />
-                            </div>
+                        <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+</div>
                             <div className='text-mama'>(88)</div>
                         </div>
                         {/* THE FIFTH BUTTON DIV */}
@@ -1143,7 +1222,7 @@ Featured
                   </div>
                   
 
-                  <div className='mx-5 flex flex-col lg:flex-row lg:justify-center lg:items-center tex-center'>
+                  <div className='mx-5 flex flex-col lg:flex-row lg:justify-between xl:mx-40 lg:items-center tex-center'>
                     <div className=' mb-10 py-2'>
                         <div className='flex justify-center mb-6'>                           
                          <img src="/services.svg" alt="" />
