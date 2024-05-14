@@ -1,6 +1,5 @@
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
-import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 function HeaderHome() {
   return (
@@ -15,9 +14,9 @@ function HeaderHome() {
       
         '>
             <div><NavLink to={'/'} style={({ isActive }) => {
- return isActive ? { color: "#fff" } : {};
+ return isActive ? { color: "#fff"} : {};
  }}>Home</NavLink></div>
-            <div><NavLink to={'/login'} style={({ isActive }) => {
+            <div><NavLink to={'/contacts'} style={({ isActive }) => {
  return isActive ? { color: "#fff" } : {};
  }}>Contacts</NavLink></div>
             <div><NavLink to={'/about'} style={({ isActive }) => {

@@ -11,7 +11,7 @@ function About() {
     <div>
       <Header/>
       <HeaderHome/>
-      <div className='flex mx-5 lg:mx-40 lg:mt-20 mt-10 mb-10 '>
+      <div className='flex mx-5 lg:mx-20 lg:mt-20 mt-10 mb-10 '>
           <div className='flex   w-1/4 sm:w-1/12 justify-around '>
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>
@@ -20,13 +20,15 @@ function About() {
         </div>
 
 
-        <div className='flex'>
-          <div className=' ml-5 md:flex-1'>
+        <div className='flex lg:mx-20 lg:items-center lg:justify-between'>
+          <div className=' ml-5 md:flex-1 lg:ml-0 mr-10'>
             <h1 className='text-4xl font-medium mb-5'>Our Story</h1>
             <p className='mb-5'>Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace with an active presense in Bangladesh. Supported by wide range of tailored marketing, data and service solutions, Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across the region. </p>
             <p>Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a diverse assotment in categories ranging  from consumer.</p>
           </div>
-          <div className=' hidden md:flex-1'>image</div>
+          <div className=' hidden lg:inline'>
+            <img src="/about_side.svg" alt="" />
+          </div>
         </div>
 
         <Pricing/>

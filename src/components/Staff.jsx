@@ -2,28 +2,29 @@ import React from 'react'
 
 function Staff() {
   return (
-    <div className='flex flex-col mx-5 lg:flex-row  lg:justify-between'>
-        <div className='mb-5 '>
+    <div>
+        <div className='flex flex-col mx-5 lg:flex-row  lg:justify-between mb-10 md:mb-0 lg:mx-20  '>
+        <div className='mb-5 lg:mr-6 '>
             <div><img src="/founder.svg" alt="" /></div>
             <div className='py-4'>
                    <p className='text-2xl font-medium'>Tom Cruise</p>
-                   <p className='text-sm '>Founder & Chairman</p>
-                   <div className='flex'>
-                    <div>instagram</div>
-                    <div>facebook</div>
-                    <div>linkedin</div>
+                   <p className='text-sm  mb-2'>Founder & Chairman</p>
+                   <div className='flex items-center w-3/12 justify-between'>
+                    <div className='mr-1 sm:mr-0'><img src="/twitter.png" alt="" /></div>
+                    <div className='mr-1 sm:mr-0'><img src="/instagram.png" alt="" /></div>
+                    <div><img src="/linkedIn.png" alt="" /></div>
                    </div>
          </div>
         </div>
-        <div className='mb-5'>
+        <div className='mb-5 lg:mr-6'>
         <div><img src="/director.svg" alt="" /></div>
-        <div>
-                   <p>Tom Cruise</p>
-                   <p>Founder & Chairman</p>
-                   <div className='flex'>
-                    <div>instagram</div>
-                    <div>facebook</div>
-                    <div>linkedin</div>
+        <div className='py-4'>
+                   <p className='text-2xl font-medium'>Emma Watson</p>
+                   <p className='text-sm  mb-2'>Managing Director</p>
+                   <div className='flex items-center w-3/12 justify-between'>
+                    <div className='mr-1 sm:mr-0'><img src="/twitter.png" alt="" /></div>
+                    <div className='mr-1 sm:mr-0'><img src="/instagram.png" alt="" /></div>
+                    <div><img src="/linkedIn.png" alt="" /></div>
                    </div>
          </div>
         </div>
@@ -31,17 +32,24 @@ function Staff() {
         <div className='mb-5 '>
             <img src="/designer.svg" alt="" />
         </div>
-         <div>
-                   <p>Tom Cruise</p>
-                   <p>Founder & Chairman</p>
-                   <div className='flex'>
-                    <div>instagram</div>
-                    <div>facebook</div>
-                    <div>linkedin</div>
+        <div className='py-4'>
+                   <p className='text-2xl font-medium'>Will Smith</p>
+                   <p className='text-sm  mb-2'>Product Designer</p>
+                   <div className='flex items-center w-3/12 justify-between'>
+                    <div className='mr-1 sm:mr-0'><img src="/twitter.png" alt="" /></div>
+                    <div className='mr-1 sm:mr-0'><img src="/instagram.png" alt="" /></div>
+                    <div><img src="/linkedIn.png" alt="" /></div>
                    </div>
          </div>
         </div>
     </div>
+
+    <div className='flex justify-center  mb-10 lg:mb-20'>
+        <img src="/dots_2.svg" alt="" />
+    </div>
+    </div>
+
+   
   )
 }
 

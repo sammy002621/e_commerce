@@ -5,7 +5,7 @@ import Signup from './components/Signup';
 import HomePage from './components/HomePage';
 import WishList from './components/WishList';
 import HeaderHome from './components/HeaderHome';
-import { Home } from '@mui/icons-material';
+import Contacts from './components/Contacts';
 import About from './components/About';
 import { Route, Routes } from 'react-router-dom';
 function App() {
@@ -16,6 +16,7 @@ function App() {
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/about' element={<About/>}/>
+      <Route path='/contacts' element={<Contacts/>}/>
     </Routes>
   );
 }
