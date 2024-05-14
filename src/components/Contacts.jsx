@@ -9,7 +9,7 @@ function Contacts() {
         <Header/>
         <HeaderHome/>
 
-        <div className='flex mx-5 lg:mx-20 lg:mt-20 mt-10 mb-10 '>
+        <div className='flex mx-5 lg:mx-5 lg:mt-20 mt-10 mb-10 '>
           <div className='flex   w-1/4 sm:w-1/12 justify-around '>
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>
@@ -17,20 +17,21 @@ function Contacts() {
           </div>
         </div>
 
-        <div className='mx-5 shadow-sm'>
+    <div className='lg:flex lg:items-baseline '>
+       <div className='mx-5 shadow-sm  lg:mr-20'>
             <div></div>
             <div>
                 <form action="">
                     <div className='md:grid md:grid-cols-3'>
-                         <div><input type="text" placeholder='Your Name *' className='pl-4 py-2 rounded-sm mb-4 md:w-11/12' /></div>
-                         <div><input type="text" placeholder='Your Email *'  className='pl-4  py-2 rounded-sm mb-4 md:w-11/12 '/></div>
-                         <div><input type="text" placeholder='Your Phone *'  className='pl-4 py-2 rounded-sm mb-4 md:w-11/12  '/></div>
+                         <div><input type="text" placeholder='Your Name *' className='pl-4 py-2 rounded-sm mb-4 md:w-11/12 w-full' /></div>
+                         <div><input type="text" placeholder='Your Email *'  className='pl-4  py-2 rounded-sm mb-4 md:w-11/12 w-full '/></div>
+                         <div><input type="text" placeholder='Your Phone *'  className='pl-4 py-2 rounded-sm mb-4 md:w-11/12 w-full '/></div>
                          <div>
                             
                          </div>
                     </div>
                     <div >
-                    <div><input type="text" placeholder='Your Message *'  className='pl-4 py-2 rounded-sm mb-4 md:w-full pb-60 '/></div>
+                    <div><input type="text" placeholder='Your Message *'  className='pl-4 py-2 rounded-sm mb-4 md:w-full pb-60 w-full '/></div>
 
                     </div>
                 <div className='flex justify-end mx-5'>
@@ -43,17 +44,19 @@ function Contacts() {
         </div>
 
 
-        <div className='mx-5 my-20 ms:my-0'>
-            <div>
-                <div className=' flex items-center w-2/5 md:w-1/5 justify-between mb-4'>
-                    <div><img src="/contact_phone.svg" alt="" /></div>
+        <div className='mx-5 my-20 md:my-0'>
+           <div className='bg-purpl-500 md:px-40 lg:px-0'>
+           <div className='md:mb-10 md:mt-6  '>
+                <div className=' flex items-center'>
+                    <div className='mr-3'><img src="/contact_phone.svg" alt="" /></div>
                     <div>Call To Us</div>
                 </div>
-                <p className='pb-2'>We are available 24/7, 7 days a week.</p>
-                <p className='pb-2'>Phone: +8801611112222</p>
+                <p className='py-2'>We are available 24/7, 7 days a week.</p>
+                <p className='py-2'>Phone: +8801611112222</p>
             </div>
-            <div className='border-b-2 border-gray-300 mx-5 my-10 sm:my-0'></div>
-            <div className=''>
+           </div>
+            <div className='border-b-2 border-gray-300 my-10 sm:my-0 md:mb-10 md:w-1/2 md:flex mx-auto  lg:w-full'></div>
+            <div className='md:px-40 lg:px-0'>
                 <div className='flex items-center'>
                     <div className='mr-3'><img src="/contacts_email.svg" alt="" /></div>
                     <div>Write To Us</div>
@@ -64,6 +67,7 @@ function Contacts() {
             </div>
         </div>
 
+       </div>
         <Footer/>
     </div>
   )

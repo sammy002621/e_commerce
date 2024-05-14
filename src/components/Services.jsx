@@ -30,7 +30,7 @@ function Services() {
 
                         </div>
                         <div className='flex justify-center mb-2 font-bold text-lg'>MONEY BACK GUARANTEE</div>
-                        <div className='flex justify-center text-lg'>We reurn money within 30 days</div>
+                        <div className='flex justify-center text-lg'>We return money within 30 days</div>
                     </div>
                   </div>
   )

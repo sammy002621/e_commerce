@@ -2,8 +2,8 @@ import React from 'react'
 
 function Pricing() {
   return (
-    <div className='mx-5   flex flex-col lg:flex-row lg:justify-between xl:mx-20 lg:items-center text-center mt-20 mb-20 '>
-                    <div className=' mb-10  border border-gray-300 rounded-md py-4 md:px-5'>
+    <div className='mx-5   flex flex-col lg:flex-row lg:justify-between xl:mx-20 lg:items-baseline text-center mt-20 mb-20 lg:flex md:grid md:grid-cols-2 md:gap-x-6  '>
+                    <div className=' mb-10  border border-gray-300 rounded-md py-4 md:px-5 2xl:px-10'>
                         <div className='flex justify-center mb-6'>                           
                          <img src="/services_pricing_1.svg" alt="" />
 
@@ -11,7 +11,7 @@ function Pricing() {
                         <div className='flex justify-center font-medium text-3xl mb-1'>10.5k </div>
                         <div className='flex justify-center text-lg'>Sallers active our site</div>
                     </div>
-                    <div className=' mb-10 py-4   rounded-md bg-sammy text-white md:px-5' >
+                    <div className=' mb-10 py-4   rounded-md bg-sammy border border-happy text-white md:px-5 2xl:px-10' >
                         <div className='flex justify-center mb-5'>
                         <img src="/services_pricing_2.svg" alt="" />
                         </div>
@@ -24,7 +24,7 @@ function Pricing() {
                         </div>
 
                         </div>
-                    <div className=' mb-10 py-4 border border-gray-300 rounded-md md:px-5'>
+                    <div className=' mb-10 py-4 border border-gray-300 rounded-md md:px-5 2xl:px-10'>
                         <div className='flex justify-center mb-5'>
                         <img src="/services_pricing_3.svg" alt="" />
 
@@ -34,7 +34,7 @@ function Pricing() {
                     </div>
 
 
-                    <div className=' mb-10 py-4 border border-gray-300 rounded-md px-5' >
+                    <div className=' mb-10 py-4 border border-gray-300 rounded-md px-5 2xl:px-10 ' >
                         <div className='flex justify-center mb-5'>
                         <img src="/services_pricing_4.svg" alt="" />
                         </div>
@@ -42,7 +42,7 @@ function Pricing() {
                         25k
                         </div>
 
-                        <div className='flex justify-center text-lg'>
+                        <div className='flex justify-center text-lg pb-2'>
                         Anual gross sale in our site
                         </div>
 
