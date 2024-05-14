@@ -3,8 +3,8 @@ import React from 'react'
 function Staff() {
   return (
     <div>
-        <div className='flex flex-col mx-5 lg:flex-row  lg:justify-between mb-10 md:mb-0 lg:mx-20  md:grid md:grid-cols-2 lg:flex  '>
-        <div className='mb-5 lg:mr-6 '>
+        <div className='flex flex-col mx-5 lg:flex-row  lg:justify-between mb-10 md:mb-0 2xl:mx-80  md:grid md:grid-cols-2 lg:flex lg:mx-10 '>
+        <div className='mb-5  '>
             <div><img src="/founder.svg" alt="" /></div>
             <div className='py-4'>
                    <p className='text-2xl font-medium'>Tom Cruise</p>
@@ -16,7 +16,7 @@ function Staff() {
                    </div>
          </div>
         </div>
-        <div className='mb-5 lg:mr-6'>
+        <div className='mb-5 '>
         <div><img src="/director.svg" alt="" /></div>
         <div className='py-4'>
                    <p className='text-2xl font-medium'>Emma Watson</p>
