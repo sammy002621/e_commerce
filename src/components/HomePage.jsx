@@ -4,6 +4,7 @@ import HeaderHome from './HeaderHome'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Footer from './Footer';
+import Services from './Services';
 function HomePage() {
   return (
     <div>
@@ -732,11 +733,11 @@ Our Products
                         </div>
                         <div className='flex'>
                         <div className="rating">
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-4" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
 </div>
                             <div className='text-mama'>(88)</div>
                         </div>
@@ -775,11 +776,11 @@ Our Products
                         </div>
                         <div className='flex'>
                         <div className="rating">
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-8" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-9" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-10" className="mask mask-star-2 bg-orange-400" />
 </div>
                             <div className='text-mama'>(88)</div>
                         </div>
@@ -816,11 +817,11 @@ Our Products
                         </div>
                         <div className='flex'>
                         <div className="rating">
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-11" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-12" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-13" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-14" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-15" className="mask mask-star-2 bg-orange-400" />
 </div>
                             <div className='text-mama'>(88)</div>
                         </div>
@@ -1222,38 +1223,7 @@ Featured
                   </div>
                   
 
-                  <div className='mx-5 flex flex-col lg:flex-row lg:justify-between xl:mx-40 lg:items-center tex-center'>
-                    <div className=' mb-10 py-2'>
-                        <div className='flex justify-center mb-6'>                           
-                         <img src="/services.svg" alt="" />
-
-</div>
-                        <div className='flex justify-center font-bold text-lg mb-1'>FREE AND FAST DELIVERY</div>
-                        <div className='flex justify-center text-lg'>Free delivery for all orders over $140</div>
-                    </div>
-                    <div className=' mb-10 py-2'>
-                        <div className='flex justify-center mb-5'>
-                            <img src="/services_1.svg" alt="" />
-                        </div>
-                        <div className='flex justify-center text-lg font-bold mb-2 '>
-                        24/7 CUSTOMER SERVICE
-                        </div>
-
-                        <div className='flex justify-center text-lg'>
-                        Friendly 24/7 customer support
-                        </div>
-
-                        </div>
-                    <div className=' mb-10 py-2'>
-                        <div className='flex justify-center mb-5'>
-                        <img src="/services_2.svg" alt="" />
-
-                        </div>
-                        <div className='flex justify-center mb-2 font-bold text-lg'>MONEY BACK GUARANTEE</div>
-                        <div className='flex justify-center text-lg'>We reurn money within 30 days</div>
-                    </div>
-                  </div>
-
+                  <Services/>
                   <Footer/>
 
     </div>

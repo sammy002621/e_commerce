@@ -1,22 +1,31 @@
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 function HeaderHome() {
   return (
     <div className='border-b-2 px-5 lg:px-20  pt-10 pb-5 w-full overflow-hidden'>
-    <div className='flex items-center justify-between  '>
+    <div className='flex items-center justify-between relative  '>
         {/*  the left side */}
         <div className='hidden sm:flex '>
             <h1 className='font-semibold text-xl'>Exclusive</h1>
         </div>
         {/* the middle side */}
         <div className='flex justify-between  md:pl-0 w-full sm:w-10/12 md:w-2/3 lg:w-1/2 lg:px-8 
-    
+      
         '>
-            <div><Link to={'/'}>Home</Link></div>
-            <div><Link to={'/login'}>Contacts</Link></div>
-            <div><Link to={'/about'}>About</Link></div>
-            <div className='flex'><Link to={'/signup'}>Signup</Link>
+            <div><NavLink to={'/'} style={({ isActive }) => {
+ return isActive ? { color: "#fff" } : {};
+ }}>Home</NavLink></div>
+            <div><NavLink to={'/login'} style={({ isActive }) => {
+ return isActive ? { color: "#fff" } : {};
+ }}>Contacts</NavLink></div>
+            <div><NavLink to={'/about'} style={({ isActive }) => {
+ return isActive ? { color: "#fff" } : {};
+ }}>About</NavLink></div>
+            <div className='flex'><NavLink to={'/signup'} style={({ isActive }) => {
+ return isActive ? { color: "#fff" } : {};
+ }} >Signup</NavLink>
             
             <div className='border-b-2 text-black border-black'></div>
             </div>
