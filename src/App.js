@@ -8,6 +8,7 @@ import HeaderHome from './components/HeaderHome';
 import Contacts from './components/Contacts';
 import About from './components/About';
 import { Route, Routes } from 'react-router-dom';
+import PageNotFound from './components/PageNotFound';
 function App() {
   return (
     // me
@@ -17,6 +18,8 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/contacts' element={<Contacts/>}/>
+      <Route path='/error' element={<PageNotFound/>}/>
+      <Route path='/wishlist' element={<WishList/>}/>
     </Routes>
   );
 }

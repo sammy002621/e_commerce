@@ -14,16 +14,16 @@ function HeaderHome() {
       
         '>
             <div><NavLink to={'/'} style={({ isActive }) => {
- return isActive ? { color: "#fff"} : {};
+ return isActive ? { color: "#fff",borderBottom:"1px solid white"} : {};
  }}>Home</NavLink></div>
             <div><NavLink to={'/contacts'} style={({ isActive }) => {
- return isActive ? { color: "#fff" } : {};
+ return isActive ? { color: "#fff",borderBottom:"1px solid white" } : {};
  }}>Contacts</NavLink></div>
             <div><NavLink to={'/about'} style={({ isActive }) => {
- return isActive ? { color: "#fff" } : {};
+ return isActive ? { color: "#fff",borderBottom:"1px solid white" } : {};
  }}>About</NavLink></div>
             <div className='flex'><NavLink to={'/signup'} style={({ isActive }) => {
- return isActive ? { color: "#fff" } : {};
+ return isActive ? { color: "#fff",borderBottom:"1px solid white" } : {};
  }} >Signup</NavLink>
             
             <div className='border-b-2 text-black border-black'></div>
