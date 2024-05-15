@@ -1,123 +1,21 @@
 import React from 'react'
-import Header from './Header'
-import HeaderHome from './HeaderHome'
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import Footer from './Footer';
-import Services from './Services';
-import CategoryProducts from './CategoryProducts';
-import BestSaleProducts from './BestSaleProducts';
-import EnhnaceYourMusic from './EnhnaceYourMusic';
-import ExploredProducts from './ExploredProducts';
-function HomePage() {
+
+function BestSaleProducts() {
   return (
-    <div>
-        <Header/>
-        <HeaderHome/>
-        {/* body */}
-        <div className='flex px-5 md:px-10 lg:px-40   justify-between'>
-            {/* the right side */}
-            <div className=' hidden sm:inline lg:w-1/5 pt-10 md:pr-2 '>
-    <div className='flex justify-between mb-5'>
-        <div>Woman's Fashion</div>
-        <div className='pr-2 lg:pr-10'><ChevronRightIcon/></div>
-    </div>
-    <div className='flex justify-between mb-5'>
-        <div>Men's Fashion</div>
-        <div className='pr-2 lg:pr-10'><ChevronRightIcon/></div>
-    </div>
-    <div className='mb-5'>
-    Electronics
-    </div>
-    <div className='mb-5'>
-    Home & Lifestyle
-    </div>
-    <div className='mb-5'>
-    Medicine
-    </div>
-    <div className='mb-5'>
-    Sports & Outdoor
-    </div>
-    <div className='mb-5'>
-    Baby’s & Toys
-    </div>
-    <div className='mb-5'>
-    Groceries & Pets
-    </div>
-    <div className='mb-5'>
-    Health & Beauty
-    </div>
-            </div>
-
-            <div className='hidden sm:inline border-l-2 border-gray-300 '></div>
-            {/* the left side */}
-
-            <div className=' w-full lg:w-4/5  pt-10 md:mr-4 ' >
-                <div className='  text-white  bg-black w-full lg:w-11/12 md:ml-8 px-5  '>
-                <div className='flex  pt-8 justify-center'>
-                  <div className=' pt-9  w-full '>
-                  <div className='flex items-center w-full  lg:w-8/12 justify-between mb-5 '>
-                    <div className='hidden lg:inline'>
-       <img src="/apple.svg" alt="" />
-                    </div>
-                    <div className='text-2xl'>
-                    iPhone 14 Series
-                    </div>
-                </div>
-                <div className='text-semibold text-xl lg:text-5xl font-semibold mb-5 leading-10'>
-                <p className='mb-4 '>Up to 10%</p> off Voucher
-                </div>
-                <div className='flex'>
-                    <div className='mr-3'>
-                        <div className=''>Shop Now</div>
-                        <div className='border-b-2 border-white'> </div>
-                    </div>
-                    <div>
-                      <ArrowRightAltIcon/>
-                    </div>
-                </div>
-                </div>
-                <div className='hidden w-full lg:w-3/5 overflow-hidden ml-10 pl-60'>
-            <img src="/dots.svg" alt=""  />
-                </div>
-                </div>
-
-                <div className='flex justify-center'>
-                    <div className='flex justify-center items-center mt-5 mb-5 '>
-                      <img src="/dots_2.svg" alt="" />  
-                    </div>
-                </div>
-                </div>
-                
-            </div>
-            
-        </div>
-
-        <div className='px-5 lg:px-40 mt-20'>
-            {/* the first div */}
-            <div className='flex items-center md:mx-10'>
-                <div>
+    <div className=' mx-5  md:mb-40'>
+            <div className='flex items-center mb-10 md:mx-10 lg:mx-40'>
+                <div className=''>
                     <img src="/rectangle_red.svg" alt="" />
                 </div>
-                <div className='text-happy ml-3 font-semibold'>
-                    Today's
+                <div className='text-happy ml-3 font-semibold '>
+This Month
                 </div>
             </div>
-            {/* the second div */}
-            <div className='flex items-center  mt-3 pr-11 md:mx-10'>
-      <div className='  text-xl lg:text-2xl font-semibold lg:mr-60'>
-        Flash Sales
-      </div>
-      <div className='hidden lg:flex lg:justify-between lg:items-center lg:flex-1'>
-      <div className='mr-80'>
-        <img src="/time.svg" alt="" />
-      </div>
-      <div>
-      <img src="/arrows.svg" alt="" />
-      </div>
-      </div>
+            <div className='flex items-center justify-between mb-5 md:mx-10 lg:mx-40'>
+                <div className=' text-lg font-semibold sm:text-4xl sm:font-semibold md:text-3xl'>Best Sale Products</div>
+                <div><button  className='bg-sammy text-white px-4 lg:px-10 py-3 lg:text-lg font-medium rounded-md hover:bg-hover'>View All</button></div>
             </div>
-{/*  the third div */}
+            {/* BEST SELLING PRODUCTS */}
 
 
 
@@ -127,11 +25,10 @@ function HomePage() {
 
 
 
-
-
-<div className='flex '>
-               <div className='w-full flex flex-col   pt-9 md:grid md:grid-cols-2 md:gap-x-5 2xl:flex 2xl:justify-between 2xl:flex-row md:mx-10 xl:grid xl:grid-cols-3 xl:gap-x-3 xl:gap-y-2 '>
-               <div className='mb-5 '>
+      
+            <div className='flex  '>
+               <div className='w-full flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-10 lg:mx-40  2xl:flex 2xl:justify-between 2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2'>
+               <div className='mb-5'>
                 <div className='bg-happy px-3 pt-3 w-full  lg:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
                     <div>
@@ -175,7 +72,7 @@ function HomePage() {
                </div>
                <div>
                 {/* first */}
-               <div className='bg-happy px-3 pt-3  lg:w-[300px]  rounded-lg sm:mr-2'>
+               <div className='bg-happy px-3 pt-3 lg:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -216,7 +113,7 @@ function HomePage() {
                </div>
                <div>
                 {/* second */}
-               <div className='bg-happy px-3 pt-3  lg:w-[300px]  rounded-lg sm:mr-2'>
+               <div className='bg-happy px-3 pt-3 lg:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -257,7 +154,7 @@ function HomePage() {
                </div>
                <div>
                 {/* third */}
-               <div className='bg-happy px-3 pt-3  lg:w-[300px]  rounded-lg sm:mr-2'>
+               <div className='bg-happy px-3 pt-3 lg:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -297,7 +194,7 @@ function HomePage() {
                </div>
                <div>
                 {/* fourth */}
-               <div className='bg-happy px-3 pt-3  lg:w-[300px]  rounded-lg sm:mr-2'>
+               <div className='bg-happy px-3 pt-3   lg:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -338,120 +235,9 @@ function HomePage() {
                </div>
                </div>
             </div>
-            {/* HERE ME */}
-            
-        </div>
-        <div className='flex items-center justify-center'><button className='bg-sammy text-white text-xl font-medium px-10 sm:px-20 py-3 rounded-md mt-20 mb-20 hover:bg-hover'>View All Products</button></div>
-        <div className='border-b-2 border-gray-200 mx-40'></div>
-
-        {/* categories */}
-
-        <CategoryProducts/>
-
-
-
-
-
-
-
-        <div className='border-gray-300 mb-20 border-t-2 mx-40'></div>
-
-
-
-
-
-            <BestSaleProducts/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  {/* ENHANCE YOUR MUSIC EXPERIENCE */}
-           <EnhnaceYourMusic/>
-                  {/* EXPLORE THE PRODUCTS */}
-
-                  <ExploredProducts/>
-                  <div className='flex items-center justify-center'><button className='bg-sammy text-white text-xl font-medium px-10 sm:px-20 py-3 rounded-md mt-20 mb-20 hover:bg-hover'>View All Products</button></div>
-
-                  <div className='hidden lg:mx-40'>
-
-                   <div  className='flex items-center mb-10'>
-                   <div className=''>
-                    <img src="/rectangle_red.svg" alt="" />
-                </div>
-
-                  <div className='text-happy ml-3 font-semibold'>
-Featured
-                </div>
-
-                   </div>
-
-                   <div className='mb-10'>
-                <div className='text-2xl font-semibold'>New Arrival</div>
-            </div>
-
-            <div className='flex  bg-black text-white w-10/12 justify-between' >
-                {/* the first div */}
-                <div className='relative  '>
-                    <div>
-                        <img src="arrival_gamer.svg" alt="" />
-                    </div>
-                    <div className='absolute bottom-8 text-white ml-5'>
-                        <p className='mb-3'>PlayStation 5</p>
-                        <p>Black and White version of the PS5 coming out on sale.</p>
-                        <div className=''>
-                            <div>Shop Now</div>
-                            <div className='border-b-2 border-red-600'></div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* the second div */}
-                <div className=' bg-green-300'>
-                    <div>
-                        <div>women's collections</div>
-                        <div>
-                            <div>Speakers</div>
-                            <div>Perfume</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* delivery services */}
-            
-           
-                  </div>
                   
-
-                  <Services/>
-                  <Footer/>
-
-    </div>
+            </div>
   )
 }
 
-export default HomePage
+export default BestSaleProducts

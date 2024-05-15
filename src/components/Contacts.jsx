@@ -22,16 +22,13 @@ function Contacts() {
             <div></div>
             <div>
                 <form action="">
-                    <div className='md:grid md:grid-cols-3'>
-                         <div><input type="text" placeholder='Your Name *' className='pl-4 py-2 rounded-sm mb-4 md:w-11/12 w-full' /></div>
-                         <div><input type="text" placeholder='Your Email *'  className='pl-4  py-2 rounded-sm mb-4 md:w-11/12 w-full '/></div>
-                         <div><input type="text" placeholder='Your Phone *'  className='pl-4 py-2 rounded-sm mb-4 md:w-11/12 w-full '/></div>
-                         <div>
-                            
-                         </div>
+                    <div className=' md:flex justify-center  '>
+                         <div className='flex-1'><input type="text" placeholder='Your Name *' className='pl-4 py-2 rounded-sm mb-4 md:w-11/12 w-full' /></div>
+                         <div className='flex-1'><input type="text" placeholder='Your Email *'  className='pl-4  py-2 rounded-sm mb-4 md:w-11/12 w-full '/></div>
+                         <div className='flex-1'><input type="text" placeholder='Your Phone *'  className='pl-4 py-2 rounded-sm mb-4 md:w-11/12 w-full '/></div>
                     </div>
                     <div >
-                    <div><input type="text" placeholder='Your Message *'  className='pl-4 py-2 rounded-sm mb-4 md:w-full pb-60 w-full '/></div>
+                    <div><input type="text" placeholder='Your Message *'  className='pl-4 py-2 rounded-sm mb-4 md:max-w-[820px] pb-60 w-full '/></div>
 
                     </div>
                 <div className='flex justify-end mx-5'>
