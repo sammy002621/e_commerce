@@ -28,7 +28,7 @@ function CategoryProducts() {
                 </div>
                 <div className=' flex flex-col  items-center mb-3 py-10 px-10 xl:flex-1 rounded-md border-2 border-gray-300 hover:cursor-pointer   '>
                     <div className='mb-5'>
-                        <img src="cell_phone.svg" alt="" />
+                        <img src="category_computer.svg" alt="" />
                     </div>
                     <div>
                         Computers
@@ -36,7 +36,7 @@ function CategoryProducts() {
                 </div>
                 <div className='  flex flex-col items-center  mb-3 py-10 px-10  xl:flex-1 rounded-md border-2 border-gray-300 hover:cursor-pointer  '>
                     <div className='mb-5'>
-                        <img src="cell_phone.svg" alt="" />
+                        <img src="category_smartwatch.svg" alt="" />
                     </div>
                     <div>
                     SmartWatch
@@ -48,7 +48,7 @@ function CategoryProducts() {
                 </div>
                 <div className=' flex flex-col items-center mb-3 py-10 px-10 xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer  '>
                     <div className='mb-5'>
-                        <img src="cell_phone.svg" alt="" />
+                        <img src="category_headphone.svg" alt="" />
                     </div>
                     <div>
                     HeadPhones
@@ -56,7 +56,7 @@ function CategoryProducts() {
                 </div>
                 <div className=' flex flex-col items-center mb-3 py-10 px-10 xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer  '>
                     <div className='mb-5'>
-                        <img src="cell_phone.svg" alt="" />
+                        <img src="category_gamepad.svg" alt="" />
                     </div>
                     <div>
                     Gaming

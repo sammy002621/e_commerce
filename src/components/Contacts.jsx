@@ -9,8 +9,8 @@ function Contacts() {
         <Header/>
         <HeaderHome/>
 
-        <div className='flex mx-5 lg:mx-5 lg:mt-20 mt-10 mb-10 '>
-          <div className='flex   w-1/4 sm:w-1/12 justify-around '>
+        <div className='flex mx-16 lg:mx-10 lg:mt-20 mt-10 mb-10   '>
+          <div className='flex   sm:w-1/12 justify-around '>
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>
           <div>Contacts</div>
@@ -19,7 +19,6 @@ function Contacts() {
 
     <div className='lg:flex lg:items-baseline '>
        <div className='mx-5 shadow-sm  lg:mr-20'>
-            <div></div>
             <div>
                 <form action="">
                     <div className=' md:flex justify-center  '>
