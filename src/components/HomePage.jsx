@@ -48,8 +48,8 @@ function HomePage() {
             <div className='hidden sm:inline border-l-2 border-gray-300 '></div>
             {/* the left side */}
 
-            <div className=' w-full lg:w-4/5  pt-10 ' >
-                <div className='  text-white  bg-black w-full lg:w-11/12 md:ml-12 px-5  '>
+            <div className=' w-full lg:w-4/5  pt-10 md:mr-4 ' >
+                <div className='  text-white  bg-black w-full lg:w-11/12 md:ml-8 px-5  '>
                 <div className='flex  pt-8 justify-center'>
                   <div className=' pt-9  w-full '>
                   <div className='flex items-center w-full  lg:w-8/12 justify-between mb-5 '>
@@ -91,7 +91,7 @@ function HomePage() {
 
         <div className='px-5 lg:px-40 mt-20'>
             {/* the first div */}
-            <div className='flex items-center'>
+            <div className='flex items-center md:mx-10'>
                 <div>
                     <img src="/rectangle_red.svg" alt="" />
                 </div>
@@ -100,7 +100,7 @@ function HomePage() {
                 </div>
             </div>
             {/* the second div */}
-            <div className='flex items-center  mt-3 pr-11'>
+            <div className='flex items-center  mt-3 pr-11 md:mx-10'>
       <div className='  text-xl lg:text-2xl font-semibold lg:mr-60'>
         Flash Sales
       </div>
@@ -125,9 +125,9 @@ function HomePage() {
 
 
 
-<div className='flex  '>
-               <div className='w-full flex flex-col  justify-between pt-9 md:flex-row'>
-               <div className='mb-5'>
+<div className='flex '>
+               <div className='w-full flex flex-col   pt-9 md:grid md:grid-cols-2 md:gap-x-2 2xl:flex 2xl:justify-between 2xl:flex-row md:mx-10 xl:grid xl:grid-cols-3 xl:gap-x-20 xl:gap-y-2 '>
+               <div className='mb-5 '>
                 <div className='bg-happy px-3 pt-3 w-full  md:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
                     <div>
@@ -171,7 +171,7 @@ function HomePage() {
                </div>
                <div>
                 {/* first */}
-               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg sm:mr-2'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -212,7 +212,7 @@ function HomePage() {
                </div>
                <div>
                 {/* second */}
-               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg sm:mr-2'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -253,7 +253,7 @@ function HomePage() {
                </div>
                <div>
                 {/* third */}
-               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg sm:mr-2'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -293,7 +293,7 @@ function HomePage() {
                </div>
                <div>
                 {/* fourth */}
-               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg'>
+               <div className='bg-happy px-3 pt-3 md:w-[300px]  rounded-lg sm:mr-2'>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -359,14 +359,14 @@ function HomePage() {
             </div>
 
             {/* products */}
-            <div className='flex flex-col mt-10 lg:mt-20 mb-20 lg:flex-row  lg:justify-between '>
-                <div className=' flex flex-col  mb-3 items-center py-10 px-10  xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer lg:mr-2   '>
+            <div className='flex flex-col mt-10 lg:mt-20 mb-20 2xl:flex-row  2xl:justify-between md:grid md:grid-cols-3 md:gap-x-4 2xl:flex '>
+                <div className=' flex flex-col  mb-3 items-center py-10 px-10  xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer   '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
                     <div>Phones</div>
                 </div>
-                <div className=' flex flex-col  items-center mb-3 py-10 px-10 xl:flex-1 rounded-md border-2 border-gray-300 hover:cursor-pointer  lg:mr-2 '>
+                <div className=' flex flex-col  items-center mb-3 py-10 px-10 xl:flex-1 rounded-md border-2 border-gray-300 hover:cursor-pointer   '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -374,7 +374,7 @@ function HomePage() {
                         Computers
                     </div>
                 </div>
-                <div className='  flex flex-col items-center  mb-3 py-10 px-10  xl:flex-1 rounded-md border-2 border-gray-300 hover:cursor-pointer  lg:mr-2'>
+                <div className='  flex flex-col items-center  mb-3 py-10 px-10  xl:flex-1 rounded-md border-2 border-gray-300 hover:cursor-pointer  '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -382,11 +382,11 @@ function HomePage() {
                     SmartWatch
                     </div>
                 </div>
-                <div className=' bg-sammy text-white  mb-3 flex flex-col xl:flex-1  items-center py-10 px-10 rounded-md  md:mr-2'>
+                <div className=' bg-sammy text-white  mb-3 flex flex-col xl:flex-1  items-center py-10 px-10 rounded-md '>
                     <div className='mb-5'><img src="white_camera.svg" alt="" /></div>
                     <div>Camera</div>
                 </div>
-                <div className=' flex flex-col items-center mb-3 py-10 px-10 xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer lg:mr-2 '>
+                <div className=' flex flex-col items-center mb-3 py-10 px-10 xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer  '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -394,7 +394,7 @@ function HomePage() {
                     HeadPhones
                     </div>
                 </div>
-                <div className=' flex flex-col items-center mb-3 py-10 px-10 xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer lg:mr-2 '>
+                <div className=' flex flex-col items-center mb-3 py-10 px-10 xl:flex-1  rounded-md border-2 border-gray-300 hover:cursor-pointer  '>
                     <div className='mb-5'>
                         <img src="cell_phone.svg" alt="" />
                     </div>
@@ -406,8 +406,8 @@ function HomePage() {
             
         </div>
         <div className='border-gray-300 mb-20 border-t-2 mx-40'></div>
-            <div className=' mx-5 md:mx-40 md:mb-40'>
-            <div className='flex items-center mb-10'>
+            <div className=' mx-5  md:mb-40'>
+            <div className='flex items-center mb-10 md:mx-10'>
                 <div className=''>
                     <img src="/rectangle_red.svg" alt="" />
                 </div>
@@ -415,8 +415,8 @@ function HomePage() {
 This Month
                 </div>
             </div>
-            <div className='flex items-center justify-between mb-5'>
-                <div className=' text-lg font-semibold sm:text-4xl sm:font-semibold'>Best Sale Products</div>
+            <div className='flex items-center justify-between mb-5 md:mx-10'>
+                <div className=' text-lg font-semibold sm:text-4xl sm:font-semibold md:text-3xl'>Best Sale Products</div>
                 <div><button  className='bg-sammy text-white px-4 lg:px-10 py-3 lg:text-lg font-medium rounded-md hover:bg-hover'>View All</button></div>
             </div>
             {/* BEST SELLING PRODUCTS */}
@@ -431,7 +431,7 @@ This Month
 
       
             <div className='flex  '>
-               <div className='w-full flex flex-col  justify-between pt-9 md:flex-row'>
+               <div className='w-full flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-10  2xl:flex 2xl:justify-between 2xl:flex-row  xl:grid xl:grid-cols-3 xl:mx-20 xl:gap-y-2'>
                <div className='mb-5'>
                 <div className='bg-happy px-3 pt-3 w-full  md:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
@@ -676,7 +676,7 @@ This Month
 
 
                   <div className='mx-5 lg:mx-40 mt-20'>
-                    <div className='flex items-center mb-10'>
+                    <div className='flex items-center mb-10 md:mx-10'>
                 <div className=''>
                     <img src="/rectangle_red.svg" alt="" />
                 </div>
@@ -684,7 +684,7 @@ This Month
 Our Products
                 </div>
             </div>
-            <div className='flex items-center justify-between'>
+            <div className='flex items-center justify-between md:mx-10'>
                 <div className='text-lg lg:text-4xl font-semibold'>Explore Our Products</div>
                 <div className='hidden lg:block'><img src="/arrows.svg" alt="" className='mr-12' /></div>
             </div>
@@ -702,8 +702,8 @@ Our Products
 
 
 
-            <div className='flex  '>
-               <div className='w-full flex flex-col  justify-between pt-9 md:flex-row'>
+            <div className='flex  md:mx-10 '>
+               <div className='w-full flex flex-col  justify-between pt-9 md:grid md:grid-cols-2 md:gap-x-2 2xl:flex 2xl:justify-between 2xl:flex-row  xl:grid xl:grid-cols-3 xl:gap-x-20 xl:gap-y-2'>
                <div className='mb-5'>
                 <div className='bg-happy px-3 pt-3 w-full  md:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
@@ -934,8 +934,8 @@ Our Products
 
 
             <div className='flex flex-col'>
-            <div className='flex flex-col lg:justify-between lg:mb-20 '>
-               <div className='w-full flex  flex-col lg:flex-row  lg:justify-between pt-9'>
+            <div className='flex flex-col lg:justify-between lg:mb-20 md:mr-10 '>
+               <div className='w-full flex  flex-col md:grid md:grid-cols-2 md:gap-x-4 2xl:flex 2xl:justify-between 2xl:flex-row md:mx-10 xl:grid xl:grid-cols-3 xl:gap-x-20 xl:gap-y-8 pt-9'>
                <div className='mb-10 lg:mb-0'>
                 <div className='bg-happy px-3 pt-3 lg:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
