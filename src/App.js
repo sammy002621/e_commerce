@@ -10,6 +10,7 @@ import About from './components/About';
 import { Route, Routes } from 'react-router-dom';
 import PageNotFound from './components/PageNotFound';
 import Account from './components/Account';
+import CheckOut from './components/CheckOut';
 function App() {
   return (
     // me
@@ -22,6 +23,7 @@ function App() {
       <Route path='/error' element={<PageNotFound/>}/>
       <Route path='/wishlist' element={<WishList/>}/>
       <Route path='/account' element={<Account/>}/>
+      <Route path='/checkout' element={<CheckOut/>}/>
     </Routes>
   );
 }
