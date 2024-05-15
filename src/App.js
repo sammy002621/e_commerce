@@ -9,6 +9,7 @@ import Contacts from './components/Contacts';
 import About from './components/About';
 import { Route, Routes } from 'react-router-dom';
 import PageNotFound from './components/PageNotFound';
+import Account from './components/Account';
 function App() {
   return (
     // me
@@ -20,6 +21,7 @@ function App() {
       <Route path='/contacts' element={<Contacts/>}/>
       <Route path='/error' element={<PageNotFound/>}/>
       <Route path='/wishlist' element={<WishList/>}/>
+      <Route path='/account' element={<Account/>}/>
     </Routes>
   );
 }
