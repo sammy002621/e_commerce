@@ -8,7 +8,7 @@ function WishList() {
     <div>
         <Header/>
         <HeaderHome/>
-        <div className='flex mx-8 lg:mx-40 lg:mt-20 mt-10 '>
+        <div className='flex  mx-5 sm:mx-8 lg:mx-40 lg:mt-20 mt-10 '>
           <div className='flex   w-1/4 sm:w-1/12 justify-around '>
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>

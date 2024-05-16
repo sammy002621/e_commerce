@@ -22,15 +22,15 @@ function Contacts() {
             <div>
                 <form action="">
                     <div className=' md:flex justify-center  '>
-                         <div className='flex-1'><input type="text" placeholder='Your Name *' className='pl-4 py-2 rounded-sm mb-4 md:w-11/12 w-full' /></div>
-                         <div className='flex-1'><input type="text" placeholder='Your Email *'  className='pl-4  py-2 rounded-sm mb-4 md:w-11/12 w-full '/></div>
-                         <div className='flex-1'><input type="text" placeholder='Your Phone *'  className='pl-4 py-2 rounded-sm mb-4 md:w-11/12 w-full '/></div>
+                         <div className='flex-1'><input type="text" placeholder='Your Name *' className='pl-4 py-2 rounded-sm mb-4 md:w-[95%] md:mr-2 w-full' /></div>
+                         <div className='flex-1'><input type="text" placeholder='Your Email *'  className='pl-4  py-2 rounded-sm mb-4 md:w-[95%] md:mr-2 w-full '/></div>
+                         <div className='flex-1'><input type="text" placeholder='Your Phone *'  className='pl-4 py-2 rounded-sm mb-4 md:w-full w-full '/></div>
                     </div>
                     <div >
                     <div><input type="text" placeholder='Your Message *'  className='pl-4 py-2 rounded-sm mb-4  pb-60 w-full '/></div>
 
                     </div>
-                <div className='flex justify-end mx-5'>
+                <div className='flex justify-end  md:mx-0'>
                 <button className='bg-sammy px-8 py-2 text-white rounded-sm text-lg font-medium'>Send Message</button>
 
                 </div>

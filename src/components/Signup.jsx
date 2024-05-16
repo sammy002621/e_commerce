@@ -21,7 +21,7 @@ function Signup() {
                 </div>
                 <div className='w-full  md:w-[80%] lg:w-[50%]  pt-20 lg:pt-60 flex justify-end md:mx-auto lg:pl-20 overflow-hidden '>
                     <div className=''>
-                        <h1 className='text-3xl font-medium mb-4'>Create an account</h1>
+                        <h1 className=' text-2xl sm:text-3xl font-medium mb-4'>Create an account</h1>
                         <p className='text-baseline mb-10'>Enter your details below</p>
                         <form action="" className='mt-5'>
                         
@@ -36,7 +36,7 @@ function Signup() {
                                    <div className='mr-2'>
                                              <img src="/Icon-Google.svg" alt="" />
                                    </div>
-                                   <div className='text-lg border-gray-500 hover:cursor-pointer '>
+                                   <div className='sm:text-lg border-gray-500 hover:cursor-pointer '>
                                     Sign up with Google
                                    </div>
                                 </div>

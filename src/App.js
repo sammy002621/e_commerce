@@ -24,6 +24,7 @@ function App() {
       <Route path='/wishlist' element={<WishList/>}/>
       <Route path='/account' element={<Account/>}/>
       <Route path='/checkout' element={<CheckOut/>}/>
+
     </Routes>
   );
 }

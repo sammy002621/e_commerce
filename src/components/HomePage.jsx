@@ -56,8 +56,8 @@ function HomePage() {
                 <div className='  text-white  bg-black w-full lg:w-11/12 md:ml-8 px-5  '>
                 <div className='flex  pt-8 justify-center'>
                   <div className=' pt-9  w-full '>
-                  <div className='flex items-center w-full  lg:w-8/12 justify-between mb-5 '>
-                    <div className='hidden lg:inline'>
+                  <div className='flex items-center w-full  lg:w-5/12  mb-5  '>
+                    <div className='hidden lg:inline lg:mr-4'>
        <img src="/apple.svg" alt="" />
                     </div>
                     <div className='text-2xl'>
@@ -77,7 +77,7 @@ function HomePage() {
                     </div>
                 </div>
                 </div>
-                <div className='hidden w-full lg:w-3/5 overflow-hidden ml-10 pl-60'>
+                <div className='hidden w-full lg:w-3/5 overflow-hidden ml-10 pl-60  '>
             <img src="/dots.svg" alt=""  />
                 </div>
                 </div>
@@ -104,18 +104,20 @@ function HomePage() {
                 </div>
             </div>
             {/* the second div */}
-            <div className='flex items-center  mt-3 pr-11 md:mx-10'>
+            <div className='flex items-center  mt-3 pr-11 md:mx-10  xl:relative'>
       <div className='  text-xl lg:text-2xl font-semibold lg:mr-60'>
         Flash Sales
       </div>
-      <div className='hidden lg:flex lg:justify-between lg:items-center lg:flex-1'>
-      <div className='mr-80'>
+    
+     <div className='hidden lg:flex lg:justify-between lg:items-center lg:flex-1 xl:w-full  lg:mr-1 lg:ml-auto'>
+      <div className='mr-80 hidden 2xl:inline '>
         <img src="/time.svg" alt="" />
       </div>
-      <div>
+      <div className=' ml-auto xl:absolute right-[-50px]'>
       <img src="/arrows.svg" alt="" />
       </div>
       </div>
+     
             </div>
 {/*  the third div */}
 
@@ -130,7 +132,7 @@ function HomePage() {
 
 
 <div className='flex '>
-               <div className='w-full flex flex-col   pt-9 md:grid md:grid-cols-2 md:gap-x-5 2xl:flex 2xl:justify-between 2xl:flex-row md:mx-10 xl:grid xl:grid-cols-3 xl:gap-x-12 xl:gap-y-2 '>
+               <div className='w-full flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-10   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2 xl:gap-x-24 2xl:gap-x-5 '>
                <div className='mb-5 '>
                 <div className='bg-happy px-3 pt-3 w-full  lg:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
@@ -175,7 +177,7 @@ function HomePage() {
                </div>
                <div>
                 {/* first */}
-               <div className='bg-happy px-3 pt-3  lg:w-[300px]  rounded-lg sm:mr-2'>
+               <div className='bg-happy px-3 pt-3  lg:w-[300px]  rounded-lg '>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -216,7 +218,7 @@ function HomePage() {
                </div>
                <div>
                 {/* second */}
-               <div className='bg-happy px-3 pt-3  lg:w-[300px]  rounded-lg sm:mr-2'>
+               <div className='bg-happy px-3 pt-3  lg:w-[300px]  rounded-lg '>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>
@@ -257,7 +259,7 @@ function HomePage() {
                </div>
                <div>
                 {/* third */}
-               <div className='bg-happy px-3 pt-3  lg:w-[300px]  rounded-lg sm:mr-2'>
+               <div className='bg-happy px-3 pt-3  lg:w-[300px]  rounded-lg '>
                     <div className='flex justify-between items-center'>
                     <div>
                     </div>

@@ -3,11 +3,11 @@ import React from 'react'
 function CategoryProducts() {
   return (
     <div className='px-10 mt-20 lg:px-40'>
-            <div className='flex items-center mb-10'>
+            <div className='flex items-center mb-10 '>
                 <div className=''>
                     <img src="/rectangle_red.svg" alt="" />
                 </div>
-                <div className='text-happy ml-3 font-semibold'>
+                <div className='text-happy ml-3 font-semibold '>
   Categories
                 </div>
             </div>
