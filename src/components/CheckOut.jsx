@@ -28,36 +28,36 @@ function CheckOut() {
         <div className='xl:flex xl:mx-20 xl:mb-40'>
             {/* billing details form */}
             <div className='mx-5 xl:mr-40'>
-                <div className='max-w-[750px] mb-5'>
+                <div className='max-w-[750px] mb-10'>
                     <p className='mb-2 text-gray-500 md:text-xl'>First Name <span className='text-happy'>*</span></p>
                     <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
 
                 </div>
-                <div className='max-w-[750px] mb-5'>
+                <div className='max-w-[750px] mb-10'>
                 <p className='mb-2 text-gray-500 md:text-xl'>Company Name</p>
                 <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
 
                 </div>
-                <div className='max-w-[750px] mb-5'>
+                <div className='max-w-[750px] mb-10'>
                 <p className='mb-2 text-gray-500 md:text-xl'>Street Address <span className='text-happy'>*</span></p>
                 <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
 
                 </div>
-                <div className='max-w-[750px] mb-5'>
+                <div className='max-w-[750px] mb-10'>
                 <p className='mb-2 text-gray-500 md:text-xl'> Apartment, floor, etc. (optional)</p>
                 <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
                 </div>
-                <div className='max-w-[750px] mb-5 md:text-xl'>
+                <div className='max-w-[750px] mb-10 md:text-xl'>
                 <p className='mb-2 text-gray-500'>Town/City <span className='text-happy'>*</span></p>
                 <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
 
                 </div>
-                <div className='max-w-[750px] mb-5 md:text-xl'>
+                <div className='max-w-[750px] mb-10 md:text-xl'>
                 <p className='mb-2 text-gray-500'> Phone Number <span className='text-happy'>*</span></p>
                 <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
 
                 </div>
-                <div className='max-w-[750px] mb-5 md:text-xl'>
+                <div className='max-w-[750px] mb-10 md:text-xl'>
                 <p className='mb-2 text-gray-500'>Email Address <span className='text-happy'>*</span></p>
                 <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
                 </div>
@@ -69,17 +69,17 @@ function CheckOut() {
 
             {/* product details */}
 
-            <div className='mx-5 my-20 xl:w-2/5'>
+            <div className='mx-5 my-10 xl:w-2/5'>
               {/* lcd monitor */}
               <div className='flex items-center justify-between mb-3'>
-              <div className='flex items-center'>
+              <div className='flex items-center my-8'>
                 <div className='mr-2 xl:mr-4'><img src="gamer_cart.svg" alt="" /></div>
                 <div className='md:text-2xl font-baseline'>LCD Monitor</div>
               </div>
               <p className='md:text-2xl'>$650</p>
               </div>
-              <div className='flex items-center justify-between'>
-              <div className='flex items-center'>
+              <div className='flex items-center justify-between mb-10'>
+              <div className='flex items-center '>
                 <div className='mr-2 xl:mr-4'><img src="monitor_cart.svg" alt="" /></div>
                 <div className='md:text-2xl font-baseline'>H1 Gamepad</div>
               </div>
@@ -107,20 +107,25 @@ function CheckOut() {
               </div>
 
               {/* bank and methods of payment */}
-              <div className='flex items-center justify-between mb-4'>
+              <div className='flex items-center justify-between my-10'>
                 <div><input type="radio" name="" id="" className='mr-4' /><span className='md:text-2xl font-baseline'>Bank</span></div>
                 <div><img src="check_out_bank.svg" alt="" /></div>
               </div>
 
               {/* cash on delivery */}
-              <div className='mb-4'>
+              <div className='my-10'>
                 <input type="radio" className='mr-4' /> <span className='md:text-2xl font-baseline'>Cash On delivery</span> 
+              </div>
+
+              <div className='my-2 md:flex  xl:w-[530px] 2xl:w-[600px] xl:my-10 mb-10'>
+                <div className='mb-2 md:mr-2 xl:w-7/12'><input type="text" placeholder='Coupon Code' className='px-4 py-4 w-full text-center md:text-start rounded-md md:text-xl border border-black bg-transparent md:px-10' /></div>
+                <div className='xl:w-5/12'><button className='bg-sammy text-white px-5 py-4  rounded-md md:text-xl w-full '>Apply Coupon</button></div>
               </div>
 
               {/* coupon code */}
               <div></div>
 
-              <button className='bg-sammy text-white px-5 py-3 md:text-2xl font-medium rounded-sm hover:bg-hover'>Place Order</button>
+              <button className='bg-sammy text-white px-5 py-3 md:text-xl font-medium rounded-md hover:bg-hover'>Place Order</button>
 
             </div>
 
