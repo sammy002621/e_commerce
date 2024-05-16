@@ -60,7 +60,6 @@ function CheckOut() {
                 <div className='max-w-[750px] mb-5 md:text-xl'>
                 <p className='mb-2 text-gray-500'>Email Address <span className='text-happy'>*</span></p>
                 <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
-
                 </div>
                 <div className='flex items-center'>
                     <div className='mr-2'><img src="checkOut_checkbox.svg" alt="" /></div>
