@@ -63,7 +63,7 @@ function CheckOut() {
                 </div>
                 <div className='flex items-center'>
                     <div className='mr-2'><img src="checkOut_checkbox.svg" alt="" /></div>
-                   <div>Save this information <span className='hidden sm:inline'>for faster check-out next time</span>  </div>
+                   <div className=''>Save this information <span className='hidden sm:inline'>for faster check-out next time</span>  </div>
                 </div>
             </div>
 
@@ -74,47 +74,47 @@ function CheckOut() {
               <div className='flex items-center justify-between mb-3'>
               <div className='flex items-center my-8'>
                 <div className='mr-2 xl:mr-4'><img src="gamer_cart.svg" alt="" /></div>
-                <div className='md:text-2xl font-baseline'>LCD Monitor</div>
+                <div className='md:text-xl xl:text-2xl font-baseline'>LCD Monitor</div>
               </div>
-              <p className='md:text-2xl'>$650</p>
+              <p className='md:text-xl xl:text-2xl'>$650</p>
               </div>
               <div className='flex items-center justify-between mb-10'>
               <div className='flex items-center '>
                 <div className='mr-2 xl:mr-4'><img src="monitor_cart.svg" alt="" /></div>
-                <div className='md:text-2xl font-baseline'>H1 Gamepad</div>
+                <div className='md:text-xl xl:text-2xl font-baseline'>H1 Gamepad</div>
               </div>
-              <p className='md:text-2xl'>$650</p>
+              <p className='md:text-xl xl:text-2xl'>$650</p>
               </div>
               {/* gamepad */}
               
 
               {/* Subtotal */}
               <div className='flex items-center justify-between border-b-2 mt-2 pb-4 mb-4'>
-                <div className='md:text-2xl font-baseline'>SubTotal:</div>
-                <div className='md:text-2xl'>$1750</div>
+                <div className='md:text-xl xl:text-2xl font-baseline'>SubTotal:</div>
+                <div className='md:text-xl xl:text-2xl'>$1750</div>
               </div>
 
               {/* shipping */}
               <div className='flex items-center justify-between border-b-2 pb-4 '>
-                <div className='md:text-2xl font-baseline'>Shipping:</div>
-                <div className='md:text-2xl'>Free</div>
+                <div className='md:text-xl xl:text-2xl font-baseline'>Shipping:</div>
+                <div className='md:text-xl xl:text-2xl'>Free</div>
               </div>
 
               {/* total */}
               <div className='flex items-center justify-between mt-4 mb-4'>
-                <div className='md:text-2xl font-baseline'>Total:</div>
-                <div className='md:text-2xl'>$1750</div>
+                <div className='md:text-xl xl:text-2xl font-baseline'>Total:</div>
+                <div className='md:text-xl xl:text-2xl'>$1750</div>
               </div>
 
               {/* bank and methods of payment */}
               <div className='flex items-center justify-between my-10'>
-                <div><input type="radio" name="" id="" className='mr-4' /><span className='md:text-2xl font-baseline'>Bank</span></div>
+                <div><input type="radio" name="" id="" className='mr-4' /><span className='md:text-xl xl:text-2xl font-baseline'>Bank</span></div>
                 <div><img src="check_out_bank.svg" alt="" /></div>
               </div>
 
               {/* cash on delivery */}
               <div className='my-10'>
-                <input type="radio" className='mr-4' /> <span className='md:text-2xl font-baseline'>Cash On delivery</span> 
+                <input type="radio" className='mr-4' /> <span className='md:text-xl xl:text-2xl font-baseline'>Cash On delivery</span> 
               </div>
 
               <div className='my-2 md:flex  xl:w-[530px] 2xl:w-[600px] xl:my-10 mb-10'>
