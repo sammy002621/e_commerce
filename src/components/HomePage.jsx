@@ -130,7 +130,7 @@ function HomePage() {
 
 
 <div className='flex '>
-               <div className='w-full flex flex-col   pt-9 md:grid md:grid-cols-2 md:gap-x-5 2xl:flex 2xl:justify-between 2xl:flex-row md:mx-10 xl:grid xl:grid-cols-3 xl:gap-x-3 xl:gap-y-2 '>
+               <div className='w-full flex flex-col   pt-9 md:grid md:grid-cols-2 md:gap-x-5 2xl:flex 2xl:justify-between 2xl:flex-row md:mx-10 xl:grid xl:grid-cols-3 xl:gap-x-12 xl:gap-y-2 '>
                <div className='mb-5 '>
                 <div className='bg-happy px-3 pt-3 w-full  lg:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
