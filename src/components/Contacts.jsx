@@ -9,7 +9,7 @@ function Contacts() {
         <Header/>
         <HeaderHome/>
 
-        <div className='flex mx-16 lg:mx-10 lg:mt-20 mt-10 mb-10   '>
+        <div className='flex mx-5 lg:mx-10 lg:mt-20 mt-10 mb-10   '>
           <div className='flex   sm:w-1/12 justify-around '>
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>
@@ -27,7 +27,7 @@ function Contacts() {
                          <div className='flex-1'><input type="text" placeholder='Your Phone *'  className='pl-4 py-2 rounded-sm mb-4 md:w-11/12 w-full '/></div>
                     </div>
                     <div >
-                    <div><input type="text" placeholder='Your Message *'  className='pl-4 py-2 rounded-sm mb-4 md:max-w-[820px] pb-60 w-full '/></div>
+                    <div><input type="text" placeholder='Your Message *'  className='pl-4 py-2 rounded-sm mb-4  pb-60 w-full '/></div>
 
                     </div>
                 <div className='flex justify-end mx-5'>
