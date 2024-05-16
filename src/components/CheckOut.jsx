@@ -46,7 +46,6 @@ function CheckOut() {
                 <div className='max-w-[750px] mb-5'>
                 <p className='mb-2 text-gray-500 md:text-xl'> Apartment, floor, etc. (optional)</p>
                 <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
-
                 </div>
                 <div className='max-w-[750px] mb-5 md:text-xl'>
                 <p className='mb-2 text-gray-500'>Town/City <span className='text-happy'>*</span></p>
