@@ -25,7 +25,8 @@ module.exports = {
       colors:{
         happy:'#DB4444',
         mama:'#363738',
-        sammy:'#00FF66'
+        sammy:'#00FF66',
+        button:'#00FF66'
       },
       backgroundImage: {
         footer_texture: "url('/public/body_image.png')",

@@ -12,6 +12,7 @@ import PageNotFound from './components/PageNotFound';
 import Account from './components/Account';
 import CheckOut from './components/CheckOut';
 import WishList from './components/WishList';
+import ProductDetails from './components/ProductDetails';
 function App() {
   return (
     // me
@@ -26,6 +27,8 @@ function App() {
       <Route path='/account' element={<Account/>}/>
       <Route path='/checkout' element={<CheckOut/>}/>
       <Route path='/wishlist' element={<WishList/>}/>
+      <Route path='/product_details' element={<ProductDetails/>}/>
+
     </Routes>
   );
 }

@@ -25,11 +25,11 @@ function WishList() {
 
 
 
-
+{/* className='hover:cursor-pointer' */}
             
             <div className='flex mx-5 '>
-               <div className='w-full xl:w-auto flex flex-col  pt-9 md:grid md:grid-cols-2  md:mx-10 md:gap-x-5   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2 xl:gap-x-8 xl:mx-20 2xl:gap-x-5 '>
-               <div className='mb-5 '>
+               <div className='w-full xl:w-auto flex flex-col  pt-9 md:grid md:grid-cols-2  md:mx-10 md:gap-x-5   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2 xl:gap-x-8 xl:mx-20 2xl:gap-x-10 '>
+               <div className='mb-5 hover:cursor-pointer '>
                 <div className='bg-happy pt-3 w-full  lg:w-[300px] rounded-lg overflow-hidden '>
                     <div className='flex justify-between items-center mx-2'>
                     <div>
@@ -67,7 +67,7 @@ function WishList() {
                     {/* here */}
 
                </div>
-               <div>
+               <div className='hover:cursor-pointer'>
                 {/* first */}
                <div className='bg-happy  pt-3  lg:w-[300px]  rounded-lg overflow-hidden'>
                     <div className='flex justify-between items-center'>
@@ -101,7 +101,7 @@ function WishList() {
                     </div>
 
                </div>
-               <div>
+               <div className='hover:cursor-pointer'>
                 {/* second */}
                <div className='bg-happy  pt-3  lg:w-[300px]  rounded-lg overflow-hidden '>
                     <div className='flex justify-between items-center'>
@@ -136,7 +136,7 @@ function WishList() {
                     </div>
 
                </div>
-               <div>
+               <div className='hover:cursor-pointer'>
                 {/* third */}
                <div className='bg-happy  pt-3  lg:w-[300px]  rounded-lg overflow-hidden '>
                     <div className='flex justify-between items-center'>
@@ -158,7 +158,7 @@ function WishList() {
                     </div>
                     
                 </div>
-                <div className='  mb-10'>
+                <div className=' mb-10'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         Quilted Satin Jacket
                         </div>
@@ -169,7 +169,7 @@ function WishList() {
                         
                     </div>
                </div>
-               <div>
+               <div className='hover:cursor-pointer'>
                 {/* fourth */}
                <div className='bg-happy  pt-3  lg:w-[300px]  rounded-lg sm:mr-2 overflow-hidden'>
                     <div className='flex justify-between items-center'>
@@ -224,8 +224,8 @@ function WishList() {
 
 
             <div className='flex mx-5 '>
-               <div className='w-full xl:w-auto flex flex-col  pt-9 md:grid md:grid-cols-2  md:mx-10 md:gap-x-5   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2 xl:gap-x-8 xl:mx-20 2xl:gap-x-5 '>
-               <div className='mb-5 '>
+               <div className='w-full xl:w-auto flex flex-col  pt-9 md:grid md:grid-cols-2  md:mx-10 md:gap-x-5   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2 xl:gap-x-8 xl:mx-20 2xl:gap-x-10 '>
+               <div className='mb-5 hover:cursor-pointer'>
                 <div className='bg-happy pt-3 w-full  lg:w-[300px] rounded-lg overflow-hidden '>
                     <div className='flex justify-between items-center mx-2'>
                     <div>
@@ -263,7 +263,7 @@ function WishList() {
                     {/* here */}
 
                </div>
-               <div>
+               <div className='hover:cursor-pointer'>
                 {/* first */}
                <div className='bg-happy  pt-3  lg:w-[300px]  rounded-lg overflow-hidden'>
                     <div className='flex justify-between items-center'>
@@ -297,7 +297,7 @@ function WishList() {
                     </div>
 
                </div>
-               <div>
+               <div className='hover:cursor-pointer'>
                 {/* second */}
                <div className='bg-happy  pt-3  lg:w-[300px]  rounded-lg overflow-hidden '>
                     <div className='flex justify-between items-center'>
@@ -332,7 +332,7 @@ function WishList() {
                     </div>
 
                </div>
-               <div>
+               <div className='hover:cursor-pointer'>
                 {/* third */}
                <div className='bg-happy  pt-3  lg:w-[300px]  rounded-lg overflow-hidden '>
                     <div className='flex justify-between items-center'>
@@ -367,7 +367,12 @@ function WishList() {
                         
                     </div>
                </div>
-               <div>
+
+
+
+
+
+               <div className='hover:cursor-pointer'>
                 {/* fourth */}
                <div className='bg-happy  pt-3  lg:w-[300px]  rounded-lg sm:mr-2 overflow-hidden'>
                     <div className='flex justify-between items-center'>
@@ -401,6 +406,10 @@ function WishList() {
                     </div>
 
                </div>
+
+
+
+               
                </div>
             </div>
 
