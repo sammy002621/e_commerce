@@ -12,7 +12,7 @@ Our Products
                 </div>
             </div>
             <div className='flex items-center justify-between md:mx-10 xl:mx-20'>
-                <div className='text-lg lg:text-4xl font-semibold'>Explore Our Products</div>
+                <div className='text-lg md:text-4xl font-semibold'>Explore Our Products</div>
                 <div className='hidden lg:block'><img src="/arrows.svg" alt="" className='mr-12' /></div>
             </div>
             {/*  the first  explored products */}

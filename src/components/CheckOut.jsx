@@ -9,7 +9,7 @@ function CheckOut() {
         <Header/>
         <HeaderHome/>
 
-        <div className='flex  mx-5 lg:mx-20 2xl:mx-80 lg:mt-20 mt-10 mb-10 xl:px-5 '>
+        <div className='flex  mx-5 lg:mx-20 2xl:mx-80 lg:mt-20 mt-10 mb-10 xl:px-5 md:text-xl '>
           <div className='flex   justify-around '>
           <div><span className='hidden sm:inline'>My</span> Account</div>
           <div className=''>/</div>
