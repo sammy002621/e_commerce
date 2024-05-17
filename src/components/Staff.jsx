@@ -3,7 +3,7 @@ import React from 'react'
 function Staff() {
   return (
     <div>
-        <div className='flex flex-col mx-5 lg:flex-row  lg:justify-between mb-10 md:mb-0 2xl:mx-80  md:grid md:grid-cols-2 lg:flex lg:mx-10  '>
+        <div className='flex flex-col mx-5 lg:flex-row  lg:justify-between mb-10 md:mb-0 2xl:mx-80  md:grid md:grid-cols-2 lg:flex  md:mx-10  '>
         <div className='mb-5  '>
             <div><img src="/founder.svg" alt="" /></div>
             <div className='py-4'>

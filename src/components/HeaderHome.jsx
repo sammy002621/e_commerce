@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import { Link, NavLink } from 'react-router-dom';
 function HeaderHome() {
+
+  const [open,setOpen]=useState(false);
   return (
     <div className='border-b-2 px-5 lg:px-20  pt-10 pb-5 w-full overflow-hidden'>
     <div className='flex items-center justify-between relative  '>
@@ -41,19 +43,21 @@ function HeaderHome() {
  
           </div>
 
-          <div className='lg:flex justify-between w-1/12 hidden items-center lg:w-auto   '>
+          <div className='lg:flex justify-between w-1/12 hidden items-center lg:w-auto  '>
           <div>
             <a href="google.com"><img src="wishlist.svg" alt="" /></a>
           </div>
           <div>
            <a href="google.com"> <img src="cart_notification.svg" alt="" />
 </a>          </div>
-          <div>
-            <a href="google.com"><img src="user.svg" alt="" /></a>
+          <div onClick={()=>setOpen(!open)} className='hover:cursor-pointer'>
+            <img src="user.svg" alt="" />
           </div>
+        
+        
           </div>
 
-
+          
     </div>
     </div>
   )

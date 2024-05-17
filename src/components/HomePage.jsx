@@ -11,9 +11,11 @@ import EnhnaceYourMusic from './EnhnaceYourMusic';
 import ExploredProducts from './ExploredProducts';
 function HomePage() {
   return (
-    <div>
+    <div className='relative'>
         <Header/>
         <HeaderHome/>
+
+            {/* <div className=' hidden 2xl:inline 2xl:absolute 2xl:right-16 2xl:text-white 2xl:top-40'>hello</div> */}
         {/* body */}
         <div className='flex px-5 md:px-10 lg:px-40   justify-between'>
             {/* the right side */}
