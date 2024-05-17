@@ -25,7 +25,7 @@ function App() {
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/account' element={<Account/>}/>
       <Route path='/checkout' element={<CheckOut/>}/>
-      <Route path='/play' element={<WishList/>}/>
+      <Route path='/wishlist' element={<WishList/>}/>
     </Routes>
   );
 }
