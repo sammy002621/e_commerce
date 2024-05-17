@@ -27,7 +27,7 @@ function WishList() {
 
 {/* className='hover:cursor-pointer' */}
             
-            <div className='flex mx-5 '>
+            <div className='flex mx-5  '>
                <div className='w-full xl:w-auto flex flex-col  pt-9 md:grid md:grid-cols-2  md:mx-10 md:gap-x-5   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2 xl:gap-x-8 xl:mx-20 2xl:gap-x-10 '>
                <div className='mb-5 hover:cursor-pointer '>
                 <div className='bg-happy pt-3 w-full  lg:w-[300px] rounded-lg overflow-hidden '>
@@ -409,11 +409,11 @@ function WishList() {
 
 
 
-               
+
                </div>
             </div>
 
-            <Footer/>
+           <div className='mt-40'> <Footer/></div>
         </div>
     </div>
   )
