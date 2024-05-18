@@ -4,7 +4,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 function Header() {
   return (
-    <div className='bg-black w-full overflow-hidden text-white lg:flex  justify-center'>
+    <section className='bg-black w-full overflow-hidden text-white lg:flex  justify-center'>
             <div className='  w-full  flex justify-between text-xl items-start my-4  lg:mx-10'>
             <div className=' w-10/12  flex justify-center pl-1'>
                 <p className=' font-extralight sm:font-medium pl-2' >Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
@@ -22,7 +22,7 @@ function Header() {
 
             </div>
             
-        </div>
+        </section>
   )
 }
 
