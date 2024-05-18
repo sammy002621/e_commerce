@@ -22,7 +22,7 @@ function ProductDetails() {
     <div>
         <Header/>
         <HeaderHome/>
-        <div className='flex  mx-5 lg:mx-20 2xl:mx-80 lg:mt-20 mt-10 mb-10 xl:px-5 md:text-xl '>
+        <div className='flex  mx-5 lg:mx-20 2xl:mx-14 lg:mt-20 mt-10 mb-10  md:text-xl '>
           <div className='flex   justify-around '>
           <div> Account</div>
           <div className='sm:mx-1'>/</div>
@@ -35,24 +35,24 @@ function ProductDetails() {
         </div>
 
         {/* product */}
-        <div className='flex flex-col xl:flex-row mx-5 '>
+        <div className='flex flex-col xl:flex-row 2xl:mx-60 2xl:items-stretch mx-5 md:mx-20 xl:items-center '>
 
             {/* product_images */}
-            <div className='hidden 2xl:inline'>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+            <div className='hidden 2xl:inline  xl:mt-1'>
+                <img src="gamepad_1.svg" alt="" className='mb-5' />
+                <img src="gamepad_2.svg" alt="" className='mb-5' />
+                <img src="gamepad_3.svg" alt="" className='mb-5' />
+                <img src="gamepad_4.svg" alt="" />
             </div>
 
             {/* product_general_image */}
-            <div className=''>
-                <img src="gamer_product_detail.svg" alt="" />
+            <div className=' mr-10 2xl:mx-10 xl:w-[80%] h-[700px] 2xl:w-[70%]  '>
+                <img src="gamer_product_detail.svg" alt="" className='h-700px bg-cover' />
             </div>
 
             {/* product_description_size_price */}
 
-            <div className='my-5'>
+            <div className='my-5 xl:my-0'>
                 <h1 className='text-xl font-bold mb-4'>Havic HV G-92 Gamepad</h1>
                 {/* product_rating */}
                 <div className='flex'>
@@ -64,8 +64,8 @@ function ProductDetails() {
 
                 {/* product_price */}
                 <h1 className='text-2xl font-medium mb-4'>$192.00</h1>
-                <p className='text-base mb-5 '>PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
-                <div className='border-b-2 border-gray-500 '></div>
+                <p className='text-base mb-5 md:w-4/5 '>PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
+                <div className='border-b-2 border-gray-500 md:w-4/5 '></div>
                 <div className='flex items-center  w-[130px] justify-between my-7'>
                     <div>Colours:</div>
                     <div><img src="/colour_change.svg" alt="" /></div>
@@ -93,7 +93,7 @@ function ProductDetails() {
                 </div>
 
 
-                <div className='border-gray-700 rounded-md my-10 border'>
+                <div className='border-gray-700 rounded-md my-10 border md:w-4/5 '>
                     {/* free delivery */}
                     <div className='flex items-center py-7 px-1 border-b-2 border-gray-700'>
                         <div className='mr-5'><img src="/product_details_delivery.svg" alt="" /></div>
@@ -117,7 +117,7 @@ function ProductDetails() {
         </div>
 
 
-        <div className='flex items-center mx-5 md:mx-10'>
+        <div className='flex items-center mx-5 md:mx-20'>
                 <div>
                     <img src="/rectangle_red.svg" alt="" />
                 </div>
@@ -126,8 +126,8 @@ function ProductDetails() {
                 </div>
             </div>
 
-            <div className='flex  mx-5'>
-               <div className='w-full flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-10   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2 xl:gap-x-24 2xl:gap-x-5 '>
+            <div className='flex  mx-5 xl:mx-20 2xl:mx-40'>
+               <div className='w-full xl:w-auto flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-10   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2 2xl:gap-x-5 '>
                <div className='mb-5 '>
                 <div className='bg-happy px-3 pt-3 w-full  lg:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
@@ -190,7 +190,7 @@ function ProductDetails() {
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between '>
-                        <div className='mx-16 md:ml-20'>
+                        <div className='mx-16  xl:ml-14'>
                             <img src="/gamer.svg" alt="" />
                         </div>
                         <div className='px-2'><img src="eye.svg" alt="" /></div>
