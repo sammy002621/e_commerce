@@ -17,7 +17,7 @@ function Contacts() {
           </div>
         </div>
 
-    <div className='lg:flex lg:items-baseline '>
+    <div className='lg:flex lg:items-baseline mb-60 '>
        <div className='2xl:mx-20 mx-5 shadow-sm  lg:mr-20'>
             <div>
                 <form action="">
