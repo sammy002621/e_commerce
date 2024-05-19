@@ -32,42 +32,42 @@ function CheckOut() {
 
 
 
-        <div className='xl:mx-40'>
+        <div className=''>
         <h1 className='xl:mx-20 xl:px-5 mx-5 text-3xl mb-10 '>Billing Details</h1>
 
 <div className='xl:flex xl:mx-20 xl:mb-40'>
     {/* billing details form */}
     <div className='mx-5 xl:mr-40'>
-        <div className='max-w-[750px] mb-10'>
+        <div className='xl:w-[475px] 2xl:w-[700px] mb-10'>
             <p className='mb-2 text-gray-500 md:text-xl'>First Name <span className='text-happy'>*</span></p>
             <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
 
         </div>
-        <div className='max-w-[750px] mb-10'>
+        <div className=' mb-10'>
         <p className='mb-2 text-gray-500 md:text-xl'>Company Name</p>
         <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
 
         </div>
-        <div className='max-w-[750px] mb-10'>
+        <div className=' mb-10'>
         <p className='mb-2 text-gray-500 md:text-xl'>Street Address <span className='text-happy'>*</span></p>
         <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
 
         </div>
-        <div className='max-w-[750px] mb-10'>
+        <div className=' mb-10'>
         <p className='mb-2 text-gray-500 md:text-xl'> Apartment, floor, etc. (optional)</p>
         <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
         </div>
-        <div className='max-w-[750px] mb-10 md:text-xl'>
+        <div className=' mb-10 md:text-xl'>
         <p className='mb-2 text-gray-500'>Town/City <span className='text-happy'>*</span></p>
         <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
 
         </div>
-        <div className='max-w-[750px] mb-10 md:text-xl'>
+        <div className=' mb-10 md:text-xl'>
         <p className='mb-2 text-gray-500'> Phone Number <span className='text-happy'>*</span></p>
         <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
 
         </div>
-        <div className='max-w-[750px] mb-10 md:text-xl'>
+        <div className=' mb-10 md:text-xl'>
         <p className='mb-2 text-gray-500'>Email Address <span className='text-happy'>*</span></p>
         <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
         </div>
@@ -79,7 +79,7 @@ function CheckOut() {
 
     {/* product details */}
 
-    <div className='mx-5 my-10 xl:w-2/5'>
+    <div className='mx-5 my-10 xl:w-2/5 xl:mx-2'>
       {/* lcd monitor */}
       <div className='flex items-center justify-between mb-3'>
       <div className='flex items-center my-8'>

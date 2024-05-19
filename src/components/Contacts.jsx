@@ -9,7 +9,7 @@ function Contacts() {
         <Header/>
         <HeaderHome/>
 
-        <div className='flex mx-5 xl:mx-20 lg:mx-10 lg:mt-20 mt-10 mb-10   '>
+        <div className='flex mx-5 xl:mx-5 2xl:mx-20 lg:mx-10 lg:mt-20 mt-10 mb-10   '>
           <div className='flex    justify-around '>
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>
