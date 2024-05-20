@@ -49,9 +49,9 @@ function HeaderHome() {
           </div>
 
           <div className='lg:flex justify-between w-1/12 hidden items-center lg:w-auto  '>
-          <Link to={'/'}><img src="wishlist.svg" alt="" /></Link>
-          <Link to={'/'}><img src="/cart_notification.svg" alt="" /></Link>
-          <Link to={'/'}><img src='user.svg'/></Link>
+          <Link to={'/wishlist'}><img src="wishlist.svg" alt="" /></Link>
+          <Link to={'/cart'}><img src="/cart_notification.svg" alt="" /></Link>
+          <Link to={'/account'}><img src='user.svg'/></Link>
         
         
           </div>

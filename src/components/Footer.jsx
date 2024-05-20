@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='bg-black  text-white'>
-    <div className='flex mx-5 lg:mx-10 py-10 pb-5 justify-between items-start  mt-20  lg:mb-10 ' >
+    <div className='bg-black  text-white '>
+    <div className='flex mx-5 lg:mx-10 py-10 pb-5 justify-between items-start  mt-20  lg:mb-5 ' >
    <div className='hidden md:inline'>
     <h1 className='font-semibold text-xl xl:text-3xl mb-8'>Exclusive</h1>
     <p className='font-semibold text-xl mb-8'>Subscribe</p>

@@ -17,13 +17,13 @@ function Account() {
           <div className='ml-4'>Welcome!<span className='pl-1 text-happy'>Md Rimel</span></div>
         </div>
 
-        <div className='xl:flex xl:mb-40 2xl:justify-between 2xl:mx-80'>
-        <div className='mx-5 '>
+        <div className='xl:flex xl:mb-40  2xl:mx-60'>
+        <div className='xl:mr-20 mx-5 xl:mx-5 2xl:mx-0 2xl:mr-20 2xl:mt-10'>
             <div>
             <p className='text-happy text-xl font-medium mb-4'>Edit Your Profile</p>
                 <div>
                    <div className='md:flex'>
-                    <div className='mb-4 md:max-w-[750px] md:mr-10'>
+                    <div className='mb-4  md:mr-10'>
                         <p className='mb-2'>First Name</p>
                         <input type="text" placeholder='Md' className='px-5 py-3 rounded-sm bg-happy w-full' />
                     </div>
@@ -68,7 +68,7 @@ function Account() {
         
 
         <div className='flex justify-center  '>
-        <div className='mt-20 md:flex md:items-baseline md:justify-around  md:w-full xl:flex-col xl:ml-20'>
+        <div className=' xl:mt-20 2xl:mt-40 md:flex md:items-baseline md:justify-around  md:w-full xl:flex-col xl:ml-20'>
             {/* my account */}
             <div>
                 <h1 className='text-xl font-medium mb-5'>Manage My Account</h1>
