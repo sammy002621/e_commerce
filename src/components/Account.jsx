@@ -8,7 +8,7 @@ function Account() {
     <div>
         <Header/>
         <HeaderHome/>
-        <div className='flex lg:mt-20 mt-10 mb-10 justify-between mx-5  2xl:mx-60  '>
+        <div className='flex lg:mt-20 mt-10 mb-10 justify-between mx-10  2xl:mx-60  '>
           <div className='flex   justify-around '>
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>
@@ -18,25 +18,25 @@ function Account() {
         </div>
 
         <div className='xl:flex xl:mb-40  2xl:mx-60'>
-        <div className='xl:mr-20 mx-5 xl:mx-5 2xl:mx-0 2xl:mr-20 2xl:mt-10'>
+        <div className='xl:mr-20 mx-5 xl:mx-10 2xl:mx-0 2xl:mr-20 2xl:mt-10'>
             <div>
             <p className='text-happy text-xl font-medium mb-4'>Edit Your Profile</p>
                 <div>
                    <div className='md:flex'>
-                    <div className='mb-4  md:mr-10'>
+                    <div className='mb-4 flex-1 mr-2 '>
                         <p className='mb-2'>First Name</p>
                         <input type="text" placeholder='Md' className='px-5 py-3 rounded-sm bg-happy w-full' />
                     </div>
-                    <div className='mb-4 md:max-w-[750px]'><p className='mb-2'>Last Name</p>
+                    <div className='mb-4 flex-1'><p className='mb-2'>Last Name</p>
                     <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
                     </div>
                    </div>
                    <div className='md:flex'>
-   <div className='mb-4 md:max-w-[750px] md:mr-10'>
+   <div className='mb-4 flex-1 md:mr-2'>
     <p className='mb-2'>Email</p>
     <input type="text" placeholder='rimel1111@gmail.com' className='px-5 py-3 rounded-sm bg-happy w-full' />
    </div>
-   <div className='mb-4 md:max-w-[750px]'>
+   <div className='mb-4 flex-1'>
     <p className='mb-2'>Address</p>
     <input type="text" placeholder='Kingston, 5236, United State'  className='px-5 py-3 rounded-sm bg-happy w-full'/>
    </div>
@@ -76,7 +76,7 @@ function Account() {
                 <p className='ml-10 text-lg'>My Payment Options</p>
             </div>
             {/* my orders */}
-            <div className='mt-5 mb-5 '>
+            <div className='mt-5 mb-3 '>
                 <h1 className='text-xl font-medium'>My Orders</h1>
                 <p className='ml-10 text-lg mt-5'>My Returns</p>
                 <p className='ml-10 text-lg'>My cancellations</p>
