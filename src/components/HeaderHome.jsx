@@ -1,8 +1,9 @@
 import React,{useState} from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import { Link, NavLink } from 'react-router-dom';
-
-
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 function HeaderHome() {
@@ -51,10 +52,21 @@ function HeaderHome() {
  
           </div>
 
-          <div className='lg:flex justify-between w-1/12 hidden items-center lg:w-auto  '>
-          <Link to={'/wishlist'}><img src="wishlist.svg" alt="" /></Link>
-          <Link to={'/cart'}><img src="/cart_notification.svg" alt="" /></Link>
-          <Link to={'/account'}><img src='user.svg'/></Link>
+          <div className='lg:flex justify-between w-1/12 hidden items-center lg:w-auto   '>
+          <Link to={'/wishlist'} className='mr-4 lg:relative'>
+          <FavoriteBorderIcon />
+          <div className='absolute text-white bg-sammy rounded-3xl  top-[-7px] right-[-5px] w-5 h-6 text-center  '>4</div>
+          
+          
+          </Link>
+          <Link to={'/cart'} className='mr-4 lg:relative'>
+            <ShoppingCartIcon/>
+            <div className='absolute text-white bg-sammy rounded-3xl  top-[-7px] right-[-5px] w-5 h-6 text-center  '>4</div>
+
+          </Link>
+          <Link to={'/account'}>
+            <PersonIcon/>
+          </Link>
         
         
           </div>

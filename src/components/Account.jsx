@@ -8,7 +8,7 @@ function Account() {
     <div>
         <Header/>
         <HeaderHome/>
-        <div className='flex lg:mt-20 mt-10 mb-10 justify-between mx-10  2xl:mx-60  '>
+        <div className='flex lg:mt-20 mt-10 mb-10 justify-between mx-10 md:mx-5 xl:mx-10  2xl:mx-60  '>
           <div className='flex   justify-around '>
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>
@@ -18,7 +18,7 @@ function Account() {
         </div>
 
         <div className='xl:flex xl:mb-40  2xl:mx-60'>
-        <div className='xl:mr-20 mx-5 xl:mx-10 2xl:mx-0 2xl:mr-20 2xl:mt-10'>
+        <div className=' mx-5 xl:mx-40 2xl:mx-0 2xl:mr-20 2xl:mt-10 mb-10'>
             <div>
             <p className='text-happy text-xl font-medium mb-4'>Edit Your Profile</p>
                 <div>
@@ -43,14 +43,14 @@ function Account() {
                    </div>
                 </div>
 
-                <div className='md:max-w-[750px]'>
+                <div className=''>
                     <p className='mb-2'>Password Changes</p>
                     <input type="password" placeholder='Current Password' className='px-5 py-3 rounded-sm bg-happy mb-4 w-full' />
                     <input type="password" placeholder='New Passoword' className='px-5 py-3 rounded-sm bg-happy mb-4 w-full' />
                     <input type="password" placeholder='Confirm New Password' className='px-5 py-3 rounded-sm bg-happy mb-4 w-full' />
                 </div>
 
-                <div className='flex items-center  justify-end mt-2 md:max-w-[750px]  '>
+                <div className='flex items-center  justify-end mt-2   '>
                     <p>Cancel</p>
                     <button className='bg-sammy text-white px-5 py-2 ml-5'>Save changes</button>
                 </div>
