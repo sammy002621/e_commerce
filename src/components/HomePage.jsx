@@ -55,14 +55,14 @@ function HomePage() {
             {/* the left side */}
 
             <div className=' w-full lg:w-4/5  pt-10 md:mr-4 ' >
-                <div className='  text-white  bg-black w-full lg:w-11/12 md:ml-8 px-5  '>
+                <div className='  text-white  bg-black w-full lg:w-full md:ml-8 px-5  '>
                 <div className='flex  pt-8 justify-center'>
                   <div className=' pt-9  w-full '>
                   <div className='flex items-center w-full  lg:w-5/12  mb-5  '>
-                    <div className='hidden lg:inline lg:mr-4'>
+                    <div className='hidden 2xl:inline lg:mr-4'>
        <img src="/apple.svg" alt="" />
                     </div>
-                    <div className='text-2xl'>
+                    <div className=' xl:text-lg 2xl:text-2xl'>
                     iPhone 14 Series
                     </div>
                 </div>
@@ -79,7 +79,7 @@ function HomePage() {
                     </div>
                 </div>
                 </div>
-                <div className='hidden w-full lg:w-3/5 overflow-hidden ml-10 pl-60  '>
+                <div className='hidden w-full xl:w-4/5  md:mt-10  md:inline '>
             <img src="/dots.svg" alt=""  />
                 </div>
                 </div>
@@ -95,9 +95,9 @@ function HomePage() {
             
         </div>
 
-        <div className='px-5 lg:px-40 mt-20'>
+        <div className='px-5 lg:px-20 mt-20'>
             {/* the first div */}
-            <div className='flex items-center md:mx-10'>
+            <div className='flex items-center md:mx-5'>
                 <div>
                     <img src="/rectangle_red.svg" alt="" />
                 </div>
@@ -106,7 +106,7 @@ function HomePage() {
                 </div>
             </div>
             {/* the second div */}
-            <div className='flex items-center  mt-3 pr-11 md:mx-10  xl:relative'>
+            <div className='flex items-center  mt-3 pr-11 md:mx-5  xl:relative'>
       <div className='  text-xl lg:text-2xl font-semibold lg:mr-60'>
         Flash Sales
       </div>
@@ -120,7 +120,7 @@ function HomePage() {
 
         <img src="/time.svg" alt="" />
       </div>
-      <div className=' ml-auto xl:absolute right-[-50px]'>
+      <div className=' ml-auto xl:absolute right-[-50px] xl:right-[-5px]'>
       <img src="/arrows.svg" alt="" />
       </div>
       </div>
@@ -139,8 +139,8 @@ function HomePage() {
 
 
 <div className='flex '>
-               <div className='w-full flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-10   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2 xl:gap-x-24 2xl:gap-x-5 '>
-               <div className='mb-5 '>
+               <div className=' flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-5   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-5 xl:gap-x-80  xl:gap-y-2  2xl:gap-x-5 overflow-auto '>
+               <div className='mb-5  '>
                 <div className='bg-happy px-3 pt-3 w-full  lg:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
                     <div>
@@ -159,8 +159,8 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className=' mb-4 '>
-                        <div className='text-lg font-medium pt-2 pb-1'>
+                <div className=' mb-4 lg:w-[300px]  '>
+                        <div className=' font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
                         <div className='flex pb-1'>
@@ -202,7 +202,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className=' mb-10 '>
+                <div className=' mb-10 lg:w-[300px] '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -243,7 +243,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className=' mb-10 '>
+                <div className=' mb-10 lg:w-[300px] '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -284,7 +284,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='  mb-10'>
+                <div className='  mb-10 lg:w-[300px]'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -324,7 +324,7 @@ function HomePage() {
                     </div>
                     
                 </div>
-                <div className='  mb-10'>
+                <div className='  mb-10 lg:w-[300px]'>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>

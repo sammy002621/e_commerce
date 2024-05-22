@@ -9,7 +9,7 @@ function Contacts() {
         <Header/>
         <HeaderHome/>
 
-        <div className='flex mx-5 xl:mx-5 2xl:mx-20 lg:mx-10 lg:mt-20 mt-10 mb-10   '>
+        <div className='flex mx-5 xl:mx-10 2xl:mx-20 lg:mx-10 lg:mt-20 mt-10 mb-10   '>
           <div className='flex    justify-around '>
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>
@@ -18,7 +18,7 @@ function Contacts() {
         </div>
 
     <div className='lg:flex lg:items-baseline mb-40 '>
-       <div className='2xl:mx-20 mx-5 shadow-sm  lg:mr-20'>
+       <div className='2xl:mx-20 mx-10 shadow-sm  lg:mr-20'>
             <div>
                 <form action="">
                     <div className=' md:flex justify-center  '>

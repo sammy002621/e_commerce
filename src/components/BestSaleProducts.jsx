@@ -3,7 +3,7 @@ import React from 'react'
 function BestSaleProducts() {
   return (
     <div className=' mx-5  md:mb-40'>
-            <div className='flex items-center mb-10 md:mx-10 lg:mx-40'>
+            <div className='flex items-center mb-10 md:mx-10 lg:mx-20'>
                 <div className=''>
                     <img src="/rectangle_red.svg" alt="" />
                 </div>
@@ -11,7 +11,7 @@ function BestSaleProducts() {
 This Month
                 </div>
             </div>
-            <div className='flex items-center justify-between mb-5 md:mx-10 lg:mx-40'>
+            <div className='flex items-center justify-between mb-5 md:mx-10 lg:mx-20'>
                 <div className=' text-lg font-semibold sm:text-4xl sm:font-semibold md:text-3xl'>Best Sale Products</div>
                 <div><button  className='bg-sammy text-white px-4 lg:px-10 py-3 lg:text-lg font-medium rounded-md hover:bg-hover'>View All</button></div>
             </div>
@@ -27,7 +27,7 @@ This Month
 
       
             <div className='flex  '>
-               <div className='w-full flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-10 lg:mx-40  2xl:flex  2xl:flex-row  xl:grid xl:grid-cols-3  xl:gap-y-2 xl:gap-x-12 2xl:gap-x-5'>
+               <div className='w-full flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-10 lg:mx-20  2xl:flex  2xl:flex-row  xl:grid xl:grid-cols-5  xl:gap-y-2 xl:gap-x-80 2xl:gap-x-5 overflow-auto'>
                <div className='mb-5'>
                 <div className='bg-happy px-3 pt-3 w-full  lg:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
@@ -47,7 +47,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className=' mb-4 '>
+                <div className=' mb-4 lg:w-[300px] '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -90,7 +90,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className=' mb-10 '>
+                <div className=' mb-10 lg:w-[300px]  '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -131,7 +131,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className=' mb-10 '>
+                <div className=' mb-10 lg:w-[300px]  '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -172,7 +172,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='  mb-10'>
+                <div className='  mb-10 lg:w-[300px] '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>
@@ -212,7 +212,7 @@ This Month
                     </div>
                     
                 </div>
-                <div className='  mb-10'>
+                <div className='  mb-10 lg:w-[300px] '>
                         <div className='text-lg font-medium pt-2 pb-1'>
                         HAVIT HV-G92 Gamepad
                         </div>

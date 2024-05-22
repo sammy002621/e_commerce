@@ -10,17 +10,18 @@ function HeaderHome() {
   const [open,setOpen]=useState(false);
   
   return (
-    <header className='border-b-2 px-5 lg:px-20  pt-10 pb-5 w-full overflow-hidden'>
+    <header className='border-b-2 px-5 lg:px-10  pt-10 pb-5 w-full overflow-hidden'>
     <nav className='flex items-center justify-between relative  '>
         {/*  the left side */}
         
             <h1 className='font-semibold text-xl hidden sm:flex '><Link to='/'>Exclusive</Link></h1>
         
         {/* the middle side */}
-        <ul className='flex justify-between  md:pl-0 w-full sm:w-10/12 md:w-2/3 lg:w-1/2 lg:px-8 
-      
+        <ul className=' w-1/3 md:w-3/6
+      flex justify-end 
         '>
-            <NavLink to={'/'} style={({ isActive }) => {
+          <section className='flex justify-between  md:pl-0 w-full sm:w-10/12 md:w-11/12 lg:w-11/12 lg:px-8  mx-auto'>
+          <NavLink to={'/'} style={({ isActive }) => {
  return isActive ? { color: "#fff",borderBottom:"1px solid white"} : {};
  }}>Home</NavLink>
             <NavLink to={'/contacts'} style={({ isActive }) => {
@@ -34,6 +35,8 @@ function HeaderHome() {
  }} >Signup</NavLink>
             
             <span className='border-b-2 text-black border-black'></span>
+          </section>
+            
             </ul>
        
 

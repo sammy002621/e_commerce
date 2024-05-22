@@ -2,7 +2,7 @@ import React from 'react'
 
 function EnhnaceYourMusic() {
   return (
-    <div className='mx-5 lg:mx-40  flex  lg:w-10/12 items-center bg-black justify-center rounded-sm lg:rounded-none'>
+    <div className='mx-5 lg:mx-20  flex  lg:w-11/12 2xl:w-10/12 items-center bg-black justify-center rounded-sm lg:rounded-none'>
                 {/* first enhance your music experience  */}
                     <div className='flex  w-11/12 pt-8 items-center'>
                     <div className='flex-1  '>
@@ -23,7 +23,7 @@ function EnhnaceYourMusic() {
                         </div>
                     </div>
                              {/* second enhance your music experience */}
-                             <div className='hidden lg:flex lg:w-[600px]  flex-1'>
+                             <div className='hidden md:ml-10 md:flex lg:w-[600px]  flex-1'>
                                 <img src="speaker.svg" alt="" />
                              </div>
                     <div>
