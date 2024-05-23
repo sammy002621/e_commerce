@@ -30,7 +30,7 @@ Our Products
 
 
             <div className='flex   '>
-               <div className='w-full flex flex-col md:mx-10  justify-between pt-9 md:grid md:grid-cols-2 md:gap-x-5 2xl:flex  2xl:flex-row  xl:grid xl:grid-cols-5 xl:gap-x-80 xl:gap-y-2 xl:mx-10 overflow-auto'>
+               <div className=' flex flex-col md:mx-10  justify-between pt-9 md:grid md:grid-cols-2 md:gap-x-5 2xl:flex  2xl:flex-row  xl:grid xl:grid-cols-5 xl:gap-x-80 2xl:gap-x-10 xl:gap-y-2 xl:mx-10 '>
                <div className='mb-5'>
                 <div className='bg-happy px-3 pt-3 w-full  lg:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
@@ -262,7 +262,7 @@ Our Products
 
             <div className='flex flex-col md:mr-8 xl:mr-0'>
             <div className='flex flex-col  lg:mb-20  '>
-               <div className=' flex  flex-col md:grid md:grid-cols-2 md:gap-x-5 2xl:flex  2xl:flex-row md:mx-10   xl:grid xl:grid-cols-5 xl:gap-x-80  2xl:gap-x-6 xl:gap-y-12 pt-9 overflow-auto'>
+               <div className=' flex  flex-col md:grid md:grid-cols-2 md:gap-x-5 2xl:flex  2xl:flex-row md:mx-10   xl:grid xl:grid-cols-5 xl:gap-x-80  2xl:gap-x-10 xl:gap-y-12 pt-9 xl:overflow-auto 2xl:overflow-x-hidden'>
                <div className='mb-10 lg:mb-0'>
                 <div className='bg-happy px-3 pt-3 lg:w-[300px]  rounded-lg'>
                     <div className='flex justify-between items-center'>
