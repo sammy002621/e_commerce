@@ -46,8 +46,8 @@ function ProductDetails() {
             </div>
 
             {/* product_general_image */}
-            <div className=' mr-10 2xl:mx-10 xl:w-[80%] h-[700px] 2xl:w-[70%]  '>
-                <img src="gamer_product_detail.svg" alt="" className='h-700px bg-cover' />
+            <div className=' mr-10 2xl:mx-10 xl:w-[80%] xl:h-[700px] 2xl:w-[70%]  '>
+                <img src="gamer_product_detail.svg" alt="" className='h-700px bg-cover ' />
             </div>
 
             {/* product_description_size_price */}
@@ -96,7 +96,7 @@ function ProductDetails() {
                 <div className='border-gray-700 rounded-md my-10 border md:w-4/5 '>
                     {/* free delivery */}
                     <div className='flex items-center py-7 px-1 border-b-2 border-gray-700'>
-                        <div className='mr-5'><img src="/product_details_delivery.svg" alt="" /></div>
+                        <div className='mx-5'><img src="/product_details_delivery.svg" alt="" /></div>
                         <div>
                         <div className='mb-3'><h1 className='font-medium text-lg'>Free Delivery</h1></div>
                         <div className='underline'><p>Enter your postal code for Delivery <span className='hidden md:inline'>Availability</span></p></div>
@@ -104,7 +104,7 @@ function ProductDetails() {
                     </div>
                     {/* return delivery */}
                     <div className='flex items-center  py-7 px-1'>
-                        <div className='mr-5'>
+                        <div className='mx-5'>
                             <img src="product_details_return.svg" alt="" />
                         </div>
                         <div>

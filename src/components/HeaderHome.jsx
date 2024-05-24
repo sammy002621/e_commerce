@@ -21,10 +21,10 @@ function HeaderHome() {
         <ul className='  w-full md:w-3/6 sm:w-1/3
       flex justify-end 
         '>
-          <section className='flex justify-between  md:pl-0 w-full sm:w-10/12 md:w-11/12 lg:w-11/12 lg:px-8   '>
+          <section className='flex justify-between  md:pl-0 w-full sm:w-10/12 md:w-11/12 lg:w-11/12 lg:px-8 mx-auto   '>
           <NavLink to={'/'} style={({ isActive }) => {
  return isActive ? { color: "#fff",borderBottom:"1px solid white"} : {};
- }}>Home</NavLink>
+ }} className={""}>Home</NavLink>
             <NavLink to={'/contacts'} style={({ isActive }) => {
  return isActive ? { color: "#fff",borderBottom:"1px solid white" } : {};
  }}>Contacts</NavLink>

@@ -14,11 +14,11 @@ function Account() {
           <div className='mx-2'>/</div>
           <div><span className='hidden sm:inline'>My</span> Account</div>
           </div>
-          <div className='ml-4'>Welcome!<span className='pl-1 text-happy'>Md Rimel</span></div>
+          <div className='ml-4'><span className='hidden sm:inline'>Welcome!</span><span className='pl-1 text-happy'>Md Rimel</span></div>
         </div>
 
         <div className='xl:flex xl:mb-40  2xl:mx-60'>
-        <div className=' mx-5 xl:mx-40 2xl:mx-0 2xl:mr-20 2xl:mt-10 mb-10'>
+        <div className=' mx-5 xl:mx-10 2xl:mx-0 2xl:mr-20 2xl:mt-10 mb-10'>
             <div>
             <p className='text-happy text-xl font-medium mb-4'>Edit Your Profile</p>
                 <div>

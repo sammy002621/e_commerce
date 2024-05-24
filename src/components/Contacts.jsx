@@ -17,8 +17,8 @@ function Contacts() {
           </div>
         </div>
 
-    <div className='lg:flex lg:items-baseline mb-40 '>
-       <div className='2xl:mx-20 sm:mx-10 mx-5 shadow-sm  lg:mr-20'>
+    <div className='lg:flex lg:items-baseline mb-20 xl:mb-40 '>
+       <div className='2xl:mx-20 xl:mx-10 mx-5 shadow-sm  lg:mr-20'>
             <div>
                 <form action="">
                     <div className=' md:flex justify-center  '>
