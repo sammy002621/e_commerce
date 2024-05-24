@@ -117,7 +117,7 @@ const decrement2 = ()=>{
 
            <div className='flex flex-col lg:flex-row  lg:items-baseline lg:justify-between mt-20'>
            <div className='flex flex-col  lg:flex-row lg:justify-between  lg:my-0 my-4 '>
-            <div className='flex   justify-center'><input type="text" placeholder='Coupon Code' className='border-2 border-gray-300 text-center lg:py-4 lg:mr-2 py-4 outline-none  rounded-md  w-11/12 xl:w-auto xl:px-6' /></div>
+            <div className='flex xl:flex-1  justify-center'><input type="text" placeholder='Coupon Code' className='border-2 border-gray-300 text-center lg:py-4 lg:mr-2 py-4 outline-none  rounded-md  w-11/12 2xl:w-[400px] xl:px-6' /></div>
             <div className='flex justify-center '><button className='bg-sammy text-white px-4 rounded-md  lg:px-6 w-11/12 py-4 mt-4 lg:mt-0  xl:w-auto xl:px-6 '>Apply Coupon</button></div>
            </div>
 

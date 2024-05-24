@@ -8,7 +8,7 @@ function Account() {
     <div>
         <Header/>
         <HeaderHome/>
-        <div className='flex lg:mt-20 mt-10 mb-10 justify-between mx-10 md:mx-5 xl:mx-10  2xl:mx-60  '>
+        <div className='flex lg:mt-20 mt-10 mb-10 justify-between mx-5 sm:mx-10 md:mx-5 xl:mx-10  2xl:mx-60  '>
           <div className='flex   justify-around '>
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>
@@ -23,7 +23,7 @@ function Account() {
             <p className='text-happy text-xl font-medium mb-4'>Edit Your Profile</p>
                 <div>
                    <div className='md:flex'>
-                    <div className='mb-4 flex-1 mr-2 '>
+                    <div className='mb-4 flex-1 sm:mr-2 '>
                         <p className='mb-2'>First Name</p>
                         <input type="text" placeholder='Md' className='px-5 py-3 rounded-sm bg-happy w-full' />
                     </div>
