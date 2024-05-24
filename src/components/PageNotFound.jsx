@@ -17,7 +17,7 @@ function PageNotFound() {
           </div>
         </div>
 
-   <div className='flex justify-center text-center mx-5 items-center md:mb-40 mb-20'>
+   <div className='flex justify-center text-center mx-5 items-center  mb-40'>
     <div className='md:mt-20 md:pt-10 mt-10'>
         <h1 className='mb-5 lg:text-3xl lg:font-semibold text-3xl font-medium '>404 Not Found</h1>
         <p className='mb-10 font-light text-sm'>Your visited page not found. You may go home page.</p>

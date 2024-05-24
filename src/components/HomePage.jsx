@@ -55,7 +55,7 @@ function HomePage() {
             {/* the left side */}
 
             <div className=' w-full lg:w-4/5  pt-10 md:mr-4 ' >
-                <div className='  text-white  bg-black w-full lg:w-full md:ml-8 px-5  '>
+                <div className='  text-white  bg-black w-full  md:ml-8 px-5  '>
                 <div className='flex  pt-8 justify-center'>
                   <div className=' pt-9  w-full '>
                   <div className='flex items-center w-full  lg:w-5/12  mb-5  '>
@@ -139,7 +139,7 @@ function HomePage() {
 
 
 <div className='flex '>
-               <div className=' flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-5   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-5 xl:gap-x-80  xl:gap-y-2  2xl:gap-x-10 overflow-auto '>
+               <div className=' w-full xl:w-auto flex flex-col  pt-9 md:grid md:grid-cols-2 md:gap-x-5 md:mx-5   2xl:flex 2xl:flex-row  xl:grid xl:grid-cols-5 xl:gap-x-80  xl:gap-y-2  2xl:gap-x-10 xl:overflow-auto '>
                <div className='mb-5  '>
                 <div className='bg-happy px-3 pt-3 w-full  lg:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
