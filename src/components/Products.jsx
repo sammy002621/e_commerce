@@ -78,6 +78,26 @@ const decrement2 = ()=>{
             </div>
           </div>
           <div className=' pl-2  w-[70px]'>$650</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </div>
 
 
