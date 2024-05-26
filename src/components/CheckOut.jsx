@@ -55,9 +55,6 @@ function CheckOut() {
 
 
 
-
-
-
         <div className=''>
         <h1 className='xl:mx-20 xl:px-5 mx-5 text-3xl mb-10 '>Billing Details</h1>
 
