@@ -69,7 +69,7 @@ const decrement2 = ()=>{
           $650
           </div>
           <div className='flex-1 '>
-            <div className=' w-4/5 sm:w-1/2 flex items-center justify-center  border-2 border-gray-400 rounded-md h-1/4'>
+            <div className=' md:w-[100px] w-4/5 sm:w-1/2 flex items-center justify-center  border-2 border-gray-400 rounded-md h-1/4'>
                 <div className=' pl-1 mr-1 md:mr-5 '>{product1}</div>
                 <div className='flex flex-col juistify-center'>
                     <div onClick={increment1}  className=' flex justify-center'><button><KeyboardArrowUpIcon/></button></div>
@@ -115,7 +115,7 @@ const decrement2 = ()=>{
           <div className='flex-1  '>
           $550
           </div>
-          <div className='flex-1 '><div className=' w-4/5 sm:w-1/2 flex items-center justify-center  border-2 border-gray-400 rounded-md '>
+          <div className='flex-1 '><div className='md:w-[100px] w-4/5 sm:w-1/2 flex items-center justify-center  border-2 border-gray-400 rounded-md '>
                 <div className='pl-1 mr-1 md:mr-5 '>{product2}</div>
                 <div className='flex flex-col juistify-center'>
                     <div onClick={increment2}  className=' flex justify-center'><button><KeyboardArrowUpIcon/></button></div>

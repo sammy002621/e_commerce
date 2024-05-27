@@ -18,10 +18,10 @@ function HeaderHome() {
             <h1 className='font-semibold text-xl hidden sm:flex '><Link to='/'>Exclusive</Link></h1>
         
         {/* the middle side */}
-        <ul className='  w-full md:w-3/6 sm:w-1/3
+        <ul className='  w-full md:w-3/6  sm:w-1/3
       flex justify-end 
         '>
-          <section className='flex justify-between  md:pl-0 w-full sm:w-10/12 md:w-11/12 lg:w-11/12 lg:px-8 mx-auto   '>
+          <section className='flex justify-between  md:pl-0 w-full sm:w-10/12 md:w-11/12 lg:w-11/12 lg:px-8 md:px-0 bg-yellow-600  mx-auto md:mx-0   '>
           <NavLink to={'/'} style={({ isActive }) => {
  return isActive ? { color: "#fff",borderBottom:"1px solid white"} : {};
  }} className={""}>Home</NavLink>
@@ -42,7 +42,7 @@ function HeaderHome() {
        
 
         {/*  right side */}
-        <div className=' items-center  w-4/12 bg-happy rounded-md   py-2 px-3 hidden xl:flex lg:w-3/12 lg:px-2'>
+        <div className=' items-center  w-4/12 bg-happy rounded-md   py-2 px-3 hidden xl:flex lg:w-5/12  lg:px-2'>
 <React.Fragment className='xl:w-10/12'>
 <input type="text" placeholder='What are you looking for?'  className='bg-transparent  text-center w-full    outline-none  ' />
 </React.Fragment>      

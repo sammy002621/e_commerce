@@ -2,7 +2,7 @@ import React from 'react'
 
 function Pricing() {
   return (
-    <div className='mx-5  2xl:mx-60 2xl:pr-10 2xl:pl-12  flex flex-col lg:flex-row lg:justify-between  lg:items-baseline text-center mt-20 mb-20 lg:flex md:grid md:grid-cols-2 md:gap-x-10  md:mx-10  '>
+    <div className='mx-5  2xl:mx-60 2xl:pr-10 2xl:pl-12  flex flex-col lg:flex-row lg:justify-between  lg:items-baseline text-center mt-20 mb-20 lg:flex md:grid md:grid-cols-2 md:gap-x-10  md:mx-10 xl:mt-60  '>
                     <div className=' mb-10  border border-gray-300 rounded-md py-4 md:px-5 lg:px-8 2xl:px-16 xl:px-12'>
                         <div className='flex justify-center mb-6'>                           
                          <img src="/services_pricing_1.svg" alt="" />

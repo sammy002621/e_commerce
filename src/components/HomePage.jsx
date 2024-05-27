@@ -11,7 +11,7 @@ import EnhnaceYourMusic from './EnhnaceYourMusic';
 import ExploredProducts from './ExploredProducts';
 function HomePage() {
   return (
-    <div className='relative'>
+    <div >
         <Header/>
         <HeaderHome/>
 
@@ -112,7 +112,7 @@ function HomePage() {
       </div>
     
      <div className='hidden lg:flex lg:justify-between lg:items-center lg:flex-1 xl:w-full  lg:mr-1 lg:ml-auto'>
-      <div className='mr-80 hidden 2xl:inline 2xl:absolute right-60
+      <div className='mr-80 hidden 2xl:inline 2xl:absolute right-80 mb-4
        '>
 
 
@@ -120,7 +120,7 @@ function HomePage() {
 
         <img src="/time.svg" alt="" />
       </div>
-      <div className=' ml-auto xl:absolute right-[-50px] xl:right-[-5px]'>
+      <div className=' ml-auto xl:absolute right-[-50px] xl:right-12'>
       <img src="/arrows.svg" alt="" />
       </div>
       </div>
