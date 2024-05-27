@@ -11,9 +11,9 @@ function ExploredProducts() {
 Our Products
                 </div>
             </div>
-            <div className='flex items-center justify-between md:mx-10 '>
+            <div className='flex items-center justify-between md:mx-10 relative '>
                 <div className='text-lg md:text-4xl font-semibold'>Explore Our Products</div>
-                <div className='hidden lg:block'><img src="/arrows.svg" alt="" className='mr-12' /></div>
+                <div className='hidden lg:block xl:absolute right-10'><img src="/arrows.svg" alt="" className='mr-12' /></div>
             </div>
             {/*  the first  explored products */}
 
@@ -30,7 +30,7 @@ Our Products
 
 
             <div className='flex   '>
-               <div className='w-full  flex flex-col md:mx-10  justify-between pt-9 md:grid md:grid-cols-2 md:gap-x-5 2xl:flex  2xl:flex-row  xl:grid xl:grid-cols-5 xl:gap-x-80 2xl:gap-x-10 xl:gap-y-2 xl:mx-10 overflow-auto '>
+               <div className='w-full 2xl:w-auto  flex flex-col md:mx-10  justify-between pt-9 md:grid md:grid-cols-2 md:gap-x-5 2xl:flex  2xl:flex-row  xl:grid xl:grid-cols-5 xl:gap-x-80 2xl:gap-x-10 xl:gap-y-2 xl:mx-10 overflow-auto '>
                <div className='mb-5'>
                 <div className='bg-happy px-3 pt-3 w-full  lg:w-[300px] rounded-lg mb-2'>
                     <div className='flex justify-between items-center'>
