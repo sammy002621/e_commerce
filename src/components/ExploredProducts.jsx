@@ -10,6 +10,8 @@ function ExploredProducts() {
                 <div className='text-happy ml-3 font-semibold'>
 Our Products
                 </div>
+
+ 
             </div>
             <div className='flex items-center justify-between md:mx-10 relative '>
                 <div className='text-lg md:text-4xl font-semibold'>Explore Our Products</div>
