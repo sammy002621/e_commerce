@@ -49,6 +49,45 @@ function HeaderHome() {
  <div className='w-1/6  pl-3'>
     <SearchIcon/>
  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
  
           </div>
 
