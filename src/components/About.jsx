@@ -16,6 +16,30 @@ function About() {
           <div className='text-gray-600'>Home</div>
           <div className='mx-2'>/</div>
           <div>About</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
           </div>
         </div>
 
