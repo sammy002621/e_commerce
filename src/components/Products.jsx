@@ -3,16 +3,20 @@ import { useState } from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 function Products() {
+   const value=650+550*2;
     let [product1,setProduct1]=useState(1);
     let [product2,setProduct2]=useState(2);
     let [product1_price,setProduct1Price]=useState(650);
     let [product2_price,setProduct2Price]=useState(1100);
+    let[subTotal,setSubTotal]=useState(value);
 
     const increment1 = ()=>{
 
             setProduct1(prevState=>prevState+1);
+            setSubTotal(650*product1+product2*550);
         
     }
     const decrement1 = ()=>{
@@ -20,6 +24,7 @@ function Products() {
 
         }else{
             setProduct1(prevState=>prevState-1);
+            setSubTotal(650*product1+product2*550);
         }
         
     }
@@ -28,6 +33,7 @@ function Products() {
     const increment2 = ()=>{
 
         setProduct2(prevState=>prevState+1);
+        setSubTotal(650*product1+product2*550);
     
 }
 const decrement2 = ()=>{
@@ -35,6 +41,7 @@ const decrement2 = ()=>{
 
     }else{
         setProduct2(prevState=>prevState-1);
+        setSubTotal(650*product1+product2*550);
     }
     
 }
@@ -128,7 +135,7 @@ const decrement2 = ()=>{
         <div className='flex justify-between items-center'>
           <div className='border border-gray-600 sm:px-5  px-2 py-2 mb-2 rounded-md'>
           
-          <button className='sm:text-md font-semibold'>Return To shop</button>
+          <Link to={'/wishlist'} className='sm:text-md font-semibold'>Return To shop</Link>
           </div>
           <div className='border-gray-600 border px-5 py-2 mb-2 rounded-md lg:px-10'><button className='text-md font-semibold'>Update Cart</button></div>
           
@@ -145,7 +152,7 @@ const decrement2 = ()=>{
             <h1 className='text-lg font-semibold mb-4 pt-2'>Cart Total</h1>
             <div className='flex border-b-2 border-gray-400 text-base justify-between pb-2 mb-3'>
               <div>Subtotal:</div>
-              <div>${product1_price+product2_price}</div>
+              <div>${subTotal}</div>
             </div>
             <div className='flex border-b-2 border-gray-400 text-base justify-between pb-2 mb-3'>
               <div>Shipping:</div>
