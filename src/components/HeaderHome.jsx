@@ -43,9 +43,9 @@ function HeaderHome() {
 
         {/*  right side */}
         <div className=' items-center  w-4/12 bg-happy rounded-md   py-2 px-3 hidden xl:flex lg:w-1/4  lg:px-2'>
-<React.Fragment className='xl:w-10/12'>
+<div className='xl:w-10/12'>
 <input type="text" placeholder='What are you looking for?'  className='bg-transparent  text-center w-full    outline-none  ' />
-</React.Fragment>      
+</div>      
  <div className='w-1/6  pl-3'>
     <SearchIcon/>
  </div>

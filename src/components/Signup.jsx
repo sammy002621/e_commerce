@@ -1,9 +1,21 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Footer from './Footer';
 import Header from './Header';
 import HeaderHome from './HeaderHome';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 function Signup() {
+  const [userData,setUserData]=useState({
+    name:'',
+    email:'',
+    password:''
+  })
+  
+
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+  }
+
+ 
 
   return (
     <div>
@@ -24,21 +36,38 @@ function Signup() {
                     <div className=''>
                         <h1 className=' text-2xl sm:text-3xl font-medium mb-4'>Create an account</h1>
                         <p className='text-baseline mb-10'>Enter your details below</p>
-                        <form action="" className='mt-5'>
+                        <form action="" className='mt-5' onSubmit={handleSubmit}>
                         
-                        <input type="text" placeholder='Name' id='name' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full ' onFocus={()=>{
+                        <input type="text" placeholder='Name' id='name' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full ' onChange={(e)=>{
+                         setUserData({
+                          ...userData,
+                          name:e.target.value
+                         })
+
+                         console.log(userData)
+                        }} onFocus={()=>{
                           document.getElementById("name").style.borderBottomColor='white'
                         }
                       }  onBlur={()=>{
-                        document.getElementById("name").style.borderBottomColor="gray"
+                        document.getElementById("name").style.borderBottomColor="gray"  
                       }} />
-                        <input type="text"  placeholder='Email or Phone Number' id='email' onFocus={()=>{
+                        <input type="text"  placeholder='Email or Phone Number' id='email'  onChange={(e)=>{
+                         setUserData({
+                          ...userData,
+                          email:e.target.value
+                         })
+                        }} onFocus={()=>{
                           document.getElementById("email").style.borderBottomColor='white'
                         }
                       }  onBlur={()=>{
                         document.getElementById("email").style.borderBottomColor="gray"
                       }}   className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full' />
-                            <input type="text" placeholder='Password' id='password' onFocus={()=>{
+                            <input type="text" placeholder='Password' id='password' onChange={(e)=>{
+                         setUserData({
+                          ...userData,
+                          password:e.target.value
+                         })
+                        }} onFocus={()=>{
                           document.getElementById("password").style.borderBottomColor='white'
                         } 
                       }    onBlur={()=>{

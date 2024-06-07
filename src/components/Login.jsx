@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from './Footer';
 import Header from './Header';
 import HeaderHome from './HeaderHome';
+import axios from 'axios';
 function Login() {
+
+    const [userData,setUserData]=useState({
+        email:'',
+        password:'',
+    })
+
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        axios.get('/test')
+       
+    }
   return (
     <div>
         {/* header */}
@@ -22,12 +34,22 @@ function Login() {
                     <div className=''>
                         <h1 className='text-xl lg:text-3xl font-medium mb-4'>Log in to Exclusive</h1>
                         <p className='text-baseline mb-10'>Enter your details below</p>
-                        <form action="" className='mt-5'>
-                            <input type="text" placeholder='Email or Phone Number' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full' />
-                            <input type="text" placeholder='Password' className='bg-transparent border-b-2  outline-none pb-2 border-gray-700  mb-8 w-full' />
+                        <form action="" className='mt-5' onSubmit={handleSubmit}>
+                            <input type="text" placeholder='Email or Phone Number' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full' onChange={(e)=>{
+                                setUserData({
+                                    ...userData,
+                                    email:e.target.value
+                                })
+                            }} /> 
+                            <input type="text" placeholder='Password' className='bg-transparent border-b-2  outline-none pb-2 border-gray-700  mb-8 w-full' onChange={(e)=>{
+                                setUserData({
+                                    ...userData,
+                                    password:e.target.value
+                                })
+                            }} />
                             <div className='flex justify-between items-center'>
                                 <div>
-                                <button className='text-white bg-sammy  px-3 lg:px-10 py-3 rounded-md'>Log In</button>
+                                <button className='text-white bg-sammy  px-3 lg:px-10 py-3 rounded-md' type='submit'>Log In</button>
                                 </div>
                                 <div>
                                     <p className='text-happy'><a href="google.com">Forgot Password?</a></p>

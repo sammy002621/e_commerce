@@ -13,9 +13,10 @@ import CheckOut from './components/CheckOut';
 import WishList from './components/WishList';
 import ProductDetails from './components/ProductDetails';
 import Contacts from './components/Contacts'
+import axios from 'axios';
 function App() {
   
-
+  axios.defaults.baseURL = 'http://localhost:5000/app';
 
 
 
