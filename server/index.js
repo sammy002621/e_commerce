@@ -4,6 +4,9 @@ const port = process.env.PORT;
 const app = express();
 const mongoose = require("mongoose");
 const uri =process.env.URI;
+const bodyParser = require('body-parser')
+
+
 
 
 
@@ -14,8 +17,8 @@ mongoose.connect(uri)
 .catch(()=>console.log("database not connected"))
 
 
-
-
+app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.json());
 app.use('/app',require('../server/routes/route'))
 
 

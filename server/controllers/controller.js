@@ -10,7 +10,7 @@ const test = (req,res)=>{
 const registerUser =  async (req,res)=>{
 try {
     
-const {name,email,password}=req;
+const {name,email,password}=req.body;
 
 const emailExist= await User.findOne({email});
 if(emailExist){
@@ -19,9 +19,9 @@ if(emailExist){
 }
 
 
-const user = await User.create({name,email,password});
+ await User.create({name,email,password});
 
-res.json({user})
+ res.json({message:"user created"})
 
 } catch (error) {
     console.log("error occured:",error)
