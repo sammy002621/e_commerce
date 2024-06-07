@@ -4,6 +4,7 @@ import Header from './Header';
 import HeaderHome from './HeaderHome';
 import { Link } from 'react-router-dom';
 function Signup() {
+
   return (
     <div>
         {/* header */}
@@ -25,9 +26,24 @@ function Signup() {
                         <p className='text-baseline mb-10'>Enter your details below</p>
                         <form action="" className='mt-5'>
                         
-                        <input type="text" placeholder='Name' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full' />
-                        <input type="text"  placeholder='Email or Phone Number' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full'/>
-                            <input type="text" placeholder='Password' className='bg-transparent border-b-2  outline-none pb-2 border-gray-700  mb-10 w-full' />
+                        <input type="text" placeholder='Name' id='name' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full ' onFocus={()=>{
+                          document.getElementById("name").style.borderBottomColor='white'
+                        }
+                      }  onBlur={()=>{
+                        document.getElementById("name").style.borderBottomColor="gray"
+                      }} />
+                        <input type="text"  placeholder='Email or Phone Number' id='email' onFocus={()=>{
+                          document.getElementById("email").style.borderBottomColor='white'
+                        }
+                      }  onBlur={()=>{
+                        document.getElementById("email").style.borderBottomColor="gray"
+                      }}   className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full' />
+                            <input type="text" placeholder='Password' id='password' onFocus={()=>{
+                          document.getElementById("password").style.borderBottomColor='white'
+                        } 
+                      }    onBlur={()=>{
+                        document.getElementById("password").style.borderBottomColor="gray"
+                      }} className='bg-transparent border-b-2  outline-none pb-2 border-gray-700  mb-10 w-full' />
                             <div className=''>
                                 <div className='mb-4'>
                                 <button className='text-white bg-sammy px-10 py-3 rounded-md w-full' type='submit'>Create Account</button>
