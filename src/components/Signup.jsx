@@ -3,16 +3,47 @@ import Footer from './Footer';
 import Header from './Header';
 import HeaderHome from './HeaderHome';
 import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import toast from 'react-hot-toast';
 function Signup() {
   const [userData,setUserData]=useState({
     name:'',
     email:'',
     password:''
   })
+
+  const navigate = useNavigate();
   
 
   const handleSubmit = (e)=>{
     e.preventDefault();
+    const {name,email,password}=userData;
+    try {
+      const data=axios.post('/register',{name,email,password})
+      console.log(data);
+      if(data.error){
+      console.log(data.error);
+      }else{
+        setUserData({
+          name:'',
+          email:'',
+          password:''
+        })
+        
+        
+        toast.success("user created",{
+          icon: '👏',
+          
+        })
+
+        navigate('/login');
+
+      
+      }
+    } catch (error) {
+      
+    }
+    
   }
 
  
@@ -38,20 +69,18 @@ function Signup() {
                         <p className='text-baseline mb-10'>Enter your details below</p>
                         <form action="" className='mt-5' onSubmit={handleSubmit}>
                         
-                        <input type="text" placeholder='Name' id='name' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full ' onChange={(e)=>{
+                        <input type="text" placeholder='Name' id='name' value={userData.name} className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full ' onChange={(e)=>{
                          setUserData({
                           ...userData,
                           name:e.target.value
                          })
-
-                         console.log(userData)
                         }} onFocus={()=>{
                           document.getElementById("name").style.borderBottomColor='white'
                         }
                       }  onBlur={()=>{
                         document.getElementById("name").style.borderBottomColor="gray"  
                       }} />
-                        <input type="text"  placeholder='Email or Phone Number' id='email'  onChange={(e)=>{
+                        <input type="text"  value={userData.email} placeholder='Email or Phone Number' id='email'  onChange={(e)=>{
                          setUserData({
                           ...userData,
                           email:e.target.value
@@ -62,7 +91,7 @@ function Signup() {
                       }  onBlur={()=>{
                         document.getElementById("email").style.borderBottomColor="gray"
                       }}   className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full' />
-                            <input type="text" placeholder='Password' id='password' onChange={(e)=>{
+                            <input type="password" value={userData.password} placeholder='Password' id='password' onChange={(e)=>{
                          setUserData({
                           ...userData,
                           password:e.target.value

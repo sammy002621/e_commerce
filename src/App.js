@@ -1,6 +1,7 @@
 
 
 // import './App.css';
+import React from 'react';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import HomePage from './components/HomePage';
@@ -14,6 +15,7 @@ import WishList from './components/WishList';
 import ProductDetails from './components/ProductDetails';
 import Contacts from './components/Contacts'
 import axios from 'axios';
+import { Toaster } from 'react-hot-toast';
 function App() {
   
   axios.defaults.baseURL = 'http://localhost:5000/app';
@@ -25,9 +27,10 @@ function App() {
 
 
     // me
+    <React.Fragment><Toaster position='top-center' toastOptions={{duration:4000}}/>
     <Routes>
 
-
+      
       <Route path='/' element={<HomePage/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/login' element={<Login/>}/>
@@ -41,6 +44,7 @@ function App() {
       <Route path='/product_details' element={<ProductDetails/>}/>
 
     </Routes> 
+    </React.Fragment>
   );
 }
 
