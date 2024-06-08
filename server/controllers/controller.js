@@ -65,7 +65,7 @@ const loginUser = async (req,res)=>{
        if(checkPassword){
         jwt.sign({id:user._id,name:user.name,email:user.email},process.env.JWT_SECRET,{},(err,token)=>{
               if(err) console.log(err);
-              res.cookie("token:",token).json(user);
+              res.cookie("token",token).json(user);
         })
         
        }else{
@@ -80,7 +80,27 @@ const loginUser = async (req,res)=>{
 
 }
 
+
+const getProfile = (req,res)=>{
+    const {token}=req.cookies;
+    if(token){
+        jwt.verify(token,process.env.JWT_SECRET,{},(err,user)=>{
+            if(err){ 
+                console.error(err);
+                res.status(401).json(error,"Invalid token")
+            }else{
+                return res.json(user)
+            }
+            
+        })
+    }else{
+        res.json(null);
+    }
+
+}
+
 module.exports = {
     registerUser,
-    loginUser
+    loginUser,
+    getProfile
 }
