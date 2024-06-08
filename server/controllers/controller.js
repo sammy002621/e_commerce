@@ -1,6 +1,7 @@
 const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
+const jwt = require("jsonwebtoken")
 
 
 
@@ -62,7 +63,11 @@ const loginUser = async (req,res)=>{
     }else{
        const checkPassword = await bcrypt.compare(password,user.password);
        if(checkPassword){
-        return res.json({user});
+        jwt.sign({id:user._id,name:user.name,email:user.email},process.env.JWT_SECRET,{},(err,token)=>{
+              if(err) console.log(err);
+              res.cookie("token:",token).json(user);
+        })
+        
        }else{
         return res.json({error:"user doesn't exit"});
        }
