@@ -25,6 +25,7 @@ function Login() {
                 password:''
                  });
                  toast.success("user logged in");
+                 navigate('/');
         }
         
         
