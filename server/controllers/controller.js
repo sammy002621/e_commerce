@@ -4,10 +4,7 @@ const saltRounds = 10;
 
 
 
-const test = (req,res)=>{
-    console.log("connected to the frotend");
-    res.json({message:"are you there ?"})
-}
+
 
 const registerUser =  async (req,res)=>{
 try {
@@ -59,13 +56,13 @@ const loginUser = async (req,res)=>{
     const user= await User.findOne({email});
 
     if(!user){
-        return res.json({error:"Sign up to continue"});
-    }else if(!password){
+        return res.json({error:"email is required and should exist"});
+    }if(!password){
         return res.json({error:"password is required"});
     }else{
        const checkPassword = await bcrypt.compare(password,user.password);
        if(checkPassword){
-        return res.json({message:"user logged in"});
+        return res.json({user});
        }else{
         return res.json({error:"user doesn't exit"});
        }
@@ -79,7 +76,6 @@ const loginUser = async (req,res)=>{
 }
 
 module.exports = {
-    test,
     registerUser,
     loginUser
 }

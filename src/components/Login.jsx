@@ -3,16 +3,33 @@ import Footer from './Footer';
 import Header from './Header';
 import HeaderHome from './HeaderHome';
 import axios from 'axios';
+import toast from 'react-hot-toast'
+import { useNavigate } from 'react-router-dom';
 function Login() {
-
+    const navigate = useNavigate();
     const [userData,setUserData]=useState({
         email:'',
         password:'',
     })
 
-    const handleSubmit = (e)=>{
+    const handleSubmit =  async (e)=>{
         e.preventDefault();
-        axios.get('/test')
+        const {email,password}=userData;
+        const{ data} =await axios.post("/login",{email,password});
+        console.log(data);
+        if(data.error) {
+            toast.error(data.error)
+        }else{
+            setUserData({
+                email:'',
+                password:''
+                 });
+                 toast.success("user logged in");
+        }
+        
+        
+        
+        
        
     }
   return (
@@ -35,13 +52,13 @@ function Login() {
                         <h1 className='text-xl lg:text-3xl font-medium mb-4'>Log in to Exclusive</h1>
                         <p className='text-baseline mb-10'>Enter your details below</p>
                         <form action="" className='mt-5' onSubmit={handleSubmit}>
-                            <input type="text" placeholder='Email or Phone Number' className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full' onChange={(e)=>{
+                            <input type="text" placeholder='Email or Phone Number' value={userData.email} className='bg-transparent border-b-2  border-gray-700 outline-none pb-2  mb-10 w-full' onChange={(e)=>{
                                 setUserData({
                                     ...userData,
                                     email:e.target.value
                                 })
                             }} /> 
-                            <input type="text" placeholder='Password' className='bg-transparent border-b-2  outline-none pb-2 border-gray-700  mb-8 w-full' onChange={(e)=>{
+                            <input type="password" placeholder='Password' value={userData.password} className='bg-transparent border-b-2  outline-none pb-2 border-gray-700  mb-8 w-full' onChange={(e)=>{
                                 setUserData({
                                     ...userData,
                                     password:e.target.value
