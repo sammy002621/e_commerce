@@ -23,6 +23,8 @@ if(!password || password.length<6){
     return res.json({error:"password is required and should be atleast six characters"});
 }
 
+
+
 const password1 = await bcrypt.hash(password,saltRounds)
 
 const emailExist= await User.findOne({email});
@@ -50,7 +52,34 @@ if(user){
 
 }
 
+
+const loginUser = async (req,res)=>{
+    const {email,password}=req.body;
+
+    const user= await User.findOne({email});
+
+    if(!user){
+        return res.json({error:"Sign up to continue"});
+    }else if(!password){
+        return res.json({error:"password is required"});
+    }else{
+       const checkPassword = await bcrypt.compare(password,user.password);
+       if(checkPassword){
+        return res.json({message:"user logged in"});
+       }else{
+        return res.json({error:"user doesn't exit"});
+       }
+    }
+
+
+    
+
+ 
+
+}
+
 module.exports = {
     test,
-    registerUser
+    registerUser,
+    loginUser
 }
