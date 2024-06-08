@@ -1,4 +1,6 @@
 const User = require("../models/user");
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 
 
@@ -18,8 +20,10 @@ if(!name){
 
 
 if(!password || password.length<6){
-    return res.json({error:"password is required"});
+    return res.json({error:"password is required and should be atleast six characters"});
 }
+
+const password1 = await bcrypt.hash(password,saltRounds)
 
 const emailExist= await User.findOne({email});
 if(emailExist){
@@ -28,7 +32,10 @@ if(emailExist){
 }
 
 
- const user = await User.create({name,email,password});
+
+
+
+ const user = await User.create({name,email,password:password1});
 if(user){
     console.log("user created");
     return res.json(user)
