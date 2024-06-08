@@ -1,9 +1,11 @@
-import React from 'react'
+import React ,{useContext} from 'react'
 import Header from './Header'
 import HeaderHome from './HeaderHome'
 import Footer from './Footer'
+import { UserContext } from '../context/userContext'
 
 function Account() {
+    const {user}=useContext(UserContext);
   return (
     <div>
         <Header/>
@@ -14,7 +16,7 @@ function Account() {
           <div className='mx-2'>/</div>
           <div><span className='hidden sm:inline'>My</span> Account</div>
           </div>
-          <div className='ml-4'><span className='hidden sm:inline'>Welcome!</span><span className='pl-1 text-happy'>Md Rimel</span></div>
+          <div className='ml-4'><span className='hidden sm:inline'>Welcome!</span><span className='pl-1 text-happy'>{user.name}</span></div>
         </div>
 
         <div className='xl:flex xl:mb-40  2xl:mx-60'>
@@ -25,16 +27,16 @@ function Account() {
                    <div className='md:flex'>
                     <div className='mb-4 flex-1 sm:mr-2 '>
                         <p className='mb-2'>First Name</p>
-                        <input type="text" placeholder='Md' className='px-5 py-3 rounded-sm bg-happy w-full' />
+                        <input type="text" placeholder={`${user.name}`} className='px-5 py-3 rounded-sm bg-happy w-full' />
                     </div>
                     <div className='mb-4 flex-1'><p className='mb-2'>Last Name</p>
-                    <input type="text" placeholder='Rimel' className='px-5 py-3 rounded-sm bg-happy w-full' />
+                    <input type="text" placeholder={`${user.name}`} className='px-5 py-3 rounded-sm bg-happy w-full' />
                     </div>
                    </div>
                    <div className='md:flex'>
    <div className='mb-4 flex-1 md:mr-2'>
     <p className='mb-2'>Email</p>
-    <input type="text" placeholder='rimel1111@gmail.com' className='px-5 py-3 rounded-sm bg-happy w-full' />
+    <input type="text" placeholder={`${user.email}`} className='px-5 py-3 rounded-sm bg-happy w-full' />
    </div>
    <div className='mb-4 flex-1'>
     <p className='mb-2'>Address</p>

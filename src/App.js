@@ -16,9 +16,11 @@ import ProductDetails from './components/ProductDetails';
 import Contacts from './components/Contacts'
 import axios from 'axios';
 import { Toaster } from 'react-hot-toast';
+import { UserContextProvider } from './context/userContext';
 function App() {
   
   axios.defaults.baseURL = 'http://localhost:5000/app';
+  axios.defaults.withCredentials=true;
 
 
 
@@ -27,7 +29,9 @@ function App() {
 
 
     // me
-    <React.Fragment><Toaster position='top-center' toastOptions={{duration:4000}}/>
+    <React.Fragment>
+      <UserContextProvider>
+      <Toaster position='top-center' toastOptions={{duration:4000}}/>
     <Routes>
 
       
@@ -44,7 +48,9 @@ function App() {
       <Route path='/product_details' element={<ProductDetails/>}/>
 
     </Routes> 
+    </UserContextProvider>
     </React.Fragment>
+   
   );
 }
 
