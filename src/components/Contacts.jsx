@@ -1,9 +1,39 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Header from './Header'
 import HeaderHome from './HeaderHome'
 import Footer from './Footer'
+import axios from 'axios'
+import toast from 'react-hot-toast'
 
 function Contacts() {
+    const [contacts,setContacts]=useState({
+        name:'',
+        email:'',
+        phone:'',
+        message:''
+    })
+
+    const createContacts = async(e)=>{
+    e.preventDefault();
+      try {
+        const {name,email,phone,message}=contacts;
+        const {data}=await axios.post('/createContact',{name,email,phone,message});
+        console.log(data.contact);
+        if(data.error){
+      toast.error(data.error)
+        }else{
+            setContacts({
+                name:'',
+                email:'',
+                phone:'',
+                message:''
+            })
+            toast.success("Contact registered")
+        }
+      } catch (error) {
+         console.error(error)
+      }
+    }
   return (
     <div>
         <Header/>
@@ -20,14 +50,30 @@ function Contacts() {
     <div className='lg:flex lg:items-baseline mb-20 xl:mb-40 2xl:mx-40 2xl:px-10 '>
        <div className='2xl:mx-20 xl:mx-10 mx-5 shadow-sm  lg:mr-20'>
             <div>
-                <form action="">
+                <form action="" onSubmit={createContacts}>
                     <div className=' md:flex justify-center  '>
-                         <div className='flex-1'><input type="text" placeholder='Your Name *' className='pl-4 py-2 rounded-sm mb-4 md:w-[95%] md:mr-2 w-full' /></div>
-                         <div className='flex-1'><input type="text" placeholder='Your Email *'  className='pl-4  py-2 rounded-sm mb-4 md:w-[95%] md:mr-2 w-full '/></div>
-                         <div className='flex-1'><input type="text" placeholder='Your Phone *'  className='pl-4 py-2 rounded-sm mb-4 md:w-full w-full '/></div>
+                         <div className='flex-1'><input type="text" value={contacts.name} placeholder='Your Name *' className='pl-4 py-2 rounded-sm mb-4 md:w-[95%] md:mr-2 w-full' onChange={(e)=>{
+                            setContacts(
+                               {...contacts,name:e.target.value}
+                            )
+                         }} /></div>
+                         <div className='flex-1'><input type="text" value={contacts.email} placeholder='Your Email *'  className='pl-4  py-2 rounded-sm mb-4 md:w-[95%] md:mr-2 w-full ' onChange={(e)=>{
+                            setContacts(
+                               {...contacts,email:e.target.value}
+                            )
+                         }}/></div>
+                         <div className='flex-1'><input type="text" value={contacts.phone} placeholder='Your Phone *'  className='pl-4 py-2 rounded-sm mb-4 md:w-full w-full ' onChange={(e)=>{
+                            setContacts(
+                               {...contacts,phone:e.target.value}
+                            )
+                         }}/></div>
                     </div>
                     <div >
-                    <div><input type="text" placeholder='Your Message *'  className='pl-4 py-2 rounded-sm mb-4  pb-60 w-full '/></div>
+                    <div><input type="text" placeholder='Your Message *' value={contacts.message} className='pl-4 py-2 rounded-sm mb-4  pb-60 w-full ' onChange={(e)=>{
+                            setContacts(
+                               {...contacts,message:e.target.value}
+                            )
+                         }}/></div>
 
                     </div>
                 <div className='flex justify-end  md:mx-0'>

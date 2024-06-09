@@ -1,14 +1,18 @@
-import React,{useState} from 'react'
+import React,{useState,useContext} from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import { Link, NavLink } from 'react-router-dom';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
+import { UserContext } from '../context/userContext';
 
 
 function HeaderHome() {
 
   const [open,setOpen]=useState(false);
+  const {user}=useContext(UserContext);
+  const userName = user?.name || 'Guest';
+  const userLetter=userName[0];
   
   return (
     <header className='border-b-2 px-5 lg:px-10  pt-10 pb-5 w-full overflow-hidden'>
@@ -91,7 +95,7 @@ function HeaderHome() {
  
           </div>
 
-          <div className='lg:flex justify-between w-1/12 hidden items-start lg:w-auto   '>
+          <div className='lg:flex justify-between w-1/12 hidden items-center lg:w-auto   '>
           <Link to={'/wishlist'} className='mr-4 lg:relative'>
           <FavoriteBorderIcon />
           <div className='absolute text-white bg-sammy rounded-3xl  top-[-7px] right-[-5px] w-5 h-6 text-center  '>4</div>
@@ -103,8 +107,8 @@ function HeaderHome() {
             <div className='absolute text-white bg-sammy rounded-3xl  top-[-7px] right-[-5px] w-5 h-6 text-center  '>4</div>
 
           </Link>
-          <Link to={'/account'}>
-            <PersonIcon/>
+          <Link to={'/account'} className='text-xl rounded-full border-gray-400 border-2 px-2 capitalize pb-[2px] hover:border-white'>
+            {userLetter}
           </Link>
         
         
