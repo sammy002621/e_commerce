@@ -112,26 +112,37 @@ const getUsers = async (req,res)=>{
 const createContact = async (req,res)=>{
     const {name,email,phone,message}=req.body;
     if(!name){
+    console.log("name is required")
     return res.json({error:"name is required"})
     }
 
     if(!email){
+        console.log("email is required")
         return res.json({error:"email is required"})
     }
 
     if(!message){
+        console.log("message is required")
         return res.json({error:"message is required"})
     }
 
     const contactEmailExist = await Contact.findOne({email})
     const contactPhoneExist = await Contact.findOne({phone})
 
-    if(contactEmailExist || contactPhoneExist) return res.json({error:"contact already exists"})
+    if(contactEmailExist || contactPhoneExist) {
+        
+        console.log("contact already exists")
+        return res.json({error:"contact already exists"})}
    
 
     const contact = await Contact.create({name,email,phone,message})
+    if(contact){
+ console.log("contact created")
+ return res.json({contact})
+    }
 
-    res.json(contact)
+
+    
 }
 
 module.exports = {
