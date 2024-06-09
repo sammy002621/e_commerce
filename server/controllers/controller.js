@@ -2,6 +2,7 @@ const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 const jwt = require("jsonwebtoken")
+const Contact = require("../models/contact");
 
 
 
@@ -98,9 +99,45 @@ const getProfile = (req,res)=>{
     }
 
 }
+const getUsers = async (req,res)=>{
+    try {
+        const users = await User.find();
+        res.json(users);
+    } catch (error) {
+       console.error(error) 
+    }
+}
+
+
+const createContact = async (req,res)=>{
+    const {name,email,phone,message}=req.body;
+    if(!name){
+    return res.json({error:"name is required"})
+    }
+
+    if(!email){
+        return res.json({error:"email is required"})
+    }
+
+    if(!message){
+        return res.json({error:"message is required"})
+    }
+
+    const contactEmailExist = await Contact.findOne({email})
+    const contactPhoneExist = await Contact.findOne({phone})
+
+    if(contactEmailExist || contactPhoneExist) return res.json({error:"contact already exists"})
+   
+
+    const contact = await Contact.create({name,email,phone,message})
+
+    res.json(contact)
+}
 
 module.exports = {
     registerUser,
     loginUser,
-    getProfile
+    getProfile,
+    getUsers,
+    createContact
 }
