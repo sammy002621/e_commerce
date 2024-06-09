@@ -107,7 +107,7 @@ function HeaderHome() {
             <div className='absolute text-white bg-sammy rounded-3xl  top-[-7px] right-[-5px] w-5 h-6 text-center  '>4</div>
 
           </Link>
-          <Link to={'/account'} className='text-xl rounded-full border-gray-400 border-2 px-2 capitalize pb-[2px] hover:border-white'>
+          <Link to={'/account'} className='text-xl rounded-full border-gray-400 border-2 px-2 capitalize pb-[2px] hover:border-white text-white'>
             {userLetter}
           </Link>
         
