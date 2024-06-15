@@ -17,6 +17,7 @@ import Contacts from './components/Contacts'
 import axios from 'axios';
 import { Toaster } from 'react-hot-toast';
 import { UserContextProvider } from './context/userContext';
+import Dashboard from './components/Dashboard';
 function App() {
   
   axios.defaults.baseURL = 'http://localhost:5000/app';
@@ -46,6 +47,7 @@ function App() {
       <Route path='/checkout' element={<CheckOut/>}/>
       <Route path='/wishlist' element={<WishList/>}/>
       <Route path='/product_details' element={<ProductDetails/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
 
     </Routes> 
     </UserContextProvider>

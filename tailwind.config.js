@@ -18,7 +18,9 @@ module.exports = {
         happy:'#F5F5F5',
         mama:'#363738',
         hover:'#E07575',
-        button:'#00FF66'
+        button:'#00FF66',
+        sidebar:'#F1F2F7',
+        burger:'#FFE6CC'
         
      
       },
