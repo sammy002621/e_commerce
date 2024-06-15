@@ -54,19 +54,19 @@ function Dashboard() {
 <div className='mx-14 text-xl mb-4 font-medium'>MENU</div>
 <div className='bg-gray-700 mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer '>
     <img src="/chart.svg" alt="" className='w-[30px]' />
-    <p className='text-xl'>DashBoard</p>
+    <p className='text-lg'>DashBoard</p>
    </div>
    <div className=' mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer hover:bg-gray-300'>
     <img src="/dashboard_cart.svg" alt="" className='w-[30px]' />
-    <p className='text-xl'>Food Order</p>
+    <p className='text-lg'>Food Order</p>
    </div>
    <div className=' mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer hover:bg-gray-300'>
     <img src="/document.svg" alt="" className='w-[30px]' />
-    <p className='text-xl'>Manage Menu</p>
+    <p className='text-lg'>Manage Menu</p>
    </div>
    <div className=' mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer hover:bg-gray-300'>
     <img src="/chat.svg" alt="" className='w-[30px]' />
-    <p className='text-xl'>Customer Review</p>
+    <p className='text-lg'>Customer Review</p>
    </div>
      </div>
      {/* others */}
