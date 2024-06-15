@@ -20,7 +20,9 @@ module.exports = {
         hover:'#E07575',
         button:'#00FF66',
         sidebar:'#F1F2F7',
-        burger:'#FFE6CC'
+        burger:'#FFE6CC',
+        button2:'#DDE4F0'
+        
         
      
       },
@@ -28,7 +30,10 @@ module.exports = {
         happy:'#DB4444',
         mama:'#363738',
         sammy:'#00FF66',
-        button:'#00FF66'
+        button:'#00FF66',
+        dashboard:'#1F384C',
+        button_color:'#5A6ACF'
+        
       },
       backgroundImage: {
         footer_texture: "url('/public/body_image.png')",
