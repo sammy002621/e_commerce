@@ -25,7 +25,7 @@ function Dashboard() {
             B
         </div>
     </div>
-    <div className='w-[60%] pl-4  '>
+    <div className='w-[40%] pl-4  '>
        <select name="" id="" className=' bg-transparent text-lg '>
         <option value="Burger" className=''>Delicious Burger</option>
         <option value="Pizza">Pizza</option>
@@ -45,32 +45,44 @@ function Dashboard() {
     {/* sidebar */}
     <section className='w-[19.3%] bg-sidebar h-[90dvh] pt-14'>
         {/* main */}
-     <div>
-<div>MENU</div>
-<div className='bg-gray-700 mx-5 flex gap-x-4 items-center w-[75%] py-3 px-7 rounded-md'>
+     <div className='mb-4'>
+<div className='mx-14 text-xl mb-4 font-medium'>MENU</div>
+<div className='bg-gray-700 mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer '>
     <img src="/chart.svg" alt="" className='w-[30px]' />
-    <p>DashBoard</p>
+    <p className='text-xl'>DashBoard</p>
    </div>
-   <div className=' mx-5 flex gap-x-4 items-center w-[75%] py-3 px-7 rounded-md'>
+   <div className=' mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer hover:bg-gray-300'>
     <img src="/dashboard_cart.svg" alt="" className='w-[30px]' />
-    <p>Food Order</p>
+    <p className='text-xl'>Food Order</p>
    </div>
-   <div className=' mx-5 flex gap-x-4 items-center w-[75%] py-3 px-7 rounded-md'>
+   <div className=' mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer hover:bg-gray-300'>
     <img src="/document.svg" alt="" className='w-[30px]' />
-    <p>Manage Menu</p>
+    <p className='text-xl'>Manage Menu</p>
    </div>
-   <div className=' mx-5 flex gap-x-4 items-center w-[75%] py-3 px-7 rounded-md'>
+   <div className=' mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer hover:bg-gray-300'>
     <img src="/chat.svg" alt="" className='w-[30px]' />
-    <p>Customer Review</p>
+    <p className='text-xl'>Customer Review</p>
    </div>
      </div>
      {/* others */}
      <div>
-<div>OTHERS</div>
-<div className=' mx-12'>Settings</div>
-<div className='mx-12'>Payment</div>
-<div className='mx-12'>Accounts</div>
-<div className='mx-12'>Help</div>
+<div className='mb-2 mx-14 text-xl'>OTHERS</div>
+<div className=' mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer hover:bg-gray-300'>
+<img src="/settings.svg" alt="" className='w-[30px]' />
+    <p className='text-xl'>Settings</p>
+    </div>
+<div className='mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer hover:bg-gray-300'>
+<img src="/wallet.svg" alt="" className='w-[30px]' />
+    <p className='text-xl'>Payment</p>
+    </div>
+<div className='mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer hover:bg-gray-300'>
+<img src="/profile.svg" alt="" className='w-[30px]' />
+    <p className='text-xl'>Accounts</p>
+</div>
+<div className='mx-5 flex gap-x-4 items-center w-[75%] py-4 px-7 rounded-md mb-2 hover:cursor-pointer hover:bg-gray-300'>
+<img src="/information.svg" alt="" className='w-[30px]' />
+    <p className='text-xl'>Help</p>
+</div>
      </div>
     </section>
 
