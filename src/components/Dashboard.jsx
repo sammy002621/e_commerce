@@ -142,12 +142,12 @@ function Dashboard() {
 
 
 <div className='flex'>
-<div className='bg-blue-500'>div 3</div>
+<div className='bg-blue-500 w-[30%]'>div 3</div>
 
 {/* most ordered food */}
 
-<div className='bg-orange-400'> div 4</div>
-<div className='bg-violet-500'>div 5</div>
+<div className='bg-orange-400 w-[30%]'> div 4</div>
+<div className='bg-violet-500 w-[40%]'>div 5</div>
 </div>
 {/* rating */}
 
