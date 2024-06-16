@@ -2,13 +2,15 @@
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ChartsOverviewDemo from './ChartsOverviewDemo';
 import { PieChart } from './PieChart';
 import { orderedData } from '../constants/ordered';
+import OrderedFood from './OrderedFood';
 
 function Dashboard() {
   return (
-    <main className='bg-white h-[120vh] font-poppins overflow-auto'>
+    <main className='bg-white h-[200vh] font-poppins overflow-auto'>
       {/* header */}
       <header className='flex border-b-2 fixed top-0 right-0 left-0 z-[999px] bg-white shadow-md'>
         <div className='w-[20%] bg-sidebar py-8 pl-14'>
@@ -134,56 +136,74 @@ function Dashboard() {
           </div>
 
           <div className='flex'>
-            <div className='bg-blue-500 w-[30%] pt-10 px-10'>
-              <p className='text-xl text-black mb-5'>Your Rating</p>
-              <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur</p>
-              <div>
-                <div className='bg-hygiene h-[100px] w-[100px] rounded-full text-white flex items-center justify-center'>
+            <div className=' w-[30%] pt-10 pl-10 pr-3'>
+              <p className='text-xl text-black mb-3'>Your Rating</p>
+              <p className='text-lg'>Lorem ipsum dolor sit amet connecteur</p>
+              <div className='relative'>
+                <div className='bg-hygiene h-[180px] w-[180px] rounded-full text-white flex items-center justify-center mb-1 absolute top-[50px] right-[200px]'>
                   <div>
                     <p className='text-center'>85%</p>
                     <p>Hygiene</p>
                   </div>
                 </div>
 
-                <div className=' bg-hygiene h-[100px] w-[100px] rounded-full text-white flex items-center justify-center'>
-                  <div>
-                    <p>85%</p>
+                <div className=' bg-packaging h-[200px] w-[200px] rounded-full text-white flex items-center justify-center mb-1  absolute top-[170px] right-[200px]'>
+                  <div className=''>
+                    <p className='text-center'>85%</p>
                     <p>Food Taste</p>
                   </div>
                 </div>
-                <div className='bg-hygiene h-[100px] w-[100px] rounded-full text-white flex items-center justify-center'>
+                <div className='bg-food_taste h-[250px] w-[250px] rounded-full text-white flex items-center justify-center absolute right-0 top-10'>
                   <div>
-                    <p>92%</p>
+                    <p className='text-center'>92%</p>
                     <p>Packaging</p>
                   </div>
                 </div>
                 <div></div>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                {/* <img src="/hygiene_bar.svg" alt="" />
+                <img src="/packaging_circle.svg" alt="" />
+                <img src="/food_taste_circle.svg" alt="" className='absolute top-[197px] right-[230px] h-[220px]' /> */}
               </div>
             </div>
 
             {/* most ordered food */}
-            <div className='bg-orange-400 w-[30%]'> 
+            <div className=' w-[30%]  border-l-2 border-r-2'> 
             <p>Most Ordered Food</p>
             <p>Adipiscing elit, sed do eiusmod tempor</p>
             {
                 orderedData.map((data)=>{
-            return <div key={data.id} className='flex '>
-<div>
-<img src={data.image} alt={data.name} />
-</div>
-<p>{data.name}</p>
-<p>{data.price}</p>
-            </div>
+            return <OrderedFood id={data.id} name={data.name} image={data.image} price={data.price}/>
                 }
                     
                 )
             }
             
             </div>
-            <div className='bg-violet-500 w-[40%]'>div 5</div>
+            <div className=' w-[40%] mt-10 pl-5'>
+            <div className='flex justify-between items-start'>
+                <p className='text-xl text-black'>Order Time</p>
+                <button className='border-button2 border-2 py-2 px-5 rounded-lg text-xl text-button_color font-medium hover:cursor-pointer mr-6'>View Report</button>
+              </div>
+
+              <p className='font-medium text-2xl text-black'>2.568</p>
+              <div className='flex items-center gap-x-2 mt-3'>
+                <ArrowDownwardIcon style={{ color: "red" }} />
+                {/* text */}
+                <p className='text-lg'><span className='text-red-700'>2.1%</span> vs last week</p>
+                
+              </div>
+              <p className='mt-5 text-xl mb-10'>Sales from 1-12 Dec, 2020</p>
+              <div className='flex items-start gap-x-6 mt-3 mb-2'>
+                <div className='flex gap-x-2'>
+                  <img src="/last_6_days.svg" alt="" />
+                  <p>Last 6 days</p>
+                </div>
+                <div className='flex gap-x-2'>
+                  <img src="/last_week.svg" alt="" />
+                  <p>Last Week</p>
+                </div>
+              </div>
+            </div>
           </div>
           {/* rating */}
           {/* order */}

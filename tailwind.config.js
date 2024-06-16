@@ -22,7 +22,10 @@ module.exports = {
         sidebar:'#F1F2F7',
         burger:'#FFE6CC',
         button2:'#DDE4F0',
-        hygiene:'#6463D6'
+        hygiene:'#6463D6',
+        packaging:'#2FBFDE',
+        food_taste:'#F99C30'
+        
         
         
      
