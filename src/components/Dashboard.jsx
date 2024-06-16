@@ -128,7 +128,7 @@ function Dashboard() {
             <div className=' w-[40%] border-b-2 px-10'>
               <div className='flex justify-between items-start'>
                 <p className='text-xl text-black'>Order Time</p>
-                <button className='border-button2 border-2 py-2 px-5 rounded-lg text-xl text-button_color font-medium hover:cursor-pointer mr-6'>View Report</button>
+                <button className='border-button2 border-1 py-2 px-5 rounded-lg text-xl text-button_color font-medium hover:cursor-pointer mr-6'>View Report</button>
               </div>
               <p className='mt-5 text-xl mb-10'> From 1-6 Dec, 2020</p>
               <PieChart />
