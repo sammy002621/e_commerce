@@ -21,7 +21,8 @@ module.exports = {
         button:'#00FF66',
         sidebar:'#F1F2F7',
         burger:'#FFE6CC',
-        button2:'#DDE4F0'
+        button2:'#DDE4F0',
+        hygiene:'#6463D6'
         
         
      
