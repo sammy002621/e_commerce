@@ -100,7 +100,7 @@ function Dashboard() {
 
           <div className='flex w-full mt-10'>
             {/* revenue */}
-            <div className=' w-[60%] border-b-2 border-r-2'>
+            <div className=' w-[65%] border-b-2 border-r-2'>
               <div className='flex justify-between items-start'>
                 <p className='text-xl text-black'>Revenue</p>
                 <button className='border-button2 border-2 py-2 px-5 rounded-lg text-xl text-button_color font-medium hover:cursor-pointer mr-6'>View Report</button>
@@ -126,7 +126,7 @@ function Dashboard() {
               </div>
             </div>
             {/* order time */}
-            <div className=' w-[40%] border-b-2 px-10'>
+            <div className=' w-[35%] border-b-2 px-10'>
               <div className='flex justify-between items-start'>
                 <p className='text-xl text-black'>Order Time</p>
                 <button className='border-button2 border-1 py-2 px-5 rounded-lg text-xl text-button_color font-medium hover:cursor-pointer mr-6'>View Report</button>
@@ -137,7 +137,7 @@ function Dashboard() {
           </div>
 
           <div className='flex'>
-            <div className=' w-[30%] pt-10 pl-10 pr-3'>
+            <div className=' w-[35%] pt-10 pl-10 pr-3'>
               <p className='text-xl text-black mb-3'>Your Rating</p>
               <p className='text-lg'>Lorem ipsum dolor sit amet connecteur</p>
               <div className='relative'>
@@ -168,9 +168,9 @@ function Dashboard() {
             </div>
 
             {/* most ordered food */}
-            <div className=' w-[30%]  border-l-2 border-r-2'> 
-            <p>Most Ordered Food</p>
-            <p>Adipiscing elit, sed do eiusmod tempor</p>
+            <div className=' w-[30%]  pt-10 pl-10 border-l-2 border-r-2'> 
+            <p className='text-xl text-black mb-3'>Most Ordered Food</p>
+            <p className='mt-5 text-lg mb-10'>Adipiscing elit, sed do eiusmod tempor</p>
             {
                 orderedData.map((data)=>{
             return <OrderedFood id={data.id} name={data.name} image={data.image} price={data.price}/>
@@ -180,7 +180,7 @@ function Dashboard() {
             }
             
             </div>
-            <div className=' w-[40%] mt-10 pl-5'>
+            <div className=' w-[35%] mt-10 pl-5'>
             <div className='flex justify-between items-start'>
                 <p className='text-xl text-black'>Order Time</p>
                 <button className='border-button2 border-2 py-2 px-5 rounded-lg text-xl text-button_color font-medium hover:cursor-pointer mr-6'>View Report</button>
