@@ -7,6 +7,7 @@ import ChartsOverviewDemo from './ChartsOverviewDemo';
 import { PieChart } from './PieChart';
 import { orderedData } from '../constants/ordered';
 import OrderedFood from './OrderedFood';
+import LineGraph from './LineChart'
 
 function Dashboard() {
   return (
@@ -193,7 +194,8 @@ function Dashboard() {
                 
               </div>
               <p className='mt-5 text-xl mb-10'>Sales from 1-12 Dec, 2020</p>
-              <div className='flex items-start gap-x-6 mt-3 mb-2'>
+              <LineGraph/>
+              <div className='flex items-start gap-x-6 mt-3 mb-2 ml-2'>
                 <div className='flex gap-x-2'>
                   <img src="/last_6_days.svg" alt="" />
                   <p>Last 6 days</p>
