@@ -11,7 +11,7 @@ import LineGraph from './LineChart'
 
 function Dashboard() {
   return (
-    <main className='bg-white  h-[140vh] font-poppins overflow-auto'>
+    <main className='bg-white  h-[145vh] font-poppins overflow-auto'>
       {/* header */}
       <header className='flex border-b-2 fixed top-0 right-0 left-0 z-[999px] bg-white shadow-md'>
         <div className='w-[20%] bg-sidebar py-8 pl-14'>
@@ -29,8 +29,8 @@ function Dashboard() {
         </div>
         <div className='w-[25%] flex mx-10 mt-4'>
           <div className='w-[20%] flex justify-end'>
-            <div className=' bg-burger w-[40px] ml-4 h-[40px] object-cover rounded-full pl-3 text-xl pt-[5px]'>
-              {/* <img src="/burger.jpg" alt="" className='object-contain bg-transparent' /> */}
+            <div className=' bg-burger w-[40px] ml-4 h-[40px] object-cover rounded-full pl-3 text-xl pt-[5px] relative'>
+              {/* <img src="/burger.jpeg" alt="" className='w-full absolute top-1 right-1' /> */}
               B
             </div>
           </div>
@@ -126,7 +126,7 @@ function Dashboard() {
               </div>
             </div>
             {/* order time */}
-            <div className=' w-[35%] border-b-2 pl-10'>
+            <div className=' w-[35%] border-b-2 pl-10 pb-3'>
               <div className='flex justify-between items-start'>
                 <p className='text-xl text-black'>Order Time</p>
                 <button className='border-button2 border-2 py-2 px-5 rounded-lg text-xl text-button_color font-medium hover:cursor-pointer '>View Report</button>

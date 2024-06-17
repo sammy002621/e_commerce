@@ -7,19 +7,19 @@ export const orderedData =     [
     },
     {
         id:2,
-        image:"/salad.jpeg",
+        image:"/chicken_noodles.jpeg",
         name:"Chicken Noodles",
         price:"IDR 75.000"
     },
     {
         id:3,
-        image:"/salad.jpeg",
+        image:"/smoothie_fruits.jpeg",
         name:"Smoothie Fruits",
         price:"IDR 45.000"
     },
     {
         id:4,
-        image:"/salad.jpeg",
+        image:"/chicken_wings.jpeg",
         name:"Hot Chicken Wings",
         price:"IDR 45.000"
     },
