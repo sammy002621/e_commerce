@@ -11,7 +11,7 @@ import LineGraph from './LineChart'
 
 function Dashboard() {
   return (
-    <main className='bg-white  h-[145vh] font-poppins overflow-auto'>
+    <main className='bg-white  h-[145vh] font-roboto overflow-auto'>
       {/* header */}
       <header className='flex border-b-2 fixed top-0 right-0 left-0 z-[999px] bg-white shadow-md'>
         <div className='w-[20%] bg-sidebar py-8 pl-14'>
