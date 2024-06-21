@@ -8,7 +8,7 @@ function EnhnaceYourMusic() {
                     <div className='flex-1  '>
                         {/* categories_music_enhance */}
                         <div className='text-sammy mt-3 mb-5'>
-                            categories
+                            categories  and shopping
                         </div>
                         <div className='text-white text-lg lg:text-4xl font-medium lg:w-6/12 mb-7'>
                             Enhance Your Music Experience
