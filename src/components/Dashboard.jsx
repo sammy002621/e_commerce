@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
@@ -8,10 +8,20 @@ import { PieChart } from './PieChart';
 import { orderedData } from '../constants/ordered';
 import OrderedFood from './OrderedFood';
 import LineGraph from './LineChart'
+import { BarLoader, BeatLoader } from 'react-spinners';
+
+
+
+
 
 function Dashboard() {
+
+
+
   return (
-    <main className='bg-white  h-[145vh] font-roboto overflow-auto'>
+    <div className='h-[100vh] flex justify-center items-center'>
+    <BarLoader color="blue" />
+    {/* <main className='bg-white  h-[145vh] font-roboto overflow-auto'>
       {/* header */}
       <header className='flex border-b-2 fixed top-0 right-0 left-0 z-[999px] bg-white shadow-md'>
         <div className='w-[20%] bg-sidebar py-8 pl-14'>
@@ -214,6 +224,8 @@ function Dashboard() {
         </section>
       </div>
     </main>
+    </div>
+    
   )
 }
 
