@@ -22,7 +22,7 @@ function HeaderHome() {
             <h1 className='font-semibold text-xl hidden sm:flex '><Link to='/'>Exclusive</Link></h1>
         
         {/* the middle side */}
-        <ul className='  w-full md:w-3/6  sm:w-1/3
+        <ul className='  w-full md:w-3/6  sm:w-1/2 
       flex justify-end 
         '>
           <section className='flex justify-between  md:pl-0 w-full sm:w-10/12 md:w-11/12 lg:w-11/12 lg:px-8 md:px-0   mx-auto md:mx-0   '>

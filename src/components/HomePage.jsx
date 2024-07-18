@@ -19,7 +19,7 @@ function HomePage() {
         {/* body */}
         <div className='flex px-5 md:px-10 lg:px-40   justify-between'>
             {/* the right side */}
-            <div className=' hidden sm:inline lg:w-1/5 pt-10 md:pr-2 '>
+            <div className=' hidden sm:inline lg:w-1/5 pt-10 md:pr-2 mr-2 '>
     <div className='flex justify-between mb-5'>
         <div>Woman's Fashion</div>
         <div className='pr-2 lg:pr-10'><ChevronRightIcon/></div>
@@ -55,7 +55,7 @@ function HomePage() {
             {/* the left side */}
 
             <div className=' w-full lg:w-4/5  pt-10 md:mr-4 ' >
-                <div className='  text-white  bg-black w-full  md:ml-8 px-5  '>
+                <div className='  text-white  bg-black w-full  md:ml-8 px-5 mx-auto sm:mx-3  '>
                 <div className='flex  pt-8 justify-center'>
                   <div className=' pt-9  w-full '>
                   <div className='flex items-center w-full  lg:w-5/12  mb-5  '>
@@ -193,7 +193,7 @@ function HomePage() {
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className=' ml-20 md:ml-5'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/chair.svg" alt="" />
                         </div>
                         <div>
@@ -234,7 +234,7 @@ function HomePage() {
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className=' ml-20 md:ml-5'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/keyboard.svg" alt="" />
                         </div>
                         <div>

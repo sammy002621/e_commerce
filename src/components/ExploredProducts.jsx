@@ -86,7 +86,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className=' ml-20 md:ml-5'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/chair.svg" alt="" />
                         </div>
                         <div>
@@ -127,7 +127,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className=' ml-20 md:ml-5'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/keyboard.svg" alt="" />
                         </div>
                         <div>
@@ -276,7 +276,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-20 md:ml-10'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/gamer.svg" alt="" />
                         </div>
                         <div>
@@ -324,7 +324,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-20 md:ml-10'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/chair.svg" alt="" />
                         </div>
                         <div>
@@ -370,7 +370,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-20 md:ml-10'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/keyboard.svg" alt="" />
                         </div>
                         <div>
@@ -416,7 +416,7 @@ Our Products
                     </div>
                     </div>
                     <div className='flex items-start mt-2 justify-between'>
-                        <div className='ml-20 md:ml-10'>
+                        <div className='ml-20 md:ml-5'>
                             <img src="/television.svg" alt="" />
                         </div>
                         <div>

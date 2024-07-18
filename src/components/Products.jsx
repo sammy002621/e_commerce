@@ -12,19 +12,24 @@ function Products() {
     let [product1_price,setProduct1Price]=useState(650);
     let [product2_price,setProduct2Price]=useState(1100);
     let[subTotal,setSubTotal]=useState(value);
+    let [total1,setTotal1] = useState(product1*650);
+    let [total2,setTotal2] = useState(product2*550);
 
     const increment1 = ()=>{
+      // we have an initial state and then on the increment we take the initial state and 
 
             setProduct1(prevState=>prevState+1);
-            setSubTotal(650*product1+product2*550);
+            setTotal1(prev => prev+650);
+            setSubTotal(prev => prev + 650);
         
     }
     const decrement1 = ()=>{
-        if(product1<=0){
+        if(product1<=1){
 
         }else{
             setProduct1(prevState=>prevState-1);
-            setSubTotal(650*product1+product2*550);
+            setTotal1(prev => prev-650);
+            setSubTotal(prev => prev-650);
         }
         
     }
@@ -33,15 +38,17 @@ function Products() {
     const increment2 = ()=>{
 
         setProduct2(prevState=>prevState+1);
-        setSubTotal(650*product1+product2*550);
+        setTotal2(prev => prev+550);
+        setSubTotal(prev => prev+550);
     
 }
 const decrement2 = ()=>{
-    if(product2<=0){
+    if(product2<=1){
 
     }else{
         setProduct2(prevState=>prevState-1);
-        setSubTotal(650*product1+product2*550);
+        setTotal2(prev =>prev-550);
+        setSubTotal(prev => prev-550);
     }
     
 }
@@ -84,7 +91,7 @@ const decrement2 = ()=>{
                 </div>
             </div>
           </div>
-          <div className=' pl-2  w-[70px]'>$650</div>
+          <div className=' pl-2  w-[70px]'>${total1}</div>
 
 
 
@@ -129,7 +136,7 @@ const decrement2 = ()=>{
                     <div onClick={decrement2} className=''><button><KeyboardArrowDownIcon/></button></div>
                 </div>
             </div></div>
-          <div className=' w-[70px]'>$1100</div>
+          <div className=' w-[70px]'>${total2}</div>
         </div>
 
         <div className='flex justify-between items-center'>
@@ -160,7 +167,7 @@ const decrement2 = ()=>{
             </div>
             <div className='flex justify-between font-sm mb-3 text-base' >
               <div>Total:</div>
-              <div>${product2_price}</div>
+              <div>${subTotal}</div>
             </div>
             <div className='flex justify-center'>
               <button className='bg-sammy text-white px-5 py-3 my-1 rounded-md text-base'>Process to checkout</button>
