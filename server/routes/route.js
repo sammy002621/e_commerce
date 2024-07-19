@@ -8,6 +8,10 @@ router.use(cors({
     origin:'http://localhost:3000'
 }))
 
+
+router.get('/',(req,res)=>{
+    res.json("hey there");
+})
 router.post('/register',registerUser);
 router.post('/login',loginUser);
 router.post('/createContact',createContact)
