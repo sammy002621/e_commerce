@@ -10,7 +10,7 @@ router.use(cors({
 
 
 router.get('/',(req,res)=>{
-    res.json("hey there how are you doing");
+    res.json("hey there ");
 })
 router.post('/register',registerUser);
 router.post('/login',loginUser);
