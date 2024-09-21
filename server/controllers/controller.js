@@ -60,7 +60,7 @@ const loginUser = async (req,res)=>{
     if(!user){
         return res.json({error:"email is required and should exist"});
     }if(!password){
-        return res.json({error:"password is required and should exist"});
+        return res.json({error:"password is required"});
     }else{
        const checkPassword = await bcrypt.compare(password,user.password);
        if(checkPassword){
